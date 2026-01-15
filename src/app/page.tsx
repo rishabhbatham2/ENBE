@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Plus, Eye, Heart, Star } from "lucide-react";
+import { ArrowRight, Plus, Eye, Heart, Star, Leaf, Sparkles, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/header";
 import { placeholderImages } from "@/lib/placeholder-images";
@@ -22,6 +22,7 @@ export default function Home() {
       mg: 1500,
       rating: 5,
       image: tinctureImage,
+      features: ["USDA Organic", "Full Spectrum", "Lab Tested"],
     },
     {
       id: 2,
@@ -29,6 +30,7 @@ export default function Home() {
       mg: 750,
       rating: 5,
       image: softgelImage,
+      features: ["Easy to Swallow", "Precise Dose", "Lab Tested"],
     },
     {
       id: 3,
@@ -36,6 +38,7 @@ export default function Home() {
       mg: 300,
       rating: 5,
       image: gummiesImage,
+      features: ["Vegan", "Great Taste", "Lab Tested"],
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ export default function Home() {
       mg: 750,
       rating: 5,
       image: doggyTreatsImage,
+      features: ["Vet Approved", "All Natural", "Lab Tested"],
     },
   ];
 
@@ -93,40 +97,46 @@ export default function Home() {
             <h2 className="text-center text-m-h2 md:text-h2 font-headline font-semibold mb-12">Featured Products</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {products.map((product) => (
-                <Card key={product.id} className="group text-center overflow-hidden border rounded-xl shadow-subtle flex flex-col bg-card">
-                  <CardContent className="p-4 flex-grow flex flex-col">
-                    <div className="relative mb-4">
-                      {product.image && (
-                        <div className="aspect-square relative">
-                           <Image
-                            src={product.image.imageUrl}
-                            alt={product.image.description}
-                            fill
-                            className="object-contain"
-                            data-ai-hint={product.image.imageHint}
-                          />
-                        </div>
-                      )}
-                      <Button variant="secondary" className="absolute top-2 right-2 h-8 w-8 p-0 bg-white/80 backdrop-blur-sm rounded-full">
-                        <Heart className="h-4 w-4 text-muted-foreground" />
-                      </Button>
-                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-auto opacity-0 group-hover:opacity-100 transition-opacity">
-                         <Button variant="secondary" size="sm" className="rounded-full bg-white/80 backdrop-blur-sm">
-                           <Eye className="mr-2 h-4 w-4"/>
-                           Quick View
-                         </Button>
+                <Card key={product.id} className="group overflow-hidden border rounded-xl shadow-subtle flex flex-col bg-card">
+                  <div className="relative">
+                    {product.image && (
+                      <div className="aspect-square relative">
+                          <Image
+                          src={product.image.imageUrl}
+                          alt={product.image.description}
+                          fill
+                          className="object-cover"
+                          data-ai-hint={product.image.imageHint}
+                        />
                       </div>
+                    )}
+                    <Button variant="secondary" className="absolute top-2 right-2 h-8 w-8 p-0 bg-white/80 backdrop-blur-sm rounded-full">
+                      <Heart className="h-4 w-4 text-muted-foreground" />
+                    </Button>
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-auto opacity-0 group-hover:opacity-100 transition-opacity">
+                        <Button variant="secondary" size="sm" className="rounded-full bg-white/80 backdrop-blur-sm">
+                          <Eye className="mr-2 h-4 w-4"/>
+                          Quick View
+                        </Button>
+                    </div>
+                  </div>
+                  <CardContent className="p-4 flex-grow flex flex-col">
+                    <div className="flex justify-between items-baseline gap-2 w-full mb-1">
+                      <h3 className="text-m-h4 md:text-h4 font-headline font-semibold">{product.name}</h3>
+                      <span className="text-sm text-muted-foreground">Mg:{product.mg}</span>
+                    </div>
+                    <div className="flex justify-start gap-0.5 mb-4 text-primary">
+                      {[...Array(product.rating)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                     </div>
                     
-                    <div className="flex-grow flex flex-col items-center">
-                       <div className="flex justify-center items-baseline gap-2 w-full mb-2">
-                        <h3 className="text-m-h4 md:text-h4 font-headline font-semibold">{product.name}</h3>
-                        <span className="text-sm text-muted-foreground">Mg:{product.mg}</span>
-                      </div>
-                      <div className="flex justify-center gap-0.5 mb-4 text-primary">
-                        {[...Array(product.rating)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
-                      </div>
-                    </div>
+                    <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                      {product.features.map((feature, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                           <CheckCircle2 className="w-4 h-4 text-primary" />
+                           <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
                     
                     <Button asChild className="w-full mt-auto">
                       <Link href={`/product/${product.id}`}>
