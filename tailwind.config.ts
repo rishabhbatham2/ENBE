@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
-        headline: ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        body: ['var(--font-koho)', 'sans-serif'],
+        headline: ['var(--font-koho)', 'sans-serif'],
         code: ['monospace'],
       },
       fontSize: {
