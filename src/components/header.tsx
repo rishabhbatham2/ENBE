@@ -51,7 +51,7 @@ export function Header() {
         </div>
         <nav className="hidden md:flex items-center gap-4 text-sm">
           <Link href="/about-us" className="text-gray-700 hover:text-black">About Us</Link>
-          <Button asChild size="sm">
+          <Button asChild size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/contact-us">Contact Us</Link>
           </Button>
         </nav>
@@ -69,7 +69,7 @@ export function Header() {
                 <Link href="/events" className="text-gray-700 hover:text-black">Events</Link>
                 <Link href="/career" className="text-gray-700 hover:text-black">Career</Link>
                 <Link href="/about-us" className="text-gray-700 hover:text-black">About Us</Link>
-                <Button asChild>
+                <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
                   <Link href="/contact-us">Contact Us</Link>
                 </Button>
               </nav>
