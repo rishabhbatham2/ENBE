@@ -54,7 +54,7 @@ export default function Home() {
     <div className="bg-background text-foreground">
       <Header />
       <main>
-        <section className="relative min-h-[600px] md:min-h-[700px] flex items-center">
+        <section className="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center text-center">
           {heroImage && (
             <Image
               src={heroImage.imageUrl}
@@ -65,23 +65,23 @@ export default function Home() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+          <div className="absolute inset-0 bg-black/30" />
           <div className="relative z-10 container mx-auto px-4">
-            <div className="max-w-readable space-y-4">
-              <h1 className="text-m-hero-l md:text-hero-l font-headline font-semibold text-foreground tracking-[-0.025em]">
+            <div className="max-w-readable mx-auto space-y-4 text-white">
+              <h1 className="text-m-hero-l md:text-hero-l font-headline font-semibold tracking-[-0.025em]">
                 Say hello to your new favorite drinking buddy
               </h1>
-              <p className="text-m-body-base md:text-body-lg text-muted-foreground max-w-prose">
+              <p className="text-m-body-base md:text-body-lg max-w-prose mx-auto">
                 ...and goodbye to rough mornings
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                 <Button asChild size="lg">
                   <Link href="/shop">
                     shop morning recovery
                     <ArrowRight />
                   </Link>
                 </Button>
-                <Button asChild size="lg" variant="outline">
+                <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-black">
                   <Link href="/subscribe">
                     subscribe & save
                     <ArrowRight />
