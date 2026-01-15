@@ -23,22 +23,22 @@ export default function Home() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 bg-white/50" />
+          <div className="absolute inset-0 bg-background/70" />
           <div className="relative z-10 max-w-readable space-y-4 px-4">
-            <h1 className="text-m-hero-l md:text-hero-l font-semibold text-gray-800 tracking-[-0.025em]">
+            <h1 className="text-m-hero-l md:text-hero-l font-semibold text-foreground tracking-[-0.025em]">
               Say hello to your new favorite drinking buddy
             </h1>
-            <p className="text-m-body-base md:text-body-lg text-gray-600 max-w-prose mx-auto">
+            <p className="text-m-body-base md:text-body-lg text-muted-foreground max-w-prose mx-auto">
               ...and goodbye to rough mornings
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button asChild size="lg" variant="outline" className="bg-white border-gray-800 text-gray-800 hover:bg-gray-100">
+              <Button asChild size="lg">
                 <Link href="/shop">
                   shop morning recovery
                   <ArrowRight />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="bg-white border-gray-800 text-gray-800 hover:bg-gray-100">
+              <Button asChild size="lg" variant="outline">
                 <Link href="/subscribe">
                   subscribe & save
                   <ArrowRight />
