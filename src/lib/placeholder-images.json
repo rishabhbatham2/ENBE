@@ -7,22 +7,28 @@
       "imageHint": "drinks food"
     },
     {
-      "id": "product-eye900",
-      "description": "A sleek, white electronic eye massaging device.",
-      "imageUrl": "https://images.unsplash.com/photo-1659355751209-2e6c7c8091fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxleWUlMjBtYXNzYWdlcnxlbnwwfHx8fDE3Njg1MDY0Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "eye massager"
+      "id": "product-tincture",
+      "description": "A glass dropper bottle of tincture.",
+      "imageUrl": "https://images.unsplash.com/photo-1732377449036-3ee4212b2057?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0aW5jdHVyZSUyMGJvdHRsZXxlbnwwfHx8fDE3Njg1MDY4MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tincture bottle"
     },
     {
-      "id": "product-pemf-prostate",
-      "description": "A set of modern, ergonomic prostate therapy devices.",
-      "imageUrl": "https://images.unsplash.com/photo-1631312113225-7236135d70ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9zdGF0ZSUyMHRoZXJhcHl8ZW58MHx8fHwxNzY4NTA2NDc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "prostate therapy"
+      "id": "product-softgel",
+      "description": "A jar of softgel capsules.",
+      "imageUrl": "https://picsum.photos/seed/softgel/400/400",
+      "imageHint": "softgel jar"
     },
     {
-      "id": "product-pemf-pet",
-      "description": "A veterinarian examining a dog on a medical device.",
-      "imageUrl": "https://images.unsplash.com/photo-1631507623442-fee09e89c6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXQlMjBtZWRpY2FsfGVufDB8fHx8MTc2ODUwNjQ3OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "pet medical"
+      "id": "product-gummies",
+      "description": "A bag of gummy supplements.",
+      "imageUrl": "https://images.unsplash.com/photo-1681373319693-0f5f3afe8485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxndW1teSUyMGJhZ3xlbnwwfHx8fDE3Njg1MDY4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gummy bag"
+    },
+    {
+      "id": "product-doggy-treats",
+      "description": "A bag of dog treats.",
+      "imageUrl": "https://images.unsplash.com/photo-1691371388787-eab02c01be7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkb2clMjB0cmVhdHN8ZW58MHx8fHwxNzY4Mzg0NjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dog treats"
     }
   ]
 }

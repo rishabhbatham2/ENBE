@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Plus } from "lucide-react";
+import { ArrowRight, Plus, Eye, Heart, Star } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/header";
 import { placeholderImages } from "@/lib/placeholder-images";
@@ -9,45 +9,40 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
-  const eye900Image = placeholderImages.find(p => p.id === "product-eye900");
-  const pemfProstateImage = placeholderImages.find(p => p.id === "product-pemf-prostate");
-  const pemfPetImage = placeholderImages.find(p => p.id === "product-pemf-pet");
+  const tinctureImage = placeholderImages.find(p => p.id === "product-tincture");
+  const softgelImage = placeholderImages.find(p => p.id === "product-softgel");
+  const gummiesImage = placeholderImages.find(p => p.id === "product-gummies");
+  const doggyTreatsImage = placeholderImages.find(p => p.id === "product-doggy-treats");
+
 
   const products = [
     {
       id: 1,
-      name: "EYE900",
-      logo: "https://res.cloudinary.com/dxx5vxxtr/image/upload/v1768506166/492b93d9-2a99-4549-8ce5-7d6b733bd26e.png",
-      image: eye900Image,
-      functions: [
-        "Prevention of Eye Aging",
-        "Treatment for Dry Eye Syndrome",
-        "Adjunctive Therapy for Glaucoma",
-        "Reduction of Dark Circles",
-      ],
+      name: "Tincture",
+      mg: 1500,
+      rating: 5,
+      image: tinctureImage,
     },
     {
       id: 2,
-      name: "PEMF: Prostate",
-      logo: "https://res.cloudinary.com/dxx5vxxtr/image/upload/v1768506166/492b93d9-2a99-4549-8ce5-7d6b733bd26e.png",
-      image: pemfProstateImage,
-      functions: [
-        "Improvement of Prostate Inflammation",
-        "Enhancement of Male Sexual Function",
-        "Reduction of Urinary Incontinence",
-        "Strengthening of Cavernous Nitric Oxide levels",
-      ],
+      name: "Softgel",
+      mg: 750,
+      rating: 5,
+      image: softgelImage,
     },
     {
       id: 3,
-      name: "PEMF",
-      logo: "https://res.cloudinary.com/dxx5vxxtr/image/upload/v1768509747/e162d184-17c3-49d6-949e-d796cb88593a.png",
-      image: pemfPetImage,
-      altLogo: "Pet Caron Logo",
-      functions: [
-        "Home Care Medical Device for Pets",
-        "Promoting Health in Senior Dogs and Cats",
-      ],
+      name: "Gummies",
+      mg: 300,
+      rating: 5,
+      image: gummiesImage,
+    },
+    {
+      id: 4,
+      name: "Doggy Treats",
+      mg: 750,
+      rating: 5,
+      image: doggyTreatsImage,
     },
   ];
 
@@ -55,7 +50,7 @@ export default function Home() {
     <div className="bg-background text-foreground">
       <Header />
       <main>
-        <section className="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center text-center">
+        <section className="relative min-h-[600px] md:min-h-[700px] flex items-center">
           {heroImage && (
             <Image
               src={heroImage.imageUrl}
@@ -66,51 +61,44 @@ export default function Home() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 bg-background/70" />
-          <div className="relative z-10 max-w-readable space-y-4 px-4">
-            <h1 className="text-m-hero-l md:text-hero-l font-semibold text-foreground tracking-[-0.025em]">
-              Say hello to your new favorite drinking buddy
-            </h1>
-            <p className="text-m-body-base md:text-body-lg text-muted-foreground max-w-prose mx-auto">
-              ...and goodbye to rough mornings
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button asChild size="lg">
-                <Link href="/shop">
-                  shop morning recovery
-                  <ArrowRight />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link href="/subscribe">
-                  subscribe & save
-                  <ArrowRight />
-                </Link>
-              </Button>
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+          <div className="relative z-10 container mx-auto px-4">
+            <div className="max-w-readable space-y-4">
+              <h1 className="text-m-hero-l md:text-hero-l font-semibold text-foreground tracking-[-0.025em]">
+                Say hello to your new favorite drinking buddy
+              </h1>
+              <p className="text-m-body-base md:text-body-lg text-muted-foreground max-w-prose">
+                ...and goodbye to rough mornings
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Button asChild size="lg">
+                  <Link href="/shop">
+                    shop morning recovery
+                    <ArrowRight />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <Link href="/subscribe">
+                    subscribe & save
+                    <ArrowRight />
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="py-16 sm:py-24">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8">
+            <h2 className="text-center text-m-h2 md:text-h2 font-semibold mb-12">Featured Products</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {products.map((product) => (
-                <Card key={product.id} className="text-center overflow-hidden border-2 rounded-xl shadow-subtle flex flex-col">
-                  <CardContent className="p-6 flex-grow flex flex-col">
-                    <div className="flex-grow">
-                      <div className="relative h-12 mb-4">
-                        <Image
-                          src={product.logo}
-                          alt={product.altLogo || "Mediworker Logo"}
-                          width={150}
-                          height={48}
-                          className="mx-auto"
-                        />
-                      </div>
-                      <h2 className="text-m-h2 md:text-h2 font-semibold mb-4">{product.name}</h2>
+                <Card key={product.id} className="group text-center overflow-hidden border rounded-xl shadow-subtle flex flex-col bg-card">
+                  <CardContent className="p-4 flex-grow flex flex-col">
+                    <div className="relative mb-4">
                       {product.image && (
-                        <div className="relative aspect-video mb-4">
-                          <Image
+                        <div className="aspect-square relative">
+                           <Image
                             src={product.image.imageUrl}
                             alt={product.image.description}
                             fill
@@ -119,21 +107,33 @@ export default function Home() {
                           />
                         </div>
                       )}
-                    </div>
-                    <div>
-                      <div className="flex items-center justify-center gap-2 mb-4">
-                        <Plus className="text-red-500" />
-                        <span className="font-semibold text-lg">Function</span>
-                      </div>
-                      <div className="bg-gray-100 p-4 rounded-lg space-y-2 text-left">
-                        {product.functions.map((func, index) => (
-                          <div key={index}>
-                            <p className="text-m-body-base md:text-body-base text-gray-700">{func}</p>
-                            {index < product.functions.length - 1 && <Separator className="my-2" />}
-                          </div>
-                        ))}
+                      <Button variant="secondary" className="absolute top-2 right-2 h-8 w-8 p-0 bg-white/80 backdrop-blur-sm rounded-full">
+                        <Heart className="h-4 w-4 text-muted-foreground" />
+                      </Button>
+                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-auto opacity-0 group-hover:opacity-100 transition-opacity">
+                         <Button variant="secondary" size="sm" className="rounded-full bg-white/80 backdrop-blur-sm">
+                           <Eye className="mr-2 h-4 w-4"/>
+                           Quick View
+                         </Button>
                       </div>
                     </div>
+                    
+                    <div className="flex-grow flex flex-col items-center">
+                       <div className="flex justify-center items-baseline gap-2 w-full mb-2">
+                        <h3 className="text-m-h4 md:text-h4 font-semibold">{product.name}</h3>
+                        <span className="text-sm text-muted-foreground">Mg:{product.mg}</span>
+                      </div>
+                      <div className="flex justify-center gap-0.5 mb-4 text-primary">
+                        {[...Array(product.rating)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                      </div>
+                    </div>
+                    
+                    <Button asChild className="w-full mt-auto">
+                      <Link href={`/product/${product.id}`}>
+                        Read More
+                        <ArrowRight />
+                      </Link>
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
