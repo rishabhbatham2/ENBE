@@ -5,6 +5,24 @@
       "description": "A vibrant overhead shot of a table with various drinks, fruits, and snacks, creating a social and refreshing atmosphere.",
       "imageUrl": "https://images.unsplash.com/photo-1665990786173-4b343763001e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkcmlua3MlMjBmb29kfGVufDB8fHx8MTc2ODUwNTU4NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "drinks food"
+    },
+    {
+      "id": "product-eye900",
+      "description": "A sleek, white electronic eye massaging device.",
+      "imageUrl": "https://images.unsplash.com/photo-1659355751209-2e6c7c8091fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxleWUlMjBtYXNzYWdlcnxlbnwwfHx8fDE3Njg1MDY0Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "eye massager"
+    },
+    {
+      "id": "product-pemf-prostate",
+      "description": "A set of modern, ergonomic prostate therapy devices.",
+      "imageUrl": "https://images.unsplash.com/photo-1631312113225-7236135d70ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9zdGF0ZSUyMHRoZXJhcHl8ZW58MHx8fHwxNzY4NTA2NDc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "prostate therapy"
+    },
+    {
+      "id": "product-pemf-pet",
+      "description": "A veterinarian examining a dog on a medical device.",
+      "imageUrl": "https://images.unsplash.com/photo-1631507623442-fee09e89c6a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXQlMjBtZWRpY2FsfGVufDB8fHx8MTc2ODUwNjQ3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pet medical"
     }
   ]
 }
