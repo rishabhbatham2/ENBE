@@ -64,7 +64,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-readable space-y-4">
-              <h1 className="text-m-hero-l md:text-hero-l font-semibold text-foreground tracking-[-0.025em]">
+              <h1 className="text-m-hero-l md:text-hero-l font-headline font-semibold text-foreground tracking-[-0.025em]">
                 Say hello to your new favorite drinking buddy
               </h1>
               <p className="text-m-body-base md:text-body-lg text-muted-foreground max-w-prose">
@@ -90,7 +90,7 @@ export default function Home() {
 
         <section className="py-16 sm:py-24">
           <div className="container mx-auto px-4">
-            <h2 className="text-center text-m-h2 md:text-h2 font-semibold mb-12">Featured Products</h2>
+            <h2 className="text-center text-m-h2 md:text-h2 font-headline font-semibold mb-12">Featured Products</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {products.map((product) => (
                 <Card key={product.id} className="group text-center overflow-hidden border rounded-xl shadow-subtle flex flex-col bg-card">
@@ -120,7 +120,7 @@ export default function Home() {
                     
                     <div className="flex-grow flex flex-col items-center">
                        <div className="flex justify-center items-baseline gap-2 w-full mb-2">
-                        <h3 className="text-m-h4 md:text-h4 font-semibold">{product.name}</h3>
+                        <h3 className="text-m-h4 md:text-h4 font-headline font-semibold">{product.name}</h3>
                         <span className="text-sm text-muted-foreground">Mg:{product.mg}</span>
                       </div>
                       <div className="flex justify-center gap-0.5 mb-4 text-primary">

@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import { Inter } from 'next/font/google';
+import { Inter, Koho } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: 'Mediworker',
@@ -10,8 +10,13 @@ export const metadata: Metadata = {
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
   variable: '--font-inter',
+});
+
+const koho = Koho({
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  variable: '--font-koho',
 });
 
 export default function RootLayout({
@@ -21,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-body antialiased`}>
+      <body className={`${inter.variable} ${koho.variable} font-body antialiased`}>
         {children}
         <Toaster />
       </body>
