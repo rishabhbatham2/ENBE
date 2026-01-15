@@ -10,9 +10,35 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
+        body: ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        headline: ['Inter', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
         code: ['monospace'],
+      },
+      fontSize: {
+        'hero-xl': ['64px', { lineHeight: '1.05', letterSpacing: '-0.03em' }],
+        'hero-l': ['56px', { lineHeight: '1.1', letterSpacing: '-0.025em' }],
+        'hero-m': ['48px', { lineHeight: '1.15', letterSpacing: '-0.02em' }],
+        'h1': ['40px', { lineHeight: '1.15', letterSpacing: '-0.02em' }],
+        'h2': ['32px', { lineHeight: '1.2', letterSpacing: '-0.015em' }],
+        'h3': ['24px', { lineHeight: '1.25', letterSpacing: '-0.01em' }],
+        'h4': ['20px', { lineHeight: '1.3', letterSpacing: 'normal' }],
+        'body-lg': ['18px', { lineHeight: '1.6' }],
+        'body-base': ['16px', { lineHeight: '1.6' }],
+        'body-sm': ['14px', { lineHeight: '1.55' }],
+        'caption': ['13px', { lineHeight: '1.4' }],
+        'button-text': ['14px', { lineHeight: '1' }],
+        'nav-links': ['14px', { lineHeight: '1' }],
+        'label': ['12px', { lineHeight: '1.2', letterSpacing: '0.08em' }],
+        
+        // Mobile sizes
+        'm-hero-xl': ['40px', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'm-hero-l': ['36px', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'm-hero-m': ['32px', { lineHeight: '1.15', letterSpacing: '-0.015em' }],
+        'm-h1': ['30px', { lineHeight: '1.15', letterSpacing: '-0.015em' }],
+        'm-h2': ['26px', { lineHeight: '1.2', letterSpacing: '-0.01em' }],
+        'm-h3': ['22px', { lineHeight: '1.25', letterSpacing: 'normal' }],
+        'm-h4': ['18px', { lineHeight: '1.3', letterSpacing: 'normal' }],
+        'm-body-base': ['15px', { lineHeight: '1.6' }],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -70,6 +96,14 @@ export default {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+        xl: '20px',
+      },
+      boxShadow: {
+        subtle: '0 10px 30px rgba(0,0,0,0.04)',
+      },
+      maxWidth: {
+        'page': '1240px',
+        'readable': '720px',
       },
       keyframes: {
         'accordion-down': {
