@@ -50,7 +50,7 @@ export default function Home() {
       </main>
       <footer className="py-8 border-t mt-16">
         <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-          <p>&copy; {new Date().getFullYear()} Zenith Commerce. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mediworker. All Rights Reserved.</p>
         </div>
       </footer>
     </div>

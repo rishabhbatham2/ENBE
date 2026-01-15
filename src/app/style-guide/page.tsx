@@ -84,7 +84,7 @@ const StyleGuidePage = () => {
     <div className="bg-background min-h-screen">
       <header className="py-4 border-b">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <Link href="/" className="font-semibold text-lg">Zenith Commerce</Link>
+          <Link href="/" className="font-semibold text-lg">Mediworker</Link>
           <Badge variant="outline">Style Guide</Badge>
         </div>
       </header>
@@ -93,7 +93,7 @@ const StyleGuidePage = () => {
         <div className="text-center max-w-readable mx-auto">
           <h1 className="text-m-h1 md:text-h1 font-semibold">Design System</h1>
           <p className="text-m-body-base md:text-body-lg text-muted-foreground mt-4">
-            A comprehensive guide to the visual language of Zenith Commerce. Calm, confident, and consistent.
+            A comprehensive guide to the visual language of Mediworker. Calm, confident, and consistent.
           </p>
         </div>
 
@@ -246,7 +246,7 @@ const StyleGuidePage = () => {
       </main>
        <footer className="py-8 border-t mt-16">
         <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-          <p>&copy; {new Date().getFullYear()} Zenith Commerce. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Mediworker. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
