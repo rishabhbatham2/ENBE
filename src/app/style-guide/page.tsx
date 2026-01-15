@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Leaf, Sparkles, Wind } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 const StyleGuidePage = () => {
   const colors = [
@@ -35,6 +36,48 @@ const StyleGuidePage = () => {
     { icon: <Sparkles />, name: "Sparkles" },
     { icon: <CheckCircle2 />, name: "Check Circle" },
     { icon: <Wind />, name: "Wind" },
+  ];
+
+  const fontSizes = [
+    { name: 'Hero XL', desktop: '64px / 1.05', mobile: '40px / 1.1', class: 'text-hero-xl' },
+    { name: 'Hero L', desktop: '56px / 1.1', mobile: '36px / 1.1', class: 'text-hero-l' },
+    { name: 'Hero M', desktop: '48px / 1.15', mobile: '32px / 1.15', class: 'text-hero-m' },
+    { name: 'Heading 1', desktop: '40px / 1.15', mobile: '30px / 1.15', class: 'text-h1' },
+    { name: 'Heading 2', desktop: '32px / 1.2', mobile: '26px / 1.2', class: 'text-h2' },
+    { name: 'Heading 3', desktop: '24px / 1.25', mobile: '22px / 1.25', class: 'text-h3' },
+    { name: 'Heading 4', desktop: '20px / 1.3', mobile: '18px / 1.3', class: 'text-h4' },
+    { name: 'Body Large', desktop: '18px / 1.6', mobile: '18px / 1.6', class: 'text-body-lg' },
+    { name: 'Body Base', desktop: '16px / 1.6', mobile: '15px / 1.6', class: 'text-body-base' },
+    { name: 'Body Small', desktop: '14px / 1.55', mobile: '14px / 1.55', class: 'text-body-sm' },
+    { name: 'Caption', desktop: '13px / 1.4', mobile: '13px / 1.4', class: 'text-caption' },
+    { name: 'Button', desktop: '14px / 1', mobile: '14px / 1', class: 'text-button-text' },
+    { name: 'Nav Links', desktop: '14px / 1', mobile: '14px / 1', class: 'text-nav-links' },
+    { name: 'Label', desktop: '12px / 1.2', mobile: '12px / 1.2', class: 'text-label' },
+  ];
+
+  const spacing = [
+    { value: '0', rem: '0', px: '0px' },
+    { value: 'px', rem: '1px', px: '1px' },
+    { value: '0.5', rem: '0.125rem', px: '2px' },
+    { value: '1', rem: '0.25rem', px: '4px' },
+    { value: '1.5', rem: '0.375rem', px: '6px' },
+    { value: '2', rem: '0.5rem', px: '8px' },
+    { value: '2.5', rem: '0.625rem', px: '10px' },
+    { value: '3', rem: '0.75rem', px: '12px' },
+    { value: '3.5', rem: '0.875rem', px: '14px' },
+    { value: '4', rem: '1rem', px: '16px' },
+    { value: '5', rem: '1.25rem', px: '20px' },
+    { value: '6', rem: '1.5rem', px: '24px' },
+    { value: '7', rem: '1.75rem', px: '28px' },
+    { value: '8', rem: '2rem', px: '32px' },
+    { value: '9', rem: '2.25rem', px: '36px' },
+    { value: '10', rem: '2.5rem', px: '40px' },
+    { value: '11', rem: '2.75rem', px: '44px' },
+    { value: '12', rem: '3rem', px: '48px' },
+    { value: '14', rem: '3.5rem', px: '56px' },
+    { value: '16', rem: '4rem', px: '64px' },
+    { value: '20', rem: '5rem', px: '80px' },
+    { value: '24', rem: '6rem', px: '96px' },
   ];
 
   return (
@@ -89,35 +132,66 @@ const StyleGuidePage = () => {
         <section>
           <h2 className="text-m-h2 md:text-h2 font-semibold mb-8">Typography</h2>
           <Card className="rounded-xl shadow-subtle">
-            <CardContent className="p-6 md:p-8 space-y-6">
-              <div>
-                <p className="text-label text-muted-foreground mb-2">Inter, Semibold (600)</p>
-                <h1 className="text-m-hero-xl md:text-hero-xl font-semibold tracking-[-0.03em]">Hero XL</h1>
-                <h1 className="text-m-hero-l md:text-hero-l font-semibold tracking-[-0.025em]">Hero L</h1>
-                <h1 className="text-m-hero-m md:text-hero-m font-semibold tracking-[-0.02em]">Hero M</h1>
-                <h1 className="text-m-h1 md:text-h1 font-semibold tracking-[-0.02em]">Heading 1</h1>
-                <h2 className="text-m-h2 md:text-h2 font-semibold tracking-[-0.015em]">Heading 2</h2>
-                <h3 className="text-m-h3 md:text-h3 font-semibold tracking-[-0.01em]">Heading 3</h3>
-                <h4 className="text-m-h4 md:text-h4 font-semibold">Heading 4</h4>
-              </div>
-              <div className="w-full h-px bg-border"></div>
-              <div>
-                <p className="text-label text-muted-foreground mb-2">Inter, Regular (400)</p>
-                <p className="text-body-lg">Body Large: For introductory paragraphs.</p>
-                <p className="text-m-body-base md:text-body-base">Body Regular: The quick brown fox jumps over the lazy dog. This is the standard for all body copy. It's designed for maximum readability and a calm reading experience.</p>
-                <p className="text-body-sm">Body Small: Useful for finer details.</p>
-                <p className="text-caption">Caption: For image captions and tertiary information.</p>
-              </div>
-               <div className="w-full h-px bg-border"></div>
-              <div>
-                <p className="text-label text-muted-foreground mb-2">Inter, Medium (500)</p>
-                <p className="text-button-text font-medium">Button Text</p>
-                <p className="text-nav-links font-medium">Navigation Links</p>
-                <p className="text-label font-medium">Label / Overline</p>
-              </div>
+            <CardHeader>
+              <CardTitle>Font Sizes</CardTitle>
+              <p className="text-muted-foreground text-body-sm">The type scale is responsive. Values are shown as: size / line-height.</p>
+            </CardHeader>
+            <CardContent>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Style Name</TableHead>
+                    <TableHead>Desktop</TableHead>
+                    <TableHead>Mobile</TableHead>
+                    <TableHead>CSS Class</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {fontSizes.map((size) => (
+                    <TableRow key={size.name}>
+                      <TableCell className="font-medium">{size.name}</TableCell>
+                      <TableCell>{size.desktop}</TableCell>
+                      <TableCell>{size.mobile}</TableCell>
+                      <TableCell><code>.{size.class}</code></TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
             </CardContent>
           </Card>
         </section>
+
+        {/* Spacing */}
+        <section>
+          <h2 className="text-m-h2 md:text-h2 font-semibold mb-8">Spacing</h2>
+           <Card className="rounded-xl shadow-subtle">
+            <CardHeader>
+              <CardTitle>Spacing Scale</CardTitle>
+              <p className="text-muted-foreground text-body-sm">The 4-point grid system provides consistent spacing. Use classes like <code>p-4</code> or <code>m-8</code>.</p>
+            </CardHeader>
+            <CardContent>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Value</TableHead>
+                    <TableHead>REM</TableHead>
+                    <TableHead>px</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {spacing.map((space) => (
+                    <TableRow key={space.value}>
+                      <TableCell className="font-medium">{space.value}</TableCell>
+                      <TableCell>{space.rem}</TableCell>
+                      <TableCell>{space.px}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </CardContent>
+          </Card>
+        </section>
+
 
         {/* Buttons & Actions */}
         <section>
