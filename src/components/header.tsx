@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { ShoppingCart, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -49,13 +49,11 @@ export function Header() {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex items-center gap-6 text-sm">
+        <nav className="hidden md:flex items-center gap-4 text-sm">
           <Link href="/about-us" className="text-gray-700 hover:text-black">About Us</Link>
-          <Link href="/contact-us" className="text-gray-700 hover:text-black">Contact Us</Link>
-          <Link href="/account" className="text-gray-700 hover:text-black">Account</Link>
-          <Link href="/cart" className="flex items-center gap-1 text-gray-700 hover:text-black">
-            Cart <ShoppingCart className="h-4 w-4" />
-          </Link>
+          <Button asChild size="sm">
+            <Link href="/contact-us">Contact Us</Link>
+          </Button>
         </nav>
         <div className="md:hidden flex-1 flex justify-end">
           <Sheet>
@@ -71,11 +69,9 @@ export function Header() {
                 <Link href="/events" className="text-gray-700 hover:text-black">Events</Link>
                 <Link href="/career" className="text-gray-700 hover:text-black">Career</Link>
                 <Link href="/about-us" className="text-gray-700 hover:text-black">About Us</Link>
-                <Link href="/contact-us" className="text-gray-700 hover:text-black">Contact Us</Link>
-                <Link href="/account" className="text-gray-700 hover:text-black">Account</Link>
-                <Link href="/cart" className="flex items-center gap-1 text-gray-700 hover:text-black">
-                  Cart <ShoppingCart className="h-5 w-5" />
-                </Link>
+                <Button asChild>
+                  <Link href="/contact-us">Contact Us</Link>
+                </Button>
               </nav>
             </SheetContent>
           </Sheet>
