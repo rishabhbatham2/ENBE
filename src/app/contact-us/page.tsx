@@ -45,7 +45,7 @@ function FaqSection() {
 
   return (
     <section className="py-16 sm:py-24 bg-muted/50">
-      <div className="container mx-auto max-w-5xl px-4">
+      <div className="container mx-auto max-w-[371px] px-4">
         <div className="text-center max-w-readable mx-auto">
           <p className="text-sm font-semibold text-muted-foreground tracking-widest mb-2">
             TRUSTED BY
@@ -91,7 +91,7 @@ export default function ContactUsPage() {
       <Header />
       <main>
         <section className="py-16 sm:py-24">
-          <div className="container mx-auto max-w-5xl px-4">
+          <div className="container mx-auto max-w-[371px] px-4">
             <div className="text-center max-w-readable mx-auto">
               <h1 className="text-m-h1 font-headline font-semibold md:text-h1">
                 Contact us

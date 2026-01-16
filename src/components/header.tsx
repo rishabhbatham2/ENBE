@@ -32,7 +32,7 @@ export function Header() {
         isScrolled ? "bg-white/80 backdrop-blur-sm border-b" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center py-4">
+      <div className="container mx-auto max-w-[371px] px-4 flex justify-between items-center py-4">
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/products" className="text-gray-700 hover:text-black">Products</Link>
           <Link href="/events" className="text-gray-700 hover:text-black">Events</Link>
