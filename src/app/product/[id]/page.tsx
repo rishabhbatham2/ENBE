@@ -60,13 +60,13 @@ export default function ProductPage() {
   const currentPrice = salePrice || price;
 
   return (
-    <div className="bg-background text-foreground">
+    <div className="bg-card text-foreground">
       <Header />
       <main className="py-16 sm:py-24">
         <div className="container mx-auto max-w-[1371px] px-4">
-          <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid md:grid-cols-5 gap-12 lg:gap-16">
             {/* Image Gallery */}
-            <div>
+            <div className="md:col-span-2">
               <div className="aspect-square relative mb-4">
                 {activeImage && (
                   <Image
@@ -77,7 +77,7 @@ export default function ProductPage() {
                   />
                 )}
               </div>
-              <div className="flex gap-2 justify-center">
+              <div className="flex gap-2 justify-start">
                 {gallery && gallery.map((img, index) => img && (
                   <button
                     key={index}
@@ -97,7 +97,7 @@ export default function ProductPage() {
             </div>
 
             {/* Product Info */}
-            <div className="space-y-6">
+            <div className="md:col-span-3 space-y-6">
               <h1 className="text-m-h1 md:text-h1 font-headline font-semibold text-foreground">{name}</h1>
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-0.5 text-primary">
