@@ -1,120 +1,150 @@
 import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { placeholderImages } from "@/lib/placeholder-images";
-import { ArrowRight, Instagram, Twitter, Youtube, Dribbble } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function ContactUsPage() {
-  const ctaImage = placeholderImages.find(p => p.id === "contact-cta-cards");
-
   return (
     <div className="bg-background text-foreground">
       <Header />
       <main>
         <section className="py-16 sm:py-24">
-          <div className="container mx-auto px-4 max-w-page">
-            <div className="text-center max-w-readable mx-auto">
-              <h1 className="text-m-h1 md:text-h1 font-headline font-semibold">
-                Contact Us
-              </h1>
-              <p className="text-m-body-base md:text-body-lg text-muted-foreground mt-4">
-                We're here to help! Whether you have questions, feedback, or
-                need support, our team is ready to assist you.
-              </p>
-            </div>
-
-            <div className="mt-16 grid md:grid-cols-2 gap-16 items-start">
-              {/* Get in touch */}
+          <div className="container mx-auto max-w-page px-4">
+            <div className="grid items-start gap-16 md:grid-cols-2">
+              {/* Left Column: Info */}
               <div className="space-y-8">
-                <h2 className="text-m-h2 md:text-h2 font-headline font-semibold">Get in touch</h2>
-                <div className="space-y-4 text-body-base">
-                  <div>
-                    <p className="font-semibold text-muted-foreground">Email:</p>
-                    <a href="mailto:Moneta@gmail.com" className="hover:underline">Moneta@gmail.com</a>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-muted-foreground">Phone:</p>
-                    <a href="tel:12312212323" className="hover:underline">(123) 1221 2323</a>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-muted-foreground">Address:</p>
-                    <p>
-                      123 Innovation Avenue, Suite 456<br />
-                      Tech District, San Francisco, CA 94107<br />
-                      United States
-                    </p>
-                  </div>
-                </div>
                 <div>
-                  <p className="font-semibold text-muted-foreground mb-2">Follow Us</p>
-                  <div className="flex items-center gap-4">
-                    <Link href="#" className="text-muted-foreground hover:text-foreground"><Youtube className="w-6 h-6" /></Link>
-                    <Link href="#" className="text-muted-foreground hover:text-foreground"><Instagram className="w-6 h-6" /></Link>
-                    <Link href="#" className="text-muted-foreground hover:text-foreground"><Dribbble className="w-6 h-6" /></Link>
-                    <Link href="#" className="text-muted-foreground hover:text-foreground"><Twitter className="w-6 h-6" /></Link>
+                  <h1 className="text-m-h1 font-headline font-semibold md:text-h1">
+                    Contact us
+                  </h1>
+                  <p className="text-m-body-base mt-4 text-muted-foreground md:text-body-lg">
+                    We'd love to hear from you. Please fill out this form, and
+                    we'll reply soon.
+                  </p>
+                </div>
+
+                <div className="grid gap-x-8 gap-y-12 pt-8 sm:grid-cols-2">
+                  <div>
+                    <h3 className="mb-2 text-h4 font-semibold">Email</h3>
+                    <p className="mb-1 text-body-base text-muted-foreground">
+                      Contact us by email, and we will respond shortly.
+                    </p>
+                    <a
+                      href="mailto:hey@uiblox.com"
+                      className="text-body-base font-medium hover:underline"
+                    >
+                      hey@uiblox.com
+                    </a>
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-h4 font-semibold">Phone</h3>
+                    <p className="mb-1 text-body-base text-muted-foreground">
+                      Call us on weekdays from 9 AM to 5 PM.
+                    </p>
+                    <a
+                      href="tel:+1222333444"
+                      className="text-body-base font-medium hover:underline"
+                    >
+                      +1 (222) 333 444
+                    </a>
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-h4 font-semibold">Mobile</h3>
+                    <p className="mb-1 text-body-base text-muted-foreground">
+                      Call us on weekdays from 9 AM to 6 PM.
+                    </p>
+                    <a
+                      href="tel:+2222333444"
+                      className="text-body-base font-medium hover:underline"
+                    >
+                      +2 (222) 333 444
+                    </a>
+                  </div>
+                  <div>
+                    <h3 className="mb-2 text-h4 font-semibold">Office</h3>
+                    <p className="text-body-base text-muted-foreground">
+                      Visit us at our headquarters.
+                    </p>
+                    <p className="text-body-base font-medium">
+                      87266 Green Station, Euless, Oregon 26739, Canada
+                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* Form */}
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-muted-foreground">Your Name</label>
-                    <Input id="name" type="text" placeholder="Your name" className="bg-card border rounded-lg" />
+              {/* Right Column: Form */}
+              <div className="rounded-xl bg-card p-8 shadow-subtle sm:p-12">
+                <h2 className="mb-6 text-m-h2 font-headline font-semibold md:text-h2">
+                  Write us a message
+                </h2>
+                <form className="space-y-6">
+                  <div className="grid gap-6 sm:grid-cols-2">
+                    <div className="space-y-2">
+                      <Label htmlFor="first-name">First name *</Label>
+                      <Input
+                        id="first-name"
+                        type="text"
+                        placeholder="Jane"
+                        className="rounded-full border-transparent bg-muted"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="last-name">Last name *</Label>
+                      <Input
+                        id="last-name"
+                        type="text"
+                        placeholder="Smith"
+                        className="rounded-full border-transparent bg-muted"
+                      />
+                    </div>
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-muted-foreground">Email address</label>
-                    <Input id="email" type="email" placeholder="Your email address" className="bg-card border rounded-lg" />
+                    <Label htmlFor="email">Email *</Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="jane@email.com"
+                      className="rounded-full border-transparent bg-muted"
+                    />
                   </div>
-                </div>
-                <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-muted-foreground">Message</label>
-                    <Textarea id="message" placeholder="Write something..." rows={6} className="bg-card border rounded-lg" />
-                </div>
-                <Button type="submit" size="lg" className="w-full sm:w-auto">Send Message</Button>
-              </form>
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea
+                      id="message"
+                      placeholder="Leave us a message..."
+                      rows={5}
+                      className="rounded-xl border-transparent bg-muted"
+                    />
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Checkbox id="privacy-policy" />
+                    <Label
+                      htmlFor="privacy-policy"
+                      className="text-sm font-normal text-muted-foreground"
+                    >
+                      I agree the Privacy Policy
+                    </Label>
+                  </div>
+                  <Button
+                    type="submit"
+                    size="lg"
+                    className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90"
+                  >
+                    Send
+                  </Button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
-
-        <section className="py-16 sm:py-24">
-            <div className="container mx-auto px-4 max-w-page">
-                <div className="bg-card rounded-xl p-8 md:p-16 grid md:grid-cols-2 gap-8 items-center">
-                    <div className="space-y-4">
-                        <h2 className="text-m-h2 md:text-h2 font-headline font-semibold">Ready to Transform Your Financial Management?</h2>
-                        <p className="text-muted-foreground text-body-base">
-                            Experience the future of finance with our cutting-edge SaaS platform. Start optimizing your financial operations today!
-                        </p>
-                        <Button asChild variant="link" className="p-0 h-auto text-foreground">
-                            <Link href="#">
-                                Download app
-                                <ArrowRight className="ml-2" />
-                            </Link>
-                        </Button>
-                    </div>
-                    <div className="relative aspect-[4/3]">
-                        {ctaImage && (
-                            <Image 
-                                src={ctaImage.imageUrl}
-                                alt={ctaImage.description}
-                                fill
-                                className="object-cover"
-                                data-ai-hint={ctaImage.imageHint}
-                            />
-                        )}
-                    </div>
-                </div>
-            </div>
-        </section>
-
       </main>
-      <footer className="py-8 border-t mt-16">
-        <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-          <p>&copy; {new Date().getFullYear()} Mediworker. All Rights Reserved.</p>
+      <footer className="mt-16 border-t py-8">
+        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
+          <p>
+            &copy; {new Date().getFullYear()} Mediworker. All Rights Reserved.
+          </p>
         </div>
       </footer>
     </div>
