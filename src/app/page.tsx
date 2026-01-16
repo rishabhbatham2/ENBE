@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
   const winstimImage = placeholderImages.find(p => p.id === "product-winstim");
+  const electro2Image = placeholderImages.find(p => p.id === "product-electro-2");
   const softgelImage = placeholderImages.find(p => p.id === "product-softgel");
   const gummiesImage = placeholderImages.find(p => p.id === "product-gummies");
   const doggyTreatsImage = placeholderImages.find(p => p.id === "product-doggy-treats");
@@ -29,6 +30,13 @@ export default function Home() {
       rating: 5,
       image: winstimImage,
       features: ["Electrotherapy", "Pain Relief", "Muscle Stimulation"],
+    },
+    {
+      id: 5,
+      name: "Winstim Plus",
+      rating: 5,
+      image: electro2Image,
+      features: ["Dual Channel", "12 Modes", "Portable"],
     },
     {
       id: 2,
@@ -131,6 +139,7 @@ export default function Home() {
                       <h3 className="text-m-h4 md:text-h4 font-headline font-semibold">{product.name}</h3>
                       {product.mg && <span className="text-sm text-muted-foreground">Mg:{product.mg}</span>}
                     </div>
+
                     <div className="flex justify-start gap-0.5 mb-4 text-primary">
                       {[...Array(product.rating)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                     </div>

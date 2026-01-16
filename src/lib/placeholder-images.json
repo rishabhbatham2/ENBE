@@ -13,6 +13,12 @@
       "imageHint": "electrotherapy device"
     },
     {
+      "id": "product-electro-2",
+      "description": "An advanced electrotherapy device.",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768548603/Electrotherapy_1_piw27g.jpg",
+      "imageHint": "electrotherapy device"
+    },
+    {
       "id": "product-softgel",
       "description": "A jar of softgel capsules.",
       "imageUrl": "https://picsum.photos/seed/softgel/400/400",
