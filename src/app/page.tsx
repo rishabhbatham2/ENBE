@@ -15,6 +15,9 @@ export default function Home() {
   const doggyTreatsImage = placeholderImages.find(p => p.id === "product-doggy-treats");
   const grapheneBeltImage = placeholderImages.find(p => p.id === "product-graphene-belt");
   const pemfProstateImage = placeholderImages.find(p => p.id === "product-pemf-prostate");
+  const pemfGshiosImage = placeholderImages.find(p => p.id === "product-pemf-gshios");
+  const eye900Image = placeholderImages.find(p => p.id === "product-eye-900");
+
 
   type Product = {
     id: number;
@@ -53,6 +56,20 @@ export default function Home() {
       rating: 5,
       image: pemfProstateImage,
       features: ["Targeted Therapy", "Non-Invasive", "At-Home Use"],
+    },
+    {
+      id: 8,
+      name: "PEMF Gshios",
+      rating: 5,
+      image: pemfGshiosImage,
+      features: ["PEMF Therapy", "Portable", "Pain Relief"],
+    },
+    {
+      id: 9,
+      name: "EYE 900",
+      rating: 5,
+      image: eye900Image,
+      features: ["Eye Massage", "Reduces Strain", "Portable"],
     },
     {
       id: 2,

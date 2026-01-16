@@ -47,6 +47,18 @@
       "description": "PEMF prostate device.",
       "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768546372/PEMF_Prostate_hubfl8.jpg",
       "imageHint": "PEMF device"
+    },
+    {
+      "id": "product-pemf-gshios",
+      "description": "PEMF Gshios device.",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768546370/PEMF_gshios.jpg",
+      "imageHint": "PEMF device"
+    },
+    {
+      "id": "product-eye-900",
+      "description": "EYE 900 eye massager.",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768546250/EYE900_xmof2q.jpg",
+      "imageHint": "eye massager"
     }
   ]
 }
