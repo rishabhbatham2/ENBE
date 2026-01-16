@@ -15,7 +15,7 @@ export default function ContactUsPage() {
       <Header />
       <main>
         <section className="py-16 sm:py-24">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-page">
             <div className="text-center max-w-readable mx-auto">
               <h1 className="text-m-h1 md:text-h1 font-headline font-semibold">
                 Contact Us
@@ -64,16 +64,16 @@ export default function ContactUsPage() {
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-muted-foreground">Your Name</label>
-                    <Input id="name" type="text" placeholder="Your name" className="bg-secondary border-none rounded-lg" />
+                    <Input id="name" type="text" placeholder="Your name" className="bg-card border rounded-lg" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-muted-foreground">Email address</label>
-                    <Input id="email" type="email" placeholder="Your email address" className="bg-secondary border-none rounded-lg" />
+                    <Input id="email" type="email" placeholder="Your email address" className="bg-card border rounded-lg" />
                   </div>
                 </div>
                 <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium text-muted-foreground">Message</label>
-                    <Textarea id="message" placeholder="Write something..." rows={6} className="bg-secondary border-none rounded-lg" />
+                    <Textarea id="message" placeholder="Write something..." rows={6} className="bg-card border rounded-lg" />
                 </div>
                 <Button type="submit" size="lg" className="w-full sm:w-auto">Send Message</Button>
               </form>
@@ -82,8 +82,8 @@ export default function ContactUsPage() {
         </section>
 
         <section className="py-16 sm:py-24">
-            <div className="container mx-auto px-4">
-                <div className="bg-secondary rounded-xl p-8 md:p-16 grid md:grid-cols-2 gap-8 items-center">
+            <div className="container mx-auto px-4 max-w-page">
+                <div className="bg-card rounded-xl p-8 md:p-16 grid md:grid-cols-2 gap-8 items-center">
                     <div className="space-y-4">
                         <h2 className="text-m-h2 md:text-h2 font-headline font-semibold">Ready to Transform Your Financial Management?</h2>
                         <p className="text-muted-foreground text-body-base">
@@ -102,7 +102,7 @@ export default function ContactUsPage() {
                                 src={ctaImage.imageUrl}
                                 alt={ctaImage.description}
                                 fill
-                                className="object-contain"
+                                className="object-cover"
                                 data-ai-hint={ctaImage.imageHint}
                             />
                         )}
