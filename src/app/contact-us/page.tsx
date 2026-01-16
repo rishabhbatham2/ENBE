@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import { motion } from 'framer-motion';
 import { Header } from '@/components/header';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -13,6 +14,28 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
+
+const sectionVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: 'easeOut',
+    },
+  },
+};
 
 function FaqSection() {
   const faqs = [
@@ -44,17 +67,29 @@ function FaqSection() {
   const [openItem, setOpenItem] = React.useState<string | null>('faq-1');
 
   return (
-    <section className="py-16 sm:py-24 bg-muted/50">
+    <motion.section
+      className="py-16 sm:py-24 bg-muted/50"
+      variants={sectionVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="container mx-auto max-w-[1371px] px-4">
-        <div className="text-center max-w-readable mx-auto">
+        <motion.div
+          className="text-center max-w-readable mx-auto"
+          variants={itemVariants}
+        >
           <p className="text-sm font-semibold text-muted-foreground tracking-widest mb-2">
             TRUSTED BY
           </p>
           <h2 className="text-m-h2 md:text-h2 font-headline font-semibold">
             Frequently Asked Questions
           </h2>
-        </div>
-        <div className="w-full mx-auto mt-12 space-y-4">
+        </motion.div>
+        <motion.div
+          className="w-full mx-auto mt-12 space-y-4"
+          variants={itemVariants}
+        >
           {faqs.map(faq => (
             <Collapsible
               key={faq.id}
@@ -79,20 +114,35 @@ function FaqSection() {
               </CollapsibleContent>
             </Collapsible>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
 export default function ContactUsPage() {
+  const contactInfo = [
+    { title: 'Email', description: 'Contact us by email, and we will respond shortly.', link: 'mailto:hey@uiblox.com', linkText: 'hey@uiblox.com' },
+    { title: 'Phone', description: 'Call us on weekdays from 9 AM to 5 PM.', link: 'tel:+1222333444', linkText: '+1 (222) 333 444' },
+    { title: 'Mobile', description: 'Call us on weekdays from 9 AM to 6 PM.', link: 'tel:+2222333444', linkText: '+2 (222) 333 444' },
+    { title: 'Office', description: 'Visit us at our headquarters.', address: '87266 Green Station, Euless, Oregon 26739, Canada' },
+  ];
+
   return (
     <div className="bg-background text-foreground">
       <Header />
       <main>
-        <section className="py-16 sm:py-24">
+        <motion.section
+          className="py-16 sm:py-24"
+          variants={sectionVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <div className="container mx-auto max-w-[1371px] px-4">
-            <div className="text-center max-w-readable mx-auto">
+            <motion.div
+              className="text-center max-w-readable mx-auto"
+              variants={itemVariants}
+            >
               <h1 className="text-m-h1 font-headline font-semibold md:text-h1">
                 Contact us
               </h1>
@@ -100,60 +150,41 @@ export default function ContactUsPage() {
                 We'd love to hear from you. Please fill out this form, and
                 we'll reply soon.
               </p>
-            </div>
+            </motion.div>
 
             <div className="grid items-start gap-16 md:grid-cols-2 mt-12">
               {/* Left Column: Info */}
-              <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 items-start">
-                <div>
-                  <h3 className="mb-2 text-h4 font-semibold">Email</h3>
-                  <p className="mb-1 text-body-base text-muted-foreground">
-                    Contact us by email, and we will respond shortly.
-                  </p>
-                  <a
-                    href="mailto:hey@uiblox.com"
-                    className="text-body-base font-medium hover:underline"
-                  >
-                    hey@uiblox.com
-                  </a>
-                </div>
-                <div>
-                  <h3 className="mb-2 text-h4 font-semibold">Phone</h3>
-                  <p className="mb-1 text-body-base text-muted-foreground">
-                    Call us on weekdays from 9 AM to 5 PM.
-                  </p>
-                  <a
-                    href="tel:+1222333444"
-                    className="text-body-base font-medium hover:underline"
-                  >
-                    +1 (222) 333 444
-                  </a>
-                </div>
-                <div>
-                  <h3 className="mb-2 text-h4 font-semibold">Mobile</h3>
-                  <p className="mb-1 text-body-base text-muted-foreground">
-                    Call us on weekdays from 9 AM to 6 PM.
-                  </p>
-                  <a
-                    href="tel:+2222333444"
-                    className="text-body-base font-medium hover:underline"
-                  >
-                    +2 (222) 333 444
-                  </a>
-                </div>
-                <div>
-                  <h3 className="mb-2 text-h4 font-semibold">Office</h3>
-                  <p className="text-body-base text-muted-foreground">
-                    Visit us at our headquarters.
-                  </p>
-                  <p className="text-body-base font-medium">
-                    87266 Green Station, Euless, Oregon 26739, Canada
-                  </p>
-                </div>
-              </div>
+              <motion.div
+                className="grid gap-x-8 gap-y-12 sm:grid-cols-2 items-start"
+                variants={sectionVariants}
+              >
+                {contactInfo.map((info, index) => (
+                  <motion.div key={index} variants={itemVariants}>
+                    <h3 className="mb-2 text-h4 font-semibold text-primary">{info.title}</h3>
+                    <p className="mb-1 text-body-base text-muted-foreground">
+                      {info.description}
+                    </p>
+                    {info.link ? (
+                       <a
+                        href={info.link}
+                        className="text-body-base font-medium text-foreground hover:underline"
+                      >
+                        {info.linkText}
+                      </a>
+                    ) : (
+                      <p className="text-body-base font-medium text-foreground">
+                        {info.address}
+                      </p>
+                    )}
+                  </motion.div>
+                ))}
+              </motion.div>
 
               {/* Right Column: Form */}
-              <div className="rounded-xl bg-card p-8 sm:p-12">
+              <motion.div
+                className="rounded-xl bg-card p-8 sm:p-12"
+                variants={itemVariants}
+              >
                 <h2 className="mb-6 text-m-h2 font-headline font-semibold md:text-h2">
                   Write us a message
                 </h2>
@@ -208,15 +239,15 @@ export default function ContactUsPage() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90"
+                    className="w-full rounded-full bg-accent text-accent-foreground hover:bg-accent/90"
                   >
                     Send
                   </Button>
                 </form>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </section>
+        </motion.section>
         <FaqSection />
       </main>
       <footer className="mt-16 border-t py-8">
