@@ -66,6 +66,33 @@ export default function AboutUsPage() {
             </div>
           </div>
         </section>
+
+        <section className="py-16 sm:py-24">
+          <div className="container mx-auto max-w-[1371px] px-4">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+              <div>
+                <p className="text-sm font-semibold text-primary tracking-widest mb-2">
+                  Effortless Task Automation
+                </p>
+                <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-foreground">
+                  Unlock Productivity with Smart Automation Tools
+                </h2>
+              </div>
+              <div className="space-y-4 text-muted-foreground text-body-base md:text-body-lg">
+                <p>
+                  As we automated processes, built workflows, and expanded our
+                  community beyond what we imagined, Mondai work as naturally
+                  came to life through that journey.
+                </p>
+                <p>
+                  On February 8th, 2021, Mondai marked a new chapter by going
+                  public on Nasdaq. Today, we keep growing as a multi-product
+                  company.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
