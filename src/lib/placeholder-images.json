@@ -35,6 +35,18 @@
       "description": "A bag of dog treats.",
       "imageUrl": "https://images.unsplash.com/photo-1691371388787-eab02c01be7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkb2clMjB0cmVhdHN8ZW58MHx8fHwxNzY4Mzg0NjU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dog treats"
+    },
+    {
+      "id": "product-graphene-belt",
+      "description": "Graphene magnetic waist belt.",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768547695/PEMF_3_ptsmow.jpg",
+      "imageHint": "magnetic belt"
+    },
+    {
+      "id": "product-pemf-prostate",
+      "description": "PEMF prostate device.",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768546372/PEMF_Prostate_hubfl8.jpg",
+      "imageHint": "PEMF device"
     }
   ]
 }

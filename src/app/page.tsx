@@ -13,6 +13,8 @@ export default function Home() {
   const softgelImage = placeholderImages.find(p => p.id === "product-softgel");
   const gummiesImage = placeholderImages.find(p => p.id === "product-gummies");
   const doggyTreatsImage = placeholderImages.find(p => p.id === "product-doggy-treats");
+  const grapheneBeltImage = placeholderImages.find(p => p.id === "product-graphene-belt");
+  const pemfProstateImage = placeholderImages.find(p => p.id === "product-pemf-prostate");
 
   type Product = {
     id: number;
@@ -37,6 +39,20 @@ export default function Home() {
       rating: 5,
       image: electro2Image,
       features: ["Dual Channel", "12 Modes", "Portable"],
+    },
+    {
+      id: 6,
+      name: "Graphene Magnetic Waist Belt",
+      rating: 5,
+      image: grapheneBeltImage,
+      features: ["Pain Relief", "Magnetic Therapy", "Adjustable"],
+    },
+    {
+      id: 7,
+      name: "PEMF Prostate",
+      rating: 5,
+      image: pemfProstateImage,
+      features: ["Targeted Therapy", "Non-Invasive", "At-Home Use"],
     },
     {
       id: 2,
@@ -79,7 +95,7 @@ export default function Home() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0" />
+          
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-readable mx-auto space-y-4 text-white">
               <h1 className="text-m-hero-l md:text-hero-l font-headline font-semibold tracking-[-0.025em]">
