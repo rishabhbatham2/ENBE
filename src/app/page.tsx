@@ -1,28 +1,34 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Plus, Eye, Heart, Star, Leaf, Sparkles, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Eye, Heart, Star, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/header";
-import { placeholderImages } from "@/lib/placeholder-images";
+import { placeholderImages, type ImagePlaceholder } from "@/lib/placeholder-images";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
-  const tinctureImage = placeholderImages.find(p => p.id === "product-tincture");
+  const winstimImage = placeholderImages.find(p => p.id === "product-winstim");
   const softgelImage = placeholderImages.find(p => p.id === "product-softgel");
   const gummiesImage = placeholderImages.find(p => p.id === "product-gummies");
   const doggyTreatsImage = placeholderImages.find(p => p.id === "product-doggy-treats");
 
+  type Product = {
+    id: number;
+    name: string;
+    mg?: number;
+    rating: number;
+    image: ImagePlaceholder | undefined;
+    features: string[];
+  };
 
-  const products = [
+  const products: Product[] = [
     {
       id: 1,
-      name: "Tincture",
-      mg: 1500,
+      name: "Winstim",
       rating: 5,
-      image: tinctureImage,
-      features: ["USDA Organic", "Full Spectrum", "Lab Tested"],
+      image: winstimImage,
+      features: ["Electrotherapy", "Pain Relief", "Muscle Stimulation"],
     },
     {
       id: 2,
@@ -65,7 +71,7 @@ export default function Home() {
               data-ai-hint={heroImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0" />
           <div className="relative z-10 container mx-auto px-4">
             <div className="max-w-readable mx-auto space-y-4 text-white">
               <h1 className="text-m-hero-l md:text-hero-l font-headline font-semibold tracking-[-0.025em]">
@@ -123,7 +129,7 @@ export default function Home() {
                   <CardContent className="p-4 flex-grow flex flex-col">
                     <div className="flex justify-between items-baseline gap-2 w-full mb-1">
                       <h3 className="text-m-h4 md:text-h4 font-headline font-semibold">{product.name}</h3>
-                      <span className="text-sm text-muted-foreground">Mg:{product.mg}</span>
+                      {product.mg && <span className="text-sm text-muted-foreground">Mg:{product.mg}</span>}
                     </div>
                     <div className="flex justify-start gap-0.5 mb-4 text-primary">
                       {[...Array(product.rating)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
