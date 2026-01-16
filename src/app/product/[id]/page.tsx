@@ -60,39 +60,41 @@ export default function ProductPage() {
   const currentPrice = salePrice || price;
 
   return (
-    <div className="bg-card text-foreground">
+    <div className="bg-white text-foreground">
       <Header />
       <main className="py-16 sm:py-24">
         <div className="container mx-auto max-w-[1371px] px-4">
           <div className="grid md:grid-cols-5 gap-12 lg:gap-16">
             {/* Image Gallery */}
-            <div className="md:col-span-2">
-              <div className="aspect-square relative mb-4">
-                {activeImage && (
-                  <Image
-                    src={activeImage}
-                    alt={name}
-                    fill
-                    className="object-contain"
-                  />
-                )}
-              </div>
-              <div className="flex gap-2 justify-start">
-                {gallery && gallery.map((img, index) => img && (
-                  <button
-                    key={index}
-                    className={`w-20 h-20 relative rounded-md overflow-hidden border-2 ${activeImage === img.imageUrl ? 'border-primary' : 'border-transparent'}`}
-                    onClick={() => setActiveImage(img.imageUrl)}
-                  >
+            <div className="md:col-span-2 flex flex-col items-start">
+              <div className="w-full max-w-md">
+                <div className="aspect-square relative mb-4 border rounded-lg overflow-hidden">
+                  {activeImage && (
                     <Image
-                      src={img.imageUrl}
-                      alt={`${name} thumbnail ${index + 1}`}
+                      src={activeImage}
+                      alt={name}
                       fill
-                      className="object-cover"
-                      data-ai-hint={img.imageHint}
+                      className="object-contain"
                     />
-                  </button>
-                ))}
+                  )}
+                </div>
+                <div className="flex gap-2 justify-start">
+                  {gallery && gallery.map((img, index) => img && (
+                    <button
+                      key={index}
+                      className={`w-20 h-20 relative rounded-md overflow-hidden border ${activeImage === img.imageUrl ? 'border-primary' : 'border-border'}`}
+                      onClick={() => setActiveImage(img.imageUrl)}
+                    >
+                      <Image
+                        src={img.imageUrl}
+                        alt={`${name} thumbnail ${index + 1}`}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={img.imageHint}
+                      />
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
 
