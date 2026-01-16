@@ -54,7 +54,7 @@ function FaqSection() {
           <p className="text-sm font-semibold text-muted-foreground tracking-widest mb-2">
             TRUSTED BY
           </p>
-          <h2 className="text-m-h2 md:text-h2 font-headline font-semibold">
+          <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">
             Frequently Asked Questions
           </h2>
         </div>
@@ -110,7 +110,7 @@ export default function ContactUsPage() {
             <div
               className="text-center max-w-readable mx-auto"
             >
-              <h1 className="text-m-h1 font-headline font-semibold md:text-h1">
+              <h1 className="text-m-h1 font-headline font-semibold md:text-h1 text-primary">
                 Contact us
               </h1>
               <p className="text-m-body-base mt-4 text-muted-foreground md:text-body-lg">
@@ -150,7 +150,7 @@ export default function ContactUsPage() {
               <div
                 className="rounded-xl bg-card p-8 sm:p-12"
               >
-                <h2 className="mb-6 text-m-h2 font-headline font-semibold md:text-h2">
+                <h2 className="mb-6 text-m-h2 font-headline font-semibold md:text-h2 text-primary">
                   Write us a message
                 </h2>
                 <form className="space-y-6">
@@ -161,7 +161,7 @@ export default function ContactUsPage() {
                         id="first-name"
                         type="text"
                         placeholder="Jane"
-                        className="rounded-full border-transparent bg-muted"
+                        className="rounded-full"
                       />
                     </div>
                     <div className="space-y-2">
@@ -170,7 +170,7 @@ export default function ContactUsPage() {
                         id="last-name"
                         type="text"
                         placeholder="Smith"
-                        className="rounded-full border-transparent bg-muted"
+                        className="rounded-full"
                       />
                     </div>
                   </div>
@@ -180,7 +180,7 @@ export default function ContactUsPage() {
                       id="email"
                       type="email"
                       placeholder="jane@email.com"
-                      className="rounded-full border-transparent bg-muted"
+                      className="rounded-full"
                     />
                   </div>
                   <div className="space-y-2">
@@ -189,7 +189,7 @@ export default function ContactUsPage() {
                       id="message"
                       placeholder="Leave us a message..."
                       rows={5}
-                      className="rounded-xl border-transparent bg-muted"
+                      className="rounded-xl"
                     />
                   </div>
                   <div className="flex items-center space-x-2">
