@@ -46,7 +46,7 @@ function FaqSection() {
 
   return (
     <section
-      className="py-16 sm:py-24 bg-muted/50"
+      className="py-16 sm:py-24 bg-muted"
     >
       <div className="container mx-auto max-w-[1371px] px-4">
         <div

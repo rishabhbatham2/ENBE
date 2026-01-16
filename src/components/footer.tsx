@@ -35,7 +35,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-muted/50">
+    <footer className="bg-muted">
       <div className="container mx-auto max-w-[1371px] px-4 py-16 sm:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Logo and Social */}
