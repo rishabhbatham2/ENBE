@@ -10,6 +10,7 @@ import { Footer } from "@/components/footer";
 
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
+  const solutionsImage = placeholderImages.find(p => p.id === "customer-driven-solutions");
 
   return (
     <div className="bg-background text-foreground">
@@ -109,6 +110,64 @@ export default function Home() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 sm:py-24">
+          <div className="container mx-auto px-4 max-w-[1371px]">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-subtle">
+                {solutionsImage && (
+                  <Image
+                    src={solutionsImage.imageUrl}
+                    alt={solutionsImage.description}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={solutionsImage.imageHint}
+                  />
+                )}
+              </div>
+              <div className="space-y-8">
+                <h2 className="text-m-h2 md:text-h2 font-headline font-semibold">
+                  Customer-Driven Solutions with Xentrix
+                </h2>
+                <p className="text-muted-foreground text-body-base md:text-body-lg">
+                  At Xentrix, we focus on delivering tailored solutions that meet your customers needs. With advanced technology and AI-powered CRM systems, we help businesses build stronger customer relationships.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-body-base">Personalized Engagement</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-body-base">Seamless Integration</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-body-base">Smart Data Analytics</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span className="text-body-base">24/7 Customer Support</span>
+                  </div>
+                </div>
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center pt-8 border-t border-border gap-8 sm:gap-4">
+                    <div className="text-center sm:text-left">
+                        <p className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">200+</p>
+                        <p className="text-body-sm text-muted-foreground mt-1">Business Partners</p>
+                    </div>
+                    <div className="text-center sm:text-left">
+                        <p className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">30K+</p>
+                        <p className="text-body-sm text-muted-foreground mt-1">Satisfied Customers</p>
+                    </div>
+                    <div className="text-center sm:text-left">
+                        <p className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">10+</p>
+                        <p className="text-body-sm text-muted-foreground mt-1">Years of Excellence</p>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
