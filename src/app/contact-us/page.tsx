@@ -75,7 +75,7 @@ export default function ContactUsPage() {
               </div>
 
               {/* Right Column: Form */}
-              <div className="rounded-xl bg-card p-8 shadow-subtle sm:p-12">
+              <div className="rounded-xl bg-card p-8 sm:p-12">
                 <h2 className="mb-6 text-m-h2 font-headline font-semibold md:text-h2">
                   Write us a message
                 </h2>
