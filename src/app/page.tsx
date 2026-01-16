@@ -3,73 +3,13 @@ import Link from "next/link";
 import { ArrowRight, Eye, Heart, Star, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/header";
-import { placeholderImages, type ImagePlaceholder } from "@/lib/placeholder-images";
+import { placeholderImages } from "@/lib/placeholder-images";
+import { products } from "@/lib/products";
 import { Card, CardContent } from "@/components/ui/card";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
-  const winstimImage = placeholderImages.find(p => p.id === "product-winstim");
-  const electro2Image = placeholderImages.find(p => p.id === "product-electro-2");
-  const grapheneBeltImage = placeholderImages.find(p => p.id === "product-graphene-belt");
-  const pemfProstateImage = placeholderImages.find(p => p.id === "product-pemf-prostate");
-  const pemfGshiosImage = placeholderImages.find(p => p.id === "product-pemf-gshios");
-  const eye900Image = placeholderImages.find(p => p.id === "product-eye-900");
-
-
-  type Product = {
-    id: number;
-    name: string;
-    mg?: number;
-    rating: number;
-    image: ImagePlaceholder | undefined;
-    features: string[];
-  };
-
-  const products: Product[] = [
-    {
-      id: 1,
-      name: "Winstim",
-      rating: 5,
-      image: winstimImage,
-      features: ["Electrotherapy", "Pain Relief", "Muscle Stimulation"],
-    },
-    {
-      id: 5,
-      name: "Winstim Plus",
-      rating: 5,
-      image: electro2Image,
-      features: ["Dual Channel", "12 Modes", "Portable"],
-    },
-    {
-      id: 6,
-      name: "Graphene Magnetic Waist Belt",
-      rating: 5,
-      image: grapheneBeltImage,
-      features: ["Pain Relief", "Magnetic Therapy", "Adjustable"],
-    },
-    {
-      id: 7,
-      name: "PEMF Prostate",
-      rating: 5,
-      image: pemfProstateImage,
-      features: ["Targeted Therapy", "Non-Invasive", "At-Home Use"],
-    },
-    {
-      id: 8,
-      name: "PEMF Gshios",
-      rating: 5,
-      image: pemfGshiosImage,
-      features: ["PEMF Therapy", "Portable", "Pain Relief"],
-    },
-    {
-      id: 9,
-      name: "EYE 900",
-      rating: 5,
-      image: eye900Image,
-      features: ["Eye Massage", "Reduces Strain", "Portable"],
-    },
-  ];
 
   return (
     <div className="bg-background text-foreground">

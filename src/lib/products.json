@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Winstim",
+      "rating": 5,
+      "reviewsCount": 2,
+      "price": 120.00,
+      "salePrice": 99.00,
+      "shortDescription": "Advanced electrotherapy device for pain relief and muscle stimulation. Portable and easy to use at home.",
+      "availability": "In Stock",
+      "image": "product-winstim",
+      "gallery": [
+        "product-winstim",
+        "product-electro-2",
+        "product-graphene-belt"
+      ],
+      "features": ["Electrotherapy", "Pain Relief", "Muscle Stimulation"],
+      "longDescription": "The Winstim is a state-of-the-art electrotherapy device designed to provide effective pain relief and muscle stimulation from the comfort of your home. It uses clinically proven TENS and EMS technology to target pain, reduce inflammation, and aid in muscle recovery. <br/><br/> Key Features: <ul><li>Multiple therapy modes for customized treatment</li><li>Adjustable intensity levels</li><li>Large LCD screen for easy operation</li><li>Rechargeable battery for portability</li></ul>",
+      "specifications": [
+        { "name": "Model", "value": "Winstim" },
+        { "name": "Technology", "value": "TENS & EMS" },
+        { "name": "Channels", "value": "2" },
+        { "name": "Power Source", "value": "Rechargeable Lithium Battery" },
+        { "name": "Dimensions", "value": "5\" x 2.5\" x 0.5\"" }
+      ],
+      "userReviews": [
+        {
+          "id": 1,
+          "rating": 5,
+          "author": "John D.",
+          "date": "2024-07-15",
+          "comment": "This device is a lifesaver! I've been struggling with chronic back pain for years, and the Winstim has made a huge difference."
+        },
+        {
+          "id": 2,
+          "rating": 5,
+          "author": "Jane S.",
+          "date": "2024-07-10",
+          "comment": "Great for post-workout recovery. Easy to use and very effective."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Winstim Plus",
+      "rating": 5,
+      "reviewsCount": 0,
+      "price": 150.00,
+      "image": "product-electro-2",
+      "gallery": ["product-electro-2"],
+      "features": ["Dual Channel", "12 Modes", "Portable"]
+    },
+    {
+      "id": 6,
+      "name": "Graphene Magnetic Waist Belt",
+      "rating": 5,
+      "reviewsCount": 0,
+      "price": 80.00,
+      "image": "product-graphene-belt",
+      "gallery": ["product-graphene-belt"],
+      "features": ["Pain Relief", "Magnetic Therapy", "Adjustable"]
+    },
+    {
+      "id": 7,
+      "name": "PEMF Prostate",
+      "rating": 5,
+      "reviewsCount": 0,
+      "price": 250.00,
+      "image": "product-pemf-prostate",
+      "gallery": ["product-pemf-prostate"],
+      "features": ["Targeted Therapy", "Non-Invasive", "At-Home Use"]
+    },
+    {
+      "id": 8,
+      "name": "PEMF Gshios",
+      "rating": 5,
+      "reviewsCount": 0,
+      "price": 180.00,
+      "image": "product-pemf-gshios",
+      "gallery": ["product-pemf-gshios"],
+      "features": ["PEMF Therapy", "Portable", "Pain Relief"]
+    },
+    {
+      "id": 9,
+      "name": "EYE 900",
+      "rating": 5,
+      "reviewsCount": 0,
+      "price": 95.00,
+      "image": "product-eye-900",
+      "gallery": ["product-eye-900"],
+      "features": ["Eye Massage", "Reduces Strain", "Portable"]
+    }
+  ]
+}
