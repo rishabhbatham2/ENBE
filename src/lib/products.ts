@@ -26,6 +26,7 @@ export type Product = {
   image: string; // id from placeholderImages
   gallery: string[]; // array of ids from placeholderImages
   features: string[];
+  keyFeatures?: string[];
   longDescription?: string;
   specifications?: ProductSpecification[];
   userReviews?: ProductReview[];

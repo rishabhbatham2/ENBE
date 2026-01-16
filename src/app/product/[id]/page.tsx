@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
-import { Star, Minus, Plus, Heart, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Star, Minus, Plus, Heart, Facebook, Twitter, Instagram, CheckCircle2 } from 'lucide-react';
 
 export default function ProductPage() {
   const params = useParams();
@@ -54,6 +54,7 @@ export default function ProductPage() {
     longDescription,
     specifications,
     userReviews,
+    keyFeatures,
   } = product;
   
   const currentPrice = salePrice || price;
@@ -181,6 +182,21 @@ export default function ProductPage() {
               </Card>
             </div>
           </div>
+
+          {/* Key Features */}
+          {keyFeatures && keyFeatures.length > 0 && (
+            <div className="mt-16 sm:mt-24">
+              <h2 className="text-h3 font-headline font-semibold text-foreground mb-8 text-center">Key Features</h2>
+              <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 max-w-4xl mx-auto">
+                {keyFeatures.map((feature, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-body-base text-muted-foreground">{feature}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Reviews */}
           {userReviews && userReviews.length > 0 && (

@@ -16,7 +16,16 @@
         "product-graphene-belt"
       ],
       "features": ["Electrotherapy", "Pain Relief", "Muscle Stimulation"],
-      "longDescription": "The Winstim is a state-of-the-art electrotherapy device designed to provide effective pain relief and muscle stimulation from the comfort of your home. It uses clinically proven TENS and EMS technology to target pain, reduce inflammation, and aid in muscle recovery. <br/><br/> Key Features: <ul><li>Multiple therapy modes for customized treatment</li><li>Adjustable intensity levels</li><li>Large LCD screen for easy operation</li><li>Rechargeable battery for portability</li></ul>",
+      "keyFeatures": [
+        "4 / 2 channel electrotherapy, multiple modalities in a single unit including combination of ultrasound and electrotherapy",
+        "A comprehensive reference library providing information on therapy, treatments and electrode placement",
+        "SD curve for interdependence between stimulus strength and the time required in activating the muscles",
+        "Treat and monitor multiple patients at the same time",
+        "Full-colour, 8” LCD touch screen displays for sharp & vivid detail",
+        "Tabletop device and can be mounted on optional mobility cart",
+        "Different treatment parameters can be saved for different patient"
+      ],
+      "longDescription": "The Winstim is a state-of-the-art electrotherapy device designed to provide effective pain relief and muscle stimulation from the comfort of your home. It uses clinically proven TENS and EMS technology to target pain, reduce inflammation, and aid in muscle recovery.",
       "specifications": [
         { "name": "Model", "value": "Winstim" },
         { "name": "Technology", "value": "TENS & EMS" },
