@@ -10,9 +10,6 @@ export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
   const winstimImage = placeholderImages.find(p => p.id === "product-winstim");
   const electro2Image = placeholderImages.find(p => p.id === "product-electro-2");
-  const softgelImage = placeholderImages.find(p => p.id === "product-softgel");
-  const gummiesImage = placeholderImages.find(p => p.id === "product-gummies");
-  const doggyTreatsImage = placeholderImages.find(p => p.id === "product-doggy-treats");
   const grapheneBeltImage = placeholderImages.find(p => p.id === "product-graphene-belt");
   const pemfProstateImage = placeholderImages.find(p => p.id === "product-pemf-prostate");
   const pemfGshiosImage = placeholderImages.find(p => p.id === "product-pemf-gshios");
@@ -70,30 +67,6 @@ export default function Home() {
       rating: 5,
       image: eye900Image,
       features: ["Eye Massage", "Reduces Strain", "Portable"],
-    },
-    {
-      id: 2,
-      name: "Softgel",
-      mg: 750,
-      rating: 5,
-      image: softgelImage,
-      features: ["Easy to Swallow", "Precise Dose", "Lab Tested"],
-    },
-    {
-      id: 3,
-      name: "Gummies",
-      mg: 300,
-      rating: 5,
-      image: gummiesImage,
-      features: ["Vegan", "Great Taste", "Lab Tested"],
-    },
-    {
-      id: 4,
-      name: "Doggy Treats",
-      mg: 750,
-      rating: 5,
-      image: doggyTreatsImage,
-      features: ["Vet Approved", "All Natural", "Lab Tested"],
     },
   ];
 
