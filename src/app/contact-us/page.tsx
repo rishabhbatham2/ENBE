@@ -1,7 +1,6 @@
 'use client';
 
 import * as React from 'react';
-import { motion } from 'framer-motion';
 import { Header } from '@/components/header';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -14,28 +13,6 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
-
-const sectionVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.6,
-      ease: 'easeOut',
-    },
-  },
-};
 
 function FaqSection() {
   const faqs = [
@@ -67,17 +44,12 @@ function FaqSection() {
   const [openItem, setOpenItem] = React.useState<string | null>('faq-1');
 
   return (
-    <motion.section
+    <section
       className="py-16 sm:py-24 bg-muted/50"
-      variants={sectionVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
     >
       <div className="container mx-auto max-w-[1371px] px-4">
-        <motion.div
+        <div
           className="text-center max-w-readable mx-auto"
-          variants={itemVariants}
         >
           <p className="text-sm font-semibold text-muted-foreground tracking-widest mb-2">
             TRUSTED BY
@@ -85,10 +57,9 @@ function FaqSection() {
           <h2 className="text-m-h2 md:text-h2 font-headline font-semibold">
             Frequently Asked Questions
           </h2>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="w-full mx-auto mt-12 space-y-4"
-          variants={itemVariants}
         >
           {faqs.map(faq => (
             <Collapsible
@@ -114,9 +85,9 @@ function FaqSection() {
               </CollapsibleContent>
             </Collapsible>
           ))}
-        </motion.div>
+        </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
 
@@ -132,16 +103,12 @@ export default function ContactUsPage() {
     <div className="bg-background text-foreground">
       <Header />
       <main>
-        <motion.section
+        <section
           className="py-16 sm:py-24"
-          variants={sectionVariants}
-          initial="hidden"
-          animate="visible"
         >
           <div className="container mx-auto max-w-[1371px] px-4">
-            <motion.div
+            <div
               className="text-center max-w-readable mx-auto"
-              variants={itemVariants}
             >
               <h1 className="text-m-h1 font-headline font-semibold md:text-h1">
                 Contact us
@@ -150,16 +117,15 @@ export default function ContactUsPage() {
                 We'd love to hear from you. Please fill out this form, and
                 we'll reply soon.
               </p>
-            </motion.div>
+            </div>
 
             <div className="grid items-start gap-16 md:grid-cols-2 mt-12">
               {/* Left Column: Info */}
-              <motion.div
+              <div
                 className="grid gap-x-8 gap-y-12 sm:grid-cols-2 items-start"
-                variants={sectionVariants}
               >
                 {contactInfo.map((info, index) => (
-                  <motion.div key={index} variants={itemVariants}>
+                  <div key={index}>
                     <h3 className="mb-2 text-h4 font-semibold text-primary">{info.title}</h3>
                     <p className="mb-1 text-body-base text-muted-foreground">
                       {info.description}
@@ -176,14 +142,13 @@ export default function ContactUsPage() {
                         {info.address}
                       </p>
                     )}
-                  </motion.div>
+                  </div>
                 ))}
-              </motion.div>
+              </div>
 
               {/* Right Column: Form */}
-              <motion.div
+              <div
                 className="rounded-xl bg-card p-8 sm:p-12"
-                variants={itemVariants}
               >
                 <h2 className="mb-6 text-m-h2 font-headline font-semibold md:text-h2">
                   Write us a message
@@ -244,10 +209,10 @@ export default function ContactUsPage() {
                     Send
                   </Button>
                 </form>
-              </motion.div>
+              </div>
             </div>
           </div>
-        </motion.section>
+        </section>
         <FaqSection />
       </main>
       <footer className="mt-16 border-t py-8">
