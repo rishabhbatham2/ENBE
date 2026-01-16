@@ -46,7 +46,7 @@ function FaqSection() {
 
   return (
     <section
-      className="py-16 sm:py-24 bg-muted"
+      className="py-16 sm:py-24 bg-secondary"
     >
       <div className="container mx-auto max-w-[1371px] px-4">
         <div
@@ -71,7 +71,7 @@ function FaqSection() {
             >
               <CollapsibleTrigger className="p-6 w-full flex justify-between items-center text-left font-semibold hover:no-underline">
                 {faq.question}
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-muted">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary">
                   {openItem === faq.id ? (
                     <X className="h-4 w-4" />
                   ) : (
