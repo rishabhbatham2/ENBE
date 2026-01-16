@@ -68,7 +68,7 @@ export default function ProductPage() {
             {/* Image Gallery */}
             <div className="md:col-span-2 flex flex-col items-start">
               <div className="w-full max-w-md">
-                <div className="aspect-square relative mb-4 border rounded-lg overflow-hidden">
+                <div className="aspect-square relative mb-4 border rounded-xl overflow-hidden">
                   {activeImage && (
                     <Image
                       src={activeImage}
@@ -82,7 +82,7 @@ export default function ProductPage() {
                   {gallery && gallery.map((img, index) => img && (
                     <button
                       key={index}
-                      className={`w-20 h-20 relative rounded-md overflow-hidden border ${activeImage === img.imageUrl ? 'border-primary' : 'border-border'}`}
+                      className={`w-20 h-20 relative rounded-xl overflow-hidden border ${activeImage === img.imageUrl ? 'border-primary' : 'border-border'}`}
                       onClick={() => setActiveImage(img.imageUrl)}
                     >
                       <Image
@@ -189,7 +189,7 @@ export default function ProductPage() {
           {keyFeatures && keyFeatures.length > 0 && (
             <div className="mt-16 sm:mt-24">
               <h2 className="text-h3 font-headline font-semibold text-foreground mb-8 text-center">Key Features</h2>
-              <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 max-w-4xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
                 {keyFeatures.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
