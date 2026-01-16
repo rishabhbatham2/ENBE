@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Header } from "@/components/header";
 import { placeholderImages, type ImagePlaceholder } from "@/lib/placeholder-images";
 import { Card, CardContent } from "@/components/ui/card";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
@@ -172,11 +173,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="py-8 border-t mt-16">
-        <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-          <p>&copy; {new Date().getFullYear()} Mediworker. All Rights Reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

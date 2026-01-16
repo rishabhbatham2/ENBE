@@ -13,6 +13,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
+import { Footer } from '@/components/footer';
 
 function FaqSection() {
   const faqs = [
@@ -215,13 +216,7 @@ export default function ContactUsPage() {
         </section>
         <FaqSection />
       </main>
-      <footer className="mt-16 border-t py-8">
-        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>
-            &copy; {new Date().getFullYear()} Mediworker. All Rights Reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

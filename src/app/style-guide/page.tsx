@@ -10,6 +10,7 @@ import { ArrowRight, CheckCircle2, Leaf, Sparkles, Wind } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { Footer } from '@/components/footer';
 
 const StyleGuidePage = () => {
   const colors = [
@@ -244,11 +245,7 @@ const StyleGuidePage = () => {
           </div>
         </section>
       </main>
-       <footer className="py-8 border-t mt-16">
-        <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-          <p>&copy; {new Date().getFullYear()} Mediworker. All Rights Reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
