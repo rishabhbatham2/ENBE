@@ -45,7 +45,7 @@ function FaqSection() {
 
   return (
     <section className="py-16 sm:py-24 bg-muted/50">
-      <div className="container mx-auto max-w-page px-4">
+      <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center max-w-readable mx-auto">
           <p className="text-sm font-semibold text-muted-foreground tracking-widest mb-2">
             TRUSTED BY
@@ -54,7 +54,7 @@ function FaqSection() {
             Frequently Asked Questions
           </h2>
         </div>
-        <div className="w-full max-w-3xl mx-auto mt-12 space-y-4">
+        <div className="w-full mx-auto mt-12 space-y-4">
           {faqs.map(faq => (
             <Collapsible
               key={faq.id}
@@ -72,8 +72,10 @@ function FaqSection() {
                   )}
                 </div>
               </CollapsibleTrigger>
-              <CollapsibleContent className="px-6 pb-6 text-muted-foreground">
-                {faq.answer}
+              <CollapsibleContent className="overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+                <div className="px-6 pb-6 text-muted-foreground">
+                  {faq.answer}
+                </div>
               </CollapsibleContent>
             </Collapsible>
           ))}
@@ -89,66 +91,64 @@ export default function ContactUsPage() {
       <Header />
       <main>
         <section className="py-16 sm:py-24">
-          <div className="container mx-auto max-w-page px-4">
-            <div className="grid items-start gap-16 md:grid-cols-2">
-              {/* Left Column: Info */}
-              <div className="space-y-8">
-                <div>
-                  <h1 className="text-m-h1 font-headline font-semibold md:text-h1">
-                    Contact us
-                  </h1>
-                  <p className="text-m-body-base mt-4 text-muted-foreground md:text-body-lg">
-                    We'd love to hear from you. Please fill out this form, and
-                    we'll reply soon.
-                  </p>
-                </div>
+          <div className="container mx-auto max-w-5xl px-4">
+            <div className="text-center max-w-readable mx-auto">
+              <h1 className="text-m-h1 font-headline font-semibold md:text-h1">
+                Contact us
+              </h1>
+              <p className="text-m-body-base mt-4 text-muted-foreground md:text-body-lg">
+                We'd love to hear from you. Please fill out this form, and
+                we'll reply soon.
+              </p>
+            </div>
 
-                <div className="grid gap-x-8 gap-y-12 pt-8 sm:grid-cols-2">
-                  <div>
-                    <h3 className="mb-2 text-h4 font-semibold">Email</h3>
-                    <p className="mb-1 text-body-base text-muted-foreground">
-                      Contact us by email, and we will respond shortly.
-                    </p>
-                    <a
-                      href="mailto:hey@uiblox.com"
-                      className="text-body-base font-medium hover:underline"
-                    >
-                      hey@uiblox.com
-                    </a>
-                  </div>
-                  <div>
-                    <h3 className="mb-2 text-h4 font-semibold">Phone</h3>
-                    <p className="mb-1 text-body-base text-muted-foreground">
-                      Call us on weekdays from 9 AM to 5 PM.
-                    </p>
-                    <a
-                      href="tel:+1222333444"
-                      className="text-body-base font-medium hover:underline"
-                    >
-                      +1 (222) 333 444
-                    </a>
-                  </div>
-                  <div>
-                    <h3 className="mb-2 text-h4 font-semibold">Mobile</h3>
-                    <p className="mb-1 text-body-base text-muted-foreground">
-                      Call us on weekdays from 9 AM to 6 PM.
-                    </p>
-                    <a
-                      href="tel:+2222333444"
-                      className="text-body-base font-medium hover:underline"
-                    >
-                      +2 (222) 333 444
-                    </a>
-                  </div>
-                  <div>
-                    <h3 className="mb-2 text-h4 font-semibold">Office</h3>
-                    <p className="text-body-base text-muted-foreground">
-                      Visit us at our headquarters.
-                    </p>
-                    <p className="text-body-base font-medium">
-                      87266 Green Station, Euless, Oregon 26739, Canada
-                    </p>
-                  </div>
+            <div className="grid items-start gap-16 md:grid-cols-2 mt-12">
+              {/* Left Column: Info */}
+              <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 items-start">
+                <div>
+                  <h3 className="mb-2 text-h4 font-semibold">Email</h3>
+                  <p className="mb-1 text-body-base text-muted-foreground">
+                    Contact us by email, and we will respond shortly.
+                  </p>
+                  <a
+                    href="mailto:hey@uiblox.com"
+                    className="text-body-base font-medium hover:underline"
+                  >
+                    hey@uiblox.com
+                  </a>
+                </div>
+                <div>
+                  <h3 className="mb-2 text-h4 font-semibold">Phone</h3>
+                  <p className="mb-1 text-body-base text-muted-foreground">
+                    Call us on weekdays from 9 AM to 5 PM.
+                  </p>
+                  <a
+                    href="tel:+1222333444"
+                    className="text-body-base font-medium hover:underline"
+                  >
+                    +1 (222) 333 444
+                  </a>
+                </div>
+                <div>
+                  <h3 className="mb-2 text-h4 font-semibold">Mobile</h3>
+                  <p className="mb-1 text-body-base text-muted-foreground">
+                    Call us on weekdays from 9 AM to 6 PM.
+                  </p>
+                  <a
+                    href="tel:+2222333444"
+                    className="text-body-base font-medium hover:underline"
+                  >
+                    +2 (222) 333 444
+                  </a>
+                </div>
+                <div>
+                  <h3 className="mb-2 text-h4 font-semibold">Office</h3>
+                  <p className="text-body-base text-muted-foreground">
+                    Visit us at our headquarters.
+                  </p>
+                  <p className="text-body-base font-medium">
+                    87266 Green Station, Euless, Oregon 26739, Canada
+                  </p>
                 </div>
               </div>
 
