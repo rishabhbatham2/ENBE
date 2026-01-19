@@ -279,7 +279,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 sm:py-24 bg-secondary">
+        <section className="py-16 sm:py-24">
           <div className="container mx-auto px-4 max-w-[1371px]">
             <div className="text-center max-w-readable mx-auto">
               <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-foreground mb-6">
