@@ -40,6 +40,29 @@ export default function Home() {
     },
   ];
 
+  const categories = [
+    {
+      title: "Massage Guns",
+      href: "#",
+      image: placeholderImages.find(p => p.id === "category-massage-guns"),
+    },
+    {
+      title: "Electric Toothbrushes",
+      href: "#",
+      image: placeholderImages.find(p => p.id === "category-electric-toothbrushes"),
+    },
+    {
+      title: "Oral Flossers",
+      href: "#",
+      image: placeholderImages.find(p => p.id === "category-oral-flossers"),
+    },
+    {
+      title: "Home Salon & Spa",
+      href: "#",
+      image: placeholderImages.find(p => p.id === "category-home-salon-spa"),
+    }
+  ];
+
   return (
     <div className="bg-background text-foreground">
       <AnnouncementBar />
@@ -79,6 +102,37 @@ export default function Home() {
                   </Link>
                 </Button>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 sm:py-24">
+          <div className="container mx-auto px-4 max-w-[1371px]">
+            <div className="text-center mb-12 max-w-prose mx-auto">
+              <h2 className="text-lg md:text-xl text-muted-foreground">
+                At Caresmith, we make smart body-care devices so you can take care of yourself, by yourself.
+              </h2>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+              {categories.map((category) => (
+                category.image && (
+                  <Link href={category.href} key={category.title} className="relative aspect-square overflow-hidden rounded-2xl group block">
+                    <Image
+                      src={category.image.imageUrl}
+                      alt={category.image.description}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      data-ai-hint={category.image.imageHint}
+                    />
+                    <div className="absolute inset-0 bg-black/40" />
+                    <div className="absolute inset-0 flex items-center justify-center p-4">
+                      <h3 className="text-white text-xl md:text-2xl font-bold text-center">
+                        {category.title}
+                      </h3>
+                    </div>
+                  </Link>
+                )
+              ))}
             </div>
           </div>
         </section>

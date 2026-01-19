@@ -71,6 +71,30 @@
       "description": "Portrait of Radhi Agarwal.",
       "imageUrl": "https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzY4NzUxODk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman smiling"
+    },
+    {
+      "id": "category-massage-guns",
+      "description": "A collection of massage guns.",
+      "imageUrl": "https://images.unsplash.com/photo-1650763346044-650eaf6edbb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXNzYWdlJTIwZ3Vuc3xlbnwwfHx8fDE3Njg4MTUwMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "massage guns"
+    },
+    {
+      "id": "category-electric-toothbrushes",
+      "description": "A set of electric toothbrushes.",
+      "imageUrl": "https://images.unsplash.com/photo-1556281419-ba93f523b592?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVjdHJpYyUyMHRvb3RoYnJ1c2hlc3xlbnwwfHx8fDE3Njg4MTUwMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "electric toothbrushes"
+    },
+    {
+      "id": "category-oral-flossers",
+      "description": "Modern oral flossers.",
+      "imageUrl": "https://images.unsplash.com/photo-1655807946138-811bb2340d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmFsJTIwZmxvc3NlcnN8ZW58MHx8fHwxNzY4ODE1MDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "oral flossers"
+    },
+    {
+      "id": "category-home-salon-spa",
+      "description": "Home salon and spa equipment.",
+      "imageUrl": "https://images.unsplash.com/photo-1666021676501-7aa887fd5d1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3BhJTIwZXF1aXBtZW50fGVufDB8fHx8MTc2ODgxNTAzMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spa equipment"
     }
   ]
 }
