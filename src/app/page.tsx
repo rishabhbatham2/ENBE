@@ -11,6 +11,33 @@ import { Footer } from "@/components/footer";
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
   const solutionsImage = placeholderImages.find(p => p.id === "customer-driven-solutions");
+  const reviewer1 = placeholderImages.find(p => p.id === "reviewer-raashi-metha");
+  const reviewer2 = placeholderImages.find(p => p.id === "reviewer-ria-bajaj");
+  const reviewer3 = placeholderImages.find(p => p.id === "reviewer-radhi-agarwal");
+
+  const reviews = [
+    {
+      name: "Dr. Raashi Metha",
+      title: "MBBS, DNB",
+      review: "As a dermatologist, I highly recommend Caresmith's Bloom Scalp Massager for stimulating hair growth and the Bloom Foot File for rejuvenated feet. I've personally used them and can attest to their effectiveness. The scalp massager promotes circulation while the foot file exfoliates for softer skin.",
+      rating: 5,
+      image: reviewer1,
+    },
+    {
+      name: "Ria Bajaj",
+      title: "Athlete Pole & Aerial Fitness",
+      review: "As an athlete in pole and aerial fitness, I love the ChargeSport and ChargeFlex Massage Guns. With customizable intensity and versatile attachments, they target muscle tension effectively. Essential for my recovery routine, helping me perform at my best. Highly recommended!",
+      rating: 5,
+      image: reviewer2,
+    },
+    {
+      name: "Radhi Agarwal",
+      title: "Product Manager at Microsoft",
+      review: "Revive Electric Head Massager is my ultimate relaxation tool after a hectic workday. This blissful device helps me unwind, calm down, and find tranquility within minutes. A must-have for all workaholics seeking daily rejuvenation.",
+      rating: 5,
+      image: reviewer3,
+    },
+  ];
 
   return (
     <div className="bg-background text-foreground">
@@ -168,6 +195,50 @@ export default function Home() {
                     </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 sm:py-24 bg-secondary">
+          <div className="container mx-auto px-4 max-w-[1371px]">
+            <div className="text-center max-w-readable mx-auto">
+              <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-foreground mb-6">
+                Discover What Customers Are Saying
+              </h2>
+              <div className="flex justify-center gap-8 md:gap-16 mb-12">
+                <div>
+                  <p className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">70K+</p>
+                  <p className="text-body-sm text-muted-foreground mt-1">Reviews</p>
+                </div>
+                <div>
+                  <p className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">1M+</p>
+                  <p className="text-body-sm text-muted-foreground mt-1">Customers</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+              {reviews.map((review, index) => (
+                <div key={index} className="text-center flex flex-col items-center">
+                  {review.image && (
+                    <Image
+                      src={review.image.imageUrl}
+                      alt={review.name}
+                      width={100}
+                      height={100}
+                      className="rounded-full mx-auto mb-4"
+                      data-ai-hint={review.image.imageHint}
+                    />
+                  )}
+                  <h3 className="text-h4 font-semibold text-foreground">{review.name}</h3>
+                  <p className="text-sm text-muted-foreground mb-2">{review.title}</p>
+                  <div className="flex justify-center gap-0.5 mb-4 text-primary">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-body-base text-muted-foreground">{review.review}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
