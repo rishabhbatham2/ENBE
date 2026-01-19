@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import { AnnouncementBar } from '@/components/announcement-bar';
 import { Header } from '@/components/header';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
@@ -102,6 +103,7 @@ export default function ContactUsPage() {
 
   return (
     <div className="bg-background text-foreground">
+      <AnnouncementBar />
       <Header />
       <main>
         <section

@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { products } from '@/lib/products';
+import { AnnouncementBar } from '@/components/announcement-bar';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Button } from '@/components/ui/button';
@@ -33,6 +34,7 @@ export default function ProductPage() {
   if (!product) {
     return (
       <div className="bg-background text-foreground min-h-screen">
+        <AnnouncementBar />
         <Header />
         <main className="container mx-auto max-w-[1371px] px-4 py-16 sm:py-24">
           <div className="text-center">Loading product...</div>
@@ -61,6 +63,7 @@ export default function ProductPage() {
 
   return (
     <div className="bg-white text-foreground">
+      <AnnouncementBar />
       <Header />
       <main className="py-16 sm:py-24">
         <div className="container mx-auto max-w-[1371px] px-4">

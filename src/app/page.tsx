@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Eye, Heart, Star, CheckCircle2, Award, Lightbulb, ShieldCheck } from "lucide-react";
 import Image from "next/image";
+import { AnnouncementBar } from "@/components/announcement-bar";
 import { Header } from "@/components/header";
 import { placeholderImages } from "@/lib/placeholder-images";
 import { products } from "@/lib/products";
@@ -41,6 +42,7 @@ export default function Home() {
 
   return (
     <div className="bg-background text-foreground">
+      <AnnouncementBar />
       <Header />
       <main>
         <section className="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center text-center">

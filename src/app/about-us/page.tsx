@@ -1,5 +1,6 @@
 'use client';
 
+import { AnnouncementBar } from '@/components/announcement-bar';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { Button } from '@/components/ui/button';
@@ -40,6 +41,7 @@ export default function AboutUsPage() {
 
   return (
     <div className="bg-background text-foreground">
+      <AnnouncementBar />
       <Header />
       <main>
         <section className="bg-secondary py-16 sm:py-24">
