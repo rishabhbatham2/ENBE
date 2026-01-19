@@ -1,7 +1,6 @@
 'use client';
 
 import Link from "next/link";
-import Image from "next/image";
 import { Facebook, Youtube, Twitter, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
@@ -40,14 +39,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
           {/* Logo and Social */}
           <div className="lg:col-span-4">
-            <Link href="/" className="mb-6 inline-block">
-               <Image
-                 src="https://res.cloudinary.com/dxx5vxxtr/image/upload/v1768506166/492b93d9-2a99-4549-8ce5-7d6b733bd26e.png"
-                 alt="Logo"
-                 width={120}
-                 height={28}
-                 priority
-               />
+            <Link href="/" className="mb-6 inline-block font-bold text-2xl text-foreground">
+              eNBe TechServ
             </Link>
             <p className="max-w-sm text-body-sm text-muted-foreground">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

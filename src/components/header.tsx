@@ -10,7 +10,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -39,14 +38,8 @@ export function Header() {
           <Link href="/career" className="text-gray-700 hover:text-black">Career</Link>
         </nav>
         <div className="flex-1 md:flex-none md:absolute md:left-1/2 md:-translate-x-1/2">
-          <Link href="/">
-            <Image
-              src="https://res.cloudinary.com/dxx5vxxtr/image/upload/v1768506166/492b93d9-2a99-4549-8ce5-7d6b733bd26e.png"
-              alt="Logo"
-              width={100}
-              height={24}
-              priority
-            />
+          <Link href="/" className="font-bold text-xl text-foreground">
+            eNBe TechServ
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-4 text-sm">
