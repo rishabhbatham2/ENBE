@@ -17,7 +17,7 @@ export function Footer() {
     { name: "About Us", href: "/about-us" },
     { name: "Blog", href: "#" },
     { name: "Contact Us", href: "/contact-us" },
-    { name: "Career", href: "/career" },
+    { name: "How to buy", href: "/how-to-buy" },
   ];
 
   const customerServicesLinks = [
