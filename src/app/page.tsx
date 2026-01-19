@@ -138,7 +138,7 @@ export default function Home() {
         </section>
 
         <section className="py-16 sm:py-24">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-[1371px]">
             <h2 className="text-center text-m-h2 md:text-h2 font-headline font-semibold mb-12">Featured Products</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {products.map((product) => (
