@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Eye, Heart, Star, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Eye, Heart, Star, CheckCircle2, Award, Lightbulb, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import { Header } from "@/components/header";
 import { placeholderImages } from "@/lib/placeholder-images";
@@ -195,6 +195,30 @@ export default function Home() {
                     </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 sm:py-24">
+          <div className="container mx-auto px-4 max-w-[1371px]">
+            <div className="bg-secondary rounded-3xl p-12 text-center">
+              <div className="grid md:grid-cols-3 gap-8 mb-8">
+                <div className="flex flex-col items-center gap-3">
+                  <Award className="w-10 h-10 text-primary" />
+                  <h3 className="font-semibold text-foreground">Expert Approved</h3>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <Lightbulb className="w-10 h-10 text-primary" />
+                  <h3 className="font-semibold text-foreground">Thoughtfully Designed</h3>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <ShieldCheck className="w-10 h-10 text-primary" />
+                  <h3 className="font-semibold text-foreground">12-Month Warranty</h3>
+                </div>
+              </div>
+              <p className="text-muted-foreground">
+                We're committed to delivering on our promise with 100% dedication.
+              </p>
             </div>
           </div>
         </section>
