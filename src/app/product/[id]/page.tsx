@@ -124,7 +124,7 @@ export default function ProductPage() {
               
               <div className="flex items-center gap-4">
                 <span className="text-sm font-semibold">Availability:</span>
-                <span className={`text-sm font-medium ${availability === 'In Stock' ? 'text-green-600' : 'text-red-600'}`}>{availability}</span>
+                <span className={`text-sm font-medium ${availability === 'In Stock' ? 'text-primary' : 'text-destructive'}`}>{availability}</span>
               </div>
 
               <Separator />

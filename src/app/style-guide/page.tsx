@@ -14,22 +14,22 @@ import { Footer } from '@/components/footer';
 
 const StyleGuidePage = () => {
   const colors = [
-    { name: "Primary Accent", hex: "#eaff2a", variable: "primary" },
-    { name: "Secondary Accent", hex: "#e36b3d", variable: "accent" },
-    { name: "Background Primary", hex: "#f4f4f2", variable: "background" },
+    { name: "Primary Accent", hex: "#2563eb", variable: "primary" },
+    { name: "Secondary Accent", hex: "#3b82f6", variable: "accent" },
+    { name: "Background Primary", hex: "#f9fafb", variable: "background" },
     { name: "Background Secondary", hex: "#ffffff", variable: "card" },
-    { name: "Text Primary", hex: "#111111", variable: "foreground" },
-    { name: "Text Secondary", hex: "#5f5f5f", variable: "muted-foreground" },
-    { name: "Text Muted", hex: "#8a8a8a", variable: "muted-foreground", description: "Slightly lighter than secondary for hints." },
-    { name: "Divider / Hairline", hex: "#e2e2de", variable: "border" },
+    { name: "Text Primary", hex: "#0c1d3e", variable: "foreground" },
+    { name: "Text Secondary", hex: "#64748b", variable: "muted-foreground" },
+    { name: "Text Muted", hex: "#64748b", variable: "muted-foreground", description: "Slightly lighter than secondary for hints." },
+    { name: "Divider / Hairline", hex: "#e2e8f0", variable: "border" },
   ];
 
   const productPalette = [
-    { name: "Sage Green", hex: "#cfd8cc", bg: "bg-[#cfd8cc]" },
-    { name: "Soft Blue", hex: "#cfddea", bg: "bg-[#cfddea]" },
-    { name: "Warm Beige", hex: "#e6ddd2", bg: "bg-[#e6ddd2]" },
-    { name: "Charcoal Grey", hex: "#4a4a4a", bg: "bg-[#4a4a4a]" },
-    { name: "Muted Orange", hex: "#e58b5b", bg: "bg-[#e58b5b]" },
+    { name: "Light Blue", hex: "#a8c5ff", bg: "bg-[#a8c5ff]" },
+    { name: "Medium Blue", hex: "#6c9eff", bg: "bg-[#6c9eff]" },
+    { name: "Dark Blue", hex: "#3a81f5", bg: "bg-[#3a81f5]" },
+    { name: "Navy Blue", hex: "#003380", bg: "bg-[#003380]" },
+    { name: "Sky Blue", hex: "#87ceeb", bg: "bg-[#87ceeb]" },
   ];
 
   const icons = [
