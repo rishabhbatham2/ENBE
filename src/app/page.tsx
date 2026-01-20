@@ -393,7 +393,7 @@ export default function Home() {
                               alt={review.name}
                               width={100}
                               height={100}
-                              className="rounded-full mx-auto mb-4"
+                              className="rounded-full mx-auto mb-4 object-cover"
                               data-ai-hint={review.image.imageHint}
                             />
                           )}
