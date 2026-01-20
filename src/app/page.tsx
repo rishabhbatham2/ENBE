@@ -8,6 +8,13 @@ import { placeholderImages } from "@/lib/placeholder-images";
 import { products } from "@/lib/products";
 import { Card, CardContent } from "@/components/ui/card";
 import { Footer } from "@/components/footer";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "hero-image");
@@ -15,6 +22,15 @@ export default function Home() {
   const reviewer1 = placeholderImages.find(p => p.id === "reviewer-raashi-metha");
   const reviewer2 = placeholderImages.find(p => p.id === "reviewer-ria-bajaj");
   const reviewer3 = placeholderImages.find(p => p.id === "reviewer-radhi-agarwal");
+  const reviewer4 = placeholderImages.find(p => p.id === "reviewer-4");
+  const reviewer5 = placeholderImages.find(p => p.id === "reviewer-5");
+  const reviewer6 = placeholderImages.find(p => p.id === "reviewer-6");
+  const reviewer7 = placeholderImages.find(p => p.id === "reviewer-7");
+  const reviewer8 = placeholderImages.find(p => p.id === "reviewer-8");
+  const reviewer9 = placeholderImages.find(p => p.id === "reviewer-9");
+  const reviewer10 = placeholderImages.find(p => p.id === "reviewer-10");
+  const reviewer11 = placeholderImages.find(p => p.id === "reviewer-11");
+  const reviewer12 = placeholderImages.find(p => p.id === "reviewer-12");
 
   const reviews = [
     {
@@ -38,6 +54,69 @@ export default function Home() {
       rating: 5,
       image: reviewer3,
     },
+    {
+      name: "Dr. Sameer Sharma",
+      title: "General Practitioner",
+      review: "The quality of equipment from eNBe TechServ is consistently high. My patients have benefited greatly from the new electrotherapy units. Their support team is also very responsive and helpful.",
+      rating: 5,
+      image: reviewer6,
+    },
+    {
+      name: "Anjali Verma",
+      title: "Physiotherapist",
+      review: "I've been using the PEMF devices for a few months now, and the results are impressive. My clients report faster recovery times. The devices are user-friendly and reliable.",
+      rating: 5,
+      image: reviewer7,
+    },
+    {
+      name: "Vikram Singh",
+      title: "Sports Rehab Specialist",
+      review: "The ChargeSport massage gun is a game-changer for my athletes. It's powerful, quiet, and the battery life is excellent. It has become an indispensable tool in my clinic.",
+      rating: 5,
+      image: reviewer8,
+    },
+    {
+      name: "Priya Patel",
+      title: "Clinic Owner",
+      review: "eNBe TechServ helped me equip my new clinic from scratch. Their team provided excellent consultation, and the quality of the products is top-notch. Highly recommend their services.",
+      rating: 5,
+      image: reviewer5,
+    },
+    {
+      name: "Arjun Kumar",
+      title: "Home User",
+      review: "I bought the EYE 900 massager for my eye strain, and it works wonders. It's very relaxing after a long day of screen time. The product was delivered on time and in perfect condition.",
+      rating: 5,
+      image: reviewer4,
+    },
+    {
+      name: "Sunita Gupta",
+      title: "Hospital Procurement Manager",
+      review: "We procured a range of rehabilitation equipment for our hospital. The entire process, from inquiry to installation, was seamless. The eNBe team is professional and efficient.",
+      rating: 5,
+      image: reviewer10,
+    },
+    {
+      name: "Rohan Desai",
+      title: "Product Manager",
+      review: "The Graphene Magnetic Waist Belt has been a great help for my lower back pain. It's comfortable to wear and provides good support. I'm very satisfied with my purchase.",
+      rating: 4,
+      image: reviewer9,
+    },
+    {
+      name: "Neha Sharma",
+      title: "IT Professional",
+      review: "I love the Revive Electric Head Massager. It's my go-to for destressing. The different modes are great for finding the right intensity. A fantastic product for anyone with a stressful job.",
+      rating: 5,
+      image: reviewer12,
+    },
+    {
+      name: "Amit Patel",
+      title: "Engineer",
+      review: "The customer service is excellent. I had a query about my product, and they resolved it quickly. The product itself is of high quality. I'm a happy customer.",
+      rating: 5,
+      image: reviewer11,
+    }
   ];
 
   const categories = [
@@ -142,7 +221,7 @@ export default function Home() {
             <h2 className="text-center text-m-h2 md:text-h2 font-headline font-semibold mb-12">Featured Products</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {products.map((product) => (
-                <Card key={product.id} className="group overflow-hidden border rounded-xl flex flex-col bg-card">
+                <Card key={product.id} className="group overflow-hidden border-none flex flex-col bg-card">
                   <div className="relative">
                     {product.image && (
                       <div className="aspect-square relative">
@@ -257,7 +336,7 @@ export default function Home() {
 
         <section className="py-16 sm:py-24 bg-secondary">
           <div className="container mx-auto px-4 max-w-[1371px]">
-            <div className="bg-card rounded-3xl p-12 text-center border">
+            <div className="bg-card rounded-3xl p-12 text-center border-none">
               <div className="grid md:grid-cols-3 gap-8 mb-8">
                 <div className="flex flex-col items-center gap-3">
                   <Award className="w-10 h-10 text-primary" />
@@ -279,8 +358,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 sm:py-24">
-          <div className="container mx-auto px-4 max-w-[1371px]">
+        <section className="py-16 sm:py-24 bg-white">
+          <div className="container mx-auto max-w-[1371px] px-4">
             <div className="text-center max-w-readable mx-auto">
               <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-foreground mb-6">
                 Discover What Customers Are Saying
@@ -296,30 +375,44 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-              {reviews.map((review, index) => (
-                <div key={index} className="text-center flex flex-col items-center">
-                  {review.image && (
-                    <Image
-                      src={review.image.imageUrl}
-                      alt={review.name}
-                      width={100}
-                      height={100}
-                      className="rounded-full mx-auto mb-4"
-                      data-ai-hint={review.image.imageHint}
-                    />
-                  )}
-                  <h3 className="text-h4 font-semibold text-foreground">{review.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-2">{review.title}</p>
-                  <div className="flex justify-center gap-0.5 mb-4 text-primary">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-body-base text-muted-foreground">{review.review}</p>
-                </div>
-              ))}
-            </div>
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {reviews.map((review, index) => (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-1">
+                        <div className="text-center flex flex-col items-center p-6">
+                          {review.image && (
+                            <Image
+                              src={review.image.imageUrl}
+                              alt={review.name}
+                              width={100}
+                              height={100}
+                              className="rounded-full mx-auto mb-4"
+                              data-ai-hint={review.image.imageHint}
+                            />
+                          )}
+                          <h3 className="text-h4 font-semibold text-foreground">{review.name}</h3>
+                          <p className="text-sm text-muted-foreground mb-2">{review.title}</p>
+                          <div className="flex justify-center gap-0.5 mb-4 text-primary">
+                            {[...Array(review.rating)].map((_, i) => (
+                              <Star key={i} className="w-5 h-5 fill-current" />
+                            ))}
+                          </div>
+                          <p className="text-body-base text-muted-foreground">{review.review}</p>
+                        </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </section>
       </main>
