@@ -95,10 +95,9 @@ function FaqSection() {
 
 export default function ContactUsPage() {
   const contactInfo = [
-    { title: 'Email', description: 'Contact us by email, and we will respond shortly.', link: 'mailto:hey@uiblox.com', linkText: 'hey@uiblox.com' },
-    { title: 'Phone', description: 'Call us on weekdays from 9 AM to 5 PM.', link: 'tel:+1222333444', linkText: '+1 (222) 333 444' },
-    { title: 'Mobile', description: 'Call us on weekdays from 9 AM to 6 PM.', link: 'tel:+2222333444', linkText: '+2 (222) 333 444' },
-    { title: 'Office', description: 'Visit us at our headquarters.', address: '87266 Green Station, Euless, Oregon 26739, Canada' },
+    { title: 'Email', description: 'Contact us by email, and we will respond shortly.', link: 'mailto:jsrawat@enbetechserv.com', linkText: 'jsrawat@enbetechserv.com' },
+    { title: 'Phone', description: 'Call us Monday–Saturday, 9 AM to 8 PM.', link: 'tel:+918800633255', linkText: '+91 88006 33255' },
+    { title: 'Office', description: 'Visit us at our headquarters.', address: 'T2/505, RPS Savana, Sector - 88, Faridabad - 121002, Haryana' },
   ];
 
   return (

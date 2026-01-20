@@ -31,6 +31,7 @@ export function Footer() {
     { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms of Service", href: "/terms-of-service" },
     { name: "Return Policy", href: "/return-policy" },
+    { name: "Shipping Policy", href: "/shipping-policy" },
   ];
 
   return (
@@ -98,15 +99,15 @@ export function Footer() {
              <ul className="space-y-3 text-muted-foreground text-body-sm">
                 <li className="flex items-start gap-3">
                     <Phone className="w-5 h-5 mt-1 shrink-0"/>
-                    <span>+0123-456-789</span>
+                    <span>+91 88006 33255</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Mail className="w-5 h-5 mt-1 shrink-0"/>
-                    <a href="mailto:example@gmail.com" className="hover:text-foreground transition-colors">example@gmail.com</a>
+                    <a href="mailto:jsrawat@enbetechserv.com" className="hover:text-foreground transition-colors">jsrawat@enbetechserv.com</a>
                 </li>
                  <li className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 mt-1 shrink-0"/>
-                    <span>8502 Preston Rd. Inglewood, Maine 98380</span>
+                    <span>T2/505, RPS Savana, Sector - 88, Faridabad - 121002, Haryana</span>
                 </li>
              </ul>
           </div>
