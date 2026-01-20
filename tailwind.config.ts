@@ -98,9 +98,6 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
         xl: '20px',
       },
-      boxShadow: {
-        subtle: '0 10px 30px rgba(0,0,0,0.04)',
-      },
       maxWidth: {
         'page': '1240px',
         'readable': '720px',

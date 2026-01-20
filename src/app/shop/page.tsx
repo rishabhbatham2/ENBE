@@ -19,7 +19,7 @@ export default function ShopPage() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           {products.map((product) => (
-            <Card key={product.id} className="group overflow-hidden border rounded-xl shadow-subtle flex flex-col bg-card">
+            <Card key={product.id} className="group overflow-hidden border rounded-xl flex flex-col bg-card">
               <div className="relative">
                 {product.image && (
                   <div className="aspect-square relative">

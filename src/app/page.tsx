@@ -142,7 +142,7 @@ export default function Home() {
             <h2 className="text-center text-m-h2 md:text-h2 font-headline font-semibold mb-12">Featured Products</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {products.map((product) => (
-                <Card key={product.id} className="group overflow-hidden border rounded-xl shadow-subtle flex flex-col bg-card">
+                <Card key={product.id} className="group overflow-hidden border rounded-xl flex flex-col bg-card">
                   <div className="relative">
                     {product.image && (
                       <div className="aspect-square relative">
@@ -200,7 +200,7 @@ export default function Home() {
         <section className="py-16 sm:py-24">
           <div className="container mx-auto px-4 max-w-[1371px]">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-subtle">
+              <div className="relative aspect-[4/5] rounded-xl overflow-hidden">
                 {solutionsImage && (
                   <Image
                     src={solutionsImage.imageUrl}
@@ -255,9 +255,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-16 sm:py-24">
+        <section className="py-16 sm:py-24 bg-secondary">
           <div className="container mx-auto px-4 max-w-[1371px]">
-            <div className="bg-secondary rounded-3xl p-12 text-center">
+            <div className="bg-card rounded-3xl p-12 text-center border">
               <div className="grid md:grid-cols-3 gap-8 mb-8">
                 <div className="flex flex-col items-center gap-3">
                   <Award className="w-10 h-10 text-primary" />

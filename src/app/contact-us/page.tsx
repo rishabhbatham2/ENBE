@@ -68,7 +68,7 @@ function FaqSection() {
               key={faq.id}
               open={openItem === faq.id}
               onOpenChange={isOpen => setOpenItem(isOpen ? faq.id : null)}
-              className="rounded-xl border-none data-[state=closed]:bg-card data-[state=open]:bg-card shadow-sm"
+              className="rounded-xl border-none data-[state=closed]:bg-card data-[state=open]:bg-card"
             >
               <CollapsibleTrigger className="p-6 w-full flex justify-between items-center text-left font-semibold hover:no-underline">
                 {faq.question}
@@ -150,7 +150,7 @@ export default function ContactUsPage() {
 
               {/* Right Column: Form */}
               <div
-                className="rounded-xl bg-card p-8 sm:p-12"
+                className="rounded-xl bg-card p-8 sm:p-12 border"
               >
                 <h2 className="mb-6 text-m-h2 font-headline font-semibold md:text-h2 text-primary">
                   Write us a message

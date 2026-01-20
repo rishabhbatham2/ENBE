@@ -14,22 +14,14 @@ import { Footer } from '@/components/footer';
 
 const StyleGuidePage = () => {
   const colors = [
-    { name: "Primary Accent", hex: "#2563eb", variable: "primary" },
-    { name: "Secondary Accent", hex: "#3b82f6", variable: "accent" },
-    { name: "Background Primary", hex: "#f9fafb", variable: "background" },
-    { name: "Background Secondary", hex: "#ffffff", variable: "card" },
-    { name: "Text Primary", hex: "#0c1d3e", variable: "foreground" },
-    { name: "Text Secondary", hex: "#64748b", variable: "muted-foreground" },
-    { name: "Text Muted", hex: "#64748b", variable: "muted-foreground", description: "Slightly lighter than secondary for hints." },
-    { name: "Divider / Hairline", hex: "#e2e8f0", variable: "border" },
-  ];
-
-  const productPalette = [
-    { name: "Light Blue", hex: "#a8c5ff", bg: "bg-[#a8c5ff]" },
-    { name: "Medium Blue", hex: "#6c9eff", bg: "bg-[#6c9eff]" },
-    { name: "Dark Blue", hex: "#3a81f5", bg: "bg-[#3a81f5]" },
-    { name: "Navy Blue", hex: "#003380", bg: "bg-[#003380]" },
-    { name: "Sky Blue", hex: "#87ceeb", bg: "bg-[#87ceeb]" },
+    { name: "Background", hex: "#ffffff", variable: "background" },
+    { name: "Foreground", hex: "#111827", variable: "foreground" },
+    { name: "Card", hex: "#ffffff", variable: "card" },
+    { name: "Primary", hex: "#3b82f6", variable: "primary" },
+    { name: "Primary Foreground", hex: "#ffffff", variable: "primary-foreground" },
+    { name: "Secondary", hex: "#f0f6ff", variable: "secondary" },
+    { name: "Muted Foreground", hex: "#6b7280", variable: "muted-foreground" },
+    { name: "Border", hex: "#dbeafe", variable: "border" },
   ];
 
   const icons = [
@@ -102,24 +94,12 @@ const StyleGuidePage = () => {
         <section>
           <h2 className="text-m-h2 md:text-h2 font-semibold mb-8">Color System</h2>
           <div className="space-y-8">
-            <Card className="rounded-xl shadow-subtle overflow-hidden">
-              <CardHeader><CardTitle>Neutral Base</CardTitle></CardHeader>
+            <Card className="rounded-xl overflow-hidden">
+              <CardHeader><CardTitle>Color Palette</CardTitle></CardHeader>
               <CardContent className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {colors.map((color) => (
                   <div key={color.name}>
                     <div className={`h-24 rounded-md border bg-${color.variable}`}></div>
-                    <h3 className="font-medium mt-2">{color.name}</h3>
-                    <p className="text-sm text-muted-foreground">{color.hex}</p>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-            <Card className="rounded-xl shadow-subtle overflow-hidden">
-              <CardHeader><CardTitle>Product Palette</CardTitle></CardHeader>
-              <CardContent className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                {productPalette.map((color) => (
-                  <div key={color.name}>
-                    <div className={`h-24 rounded-md ${color.bg}`}></div>
                     <h3 className="font-medium mt-2">{color.name}</h3>
                     <p className="text-sm text-muted-foreground">{color.hex}</p>
                   </div>
@@ -132,7 +112,7 @@ const StyleGuidePage = () => {
         {/* Typography */}
         <section>
           <h2 className="text-m-h2 md:text-h2 font-semibold mb-8">Typography</h2>
-          <Card className="rounded-xl shadow-subtle">
+          <Card className="rounded-xl">
             <CardHeader>
               <CardTitle>Font Sizes</CardTitle>
               <p className="text-muted-foreground text-body-sm">The type scale is responsive. Values are shown as: size / line-height.</p>
@@ -165,7 +145,7 @@ const StyleGuidePage = () => {
         {/* Spacing */}
         <section>
           <h2 className="text-m-h2 md:text-h2 font-semibold mb-8">Spacing</h2>
-           <Card className="rounded-xl shadow-subtle">
+           <Card className="rounded-xl">
             <CardHeader>
               <CardTitle>Spacing Scale</CardTitle>
               <p className="text-muted-foreground text-body-sm">The 4-point grid system provides consistent spacing. Use classes like <code>p-4</code> or <code>m-8</code>.</p>
@@ -197,7 +177,7 @@ const StyleGuidePage = () => {
         {/* Buttons & Actions */}
         <section>
           <h2 className="text-m-h2 md:text-h2 font-semibold mb-8">Buttons & Actions</h2>
-          <Card className="rounded-xl shadow-subtle">
+          <Card className="rounded-xl">
             <CardContent className="p-6 md:p-8 space-y-6">
               <div className="space-y-4">
                 <h3 className="font-medium">Primary Button</h3>
@@ -219,20 +199,20 @@ const StyleGuidePage = () => {
         <section className="grid md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-m-h2 md:text-h2 font-semibold mb-8">Cards & Surfaces</h2>
-            <Card className="rounded-xl shadow-subtle">
+            <Card className="rounded-xl">
               <CardHeader>
                 <CardTitle>Example Card</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-m-body-base md:text-body-base">
-                  Cards use a white background, a 20px border radius, and a subtle shadow to lift them off the page.
+                  Cards use a white background and a 20px border radius.
                 </p>
               </CardContent>
             </Card>
           </div>
           <div>
             <h2 className="text-m-h2 md:text-h2 font-semibold mb-8">Iconography</h2>
-            <Card className="rounded-xl shadow-subtle">
+            <Card className="rounded-xl">
               <CardContent className="p-6 md:p-8 flex items-center justify-around">
                 {icons.map((item) => (
                   <div key={item.name} className="flex flex-col items-center gap-2 text-muted-foreground">

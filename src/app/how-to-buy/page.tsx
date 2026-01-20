@@ -50,7 +50,7 @@ export default function HowToBuyPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
-          <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-subtle mt-0 md:mt-8">
+          <div className="relative aspect-[4/5] rounded-xl overflow-hidden mt-0 md:mt-8">
             {howToBuyImage && (
               <Image
                 src={howToBuyImage.imageUrl}
@@ -62,7 +62,7 @@ export default function HowToBuyPage() {
             )}
           </div>
 
-          <Card className="bg-card p-8 sm:p-12 rounded-xl shadow-subtle">
+          <Card className="bg-card p-8 sm:p-12 rounded-xl border-none">
              <CardContent className="p-0">
                 <div className="space-y-8">
                   {steps.map((step, index) => (
