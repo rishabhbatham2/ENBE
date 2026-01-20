@@ -29,7 +29,7 @@ export function Footer() {
 
   const informationLinks = [
     { name: "Privacy", href: "#" },
-    { name: "User Terms & Condition", href: "#" },
+    { name: "Terms of Service", href: "/terms-of-service" },
     { name: "Return Policy", href: "#" },
   ];
 
