@@ -1,3 +1,4 @@
+
 {
   "products": [
     {
@@ -7,7 +8,7 @@
       "reviewsCount": 2,
       "price": 120.00,
       "salePrice": 99.00,
-      "shortDescription": "Advanced electrotherapy device for pain relief and muscle stimulation. Portable and easy to use at home.",
+      "shortDescription": "Winstim is a 4/2-channel electrotherapy and ultrasound device offering 4-pole and 2-pole interferential therapy along with a variety of electrical stimulation waveforms. It effectively treats acute and subacute trauma, inflammatory conditions, chronic rheumatoid and arthritic disorders, and provides reliable pain relief.",
       "availability": "In Stock",
       "image": "product-winstim",
       "gallery": [
@@ -15,7 +16,7 @@
         "product-electro-2",
         "product-graphene-belt"
       ],
-      "features": ["Electrotherapy", "Pain Relief", "Muscle Stimulation"],
+      "features": ["Electrotherapy", "Ultrasound", "Pain Relief"],
       "keyFeatures": [
         "4 / 2 channel electrotherapy, multiple modalities in a single unit including combination of ultrasound and electrotherapy",
         "A comprehensive reference library providing information on therapy, treatments and electrode placement",
@@ -25,13 +26,19 @@
         "Tabletop device and can be mounted on optional mobility cart",
         "Different treatment parameters can be saved for different patient"
       ],
-      "longDescription": "The Winstim is a state-of-the-art electrotherapy device designed to provide effective pain relief and muscle stimulation from the comfort of your home. It uses clinically proven TENS and EMS technology to target pain, reduce inflammation, and aid in muscle recovery.",
+      "longDescription": "Winstim is a 4/2-channel electrotherapy and ultrasound device offering 4-pole and 2-pole interferential therapy along with a variety of electrical stimulation waveforms. It effectively treats acute and subacute trauma, inflammatory conditions, chronic rheumatoid and arthritic disorders, and provides reliable pain relief.",
       "specifications": [
-        { "name": "Model", "value": "Winstim" },
-        { "name": "Technology", "value": "TENS & EMS" },
-        { "name": "Channels", "value": "2" },
-        { "name": "Power Source", "value": "Rechargeable Lithium Battery" },
-        { "name": "Dimensions", "value": "5\" x 2.5\" x 0.5\"" }
+        { "name": "Output Channels", "value": "4 / 2" },
+        { "name": "Carrier Frequency", "value": "2,000 – 10,000 Hz" },
+        { "name": "Beat Frequency", "value": "0 – 400 Hz" },
+        { "name": "Max. Intensity", "value": "0 – 130 mA" },
+        { "name": "Phase Duration", "value": "20 – 1000 μS" },
+        { "name": "Treatment Time", "value": "1 – 60 Minutes" },
+        { "name": "Ultrasound Frequency", "value": "1 MHz & 3 MHz" },
+        { "name": "Duty Cycle", "value": "Continuous, 10%, 20% & 50%" },
+        { "name": "Duty Cycle Frequency", "value": "16Hz, 48Hz and 100Hz" },
+        { "name": "Intensity for 1 MHz", "value": "0–2.5 / 0–3 W/cm²" },
+        { "name": "Intensity for 3 MHz", "value": "0–2 / 0–3 W/cm²" }
       ],
       "userReviews": [
         {
@@ -99,6 +106,318 @@
       "image": "product-eye-900",
       "gallery": ["product-eye-900"],
       "features": ["Eye Massage", "Reduces Strain", "Portable"]
+    },
+    {
+      "id": 10,
+      "name": "WinVac",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "WinVac is an advanced vacuum therapy system designed for easy and effective electrode placement using vacuum electrodes.",
+      "longDescription": "WinVac is an advanced vacuum therapy system designed for easy and effective electrode placement using vacuum electrodes. Unlike conventional rubber electrodes, vacuum electrodes are quick to apply and ensure consistent skin contact for improved treatment outcomes. The pulsed vacuum creates a gentle massage effect, enhancing local blood circulation in the treated area. WinVac supports both continuous and pulsed modes, which can be easily adjusted using a control knob. It integrates seamlessly with electrotherapy devices to deliver multiple electrotherapy treatments. Made from biocompatible rubber, the vacuum electrodes can be securely applied to body areas where traditional electrodes are difficult to fix, ensuring greater flexibility and patient comfort.",
+      "availability": "In Stock",
+      "image": "product-winvac",
+      "gallery": ["product-winvac"],
+      "features": ["Vacuum Therapy", "Electrode Placement", "Pulsed & Continuous Modes"],
+      "specifications": [
+        { "name": "Power Supply", "value": "90–270 V / 50–60 Hz" },
+        { "name": "No. of Modes", "value": "2 (Pulsed / Continuous)" },
+        { "name": "Vacuum Pressure", "value": "100–600 m Bar (Continuously adjustable)" },
+        { "name": "Treatment Time", "value": "1–60 Min (Default – 15 Min.)" },
+        { "name": "Intensity", "value": "0 mA (min) – 100 mA (max)" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "SSD-500",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "SSD-500 is an advanced shortwave diathermy system with a solid-state generator and induction field circuitry.",
+      "longDescription": "SSD-500 is an advanced shortwave diathermy system with a solid-state generator and induction field circuitry. Operating at a shortwave frequency of 27.12 MHz, it delivers deep penetration into muscle tissues with minimal heating of fatty layers or bone. Designed for use by trained professionals, it is ideal for physiotherapy, rehabilitation, and hospital settings.",
+      "availability": "In Stock",
+      "image": "product-ssd-500",
+      "gallery": ["product-ssd-500"],
+      "features": ["Shortwave Diathermy", "Deep Penetration", "Professional Use"],
+      "keyFeatures": [
+        "Digital display with microprocessor control",
+        "Manual tuning",
+        "High-performance multi-jointed arms",
+        "User-friendly controls and clear readouts",
+        "Built-in safety circuitry",
+        "Continuous and pulsed modes"
+      ],
+      "specifications": [
+        { "name": "Continuous Mode Power", "value": "250 W" },
+        { "name": "Pulsed Mode Power", "value": "500 W" },
+        { "name": "Treatment Time", "value": "Selectable from 1 to 30 minutes" },
+        { "name": "Wavelength", "value": "11 meters" },
+        { "name": "Operating Frequency", "value": "27.12 MHz" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "AP439+",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "AP439 Plus is a cutting-edge, multi-waveform, multi-channel electrotherapy device designed for comprehensive pain relief.",
+      "longDescription": "AP439 Plus is a cutting-edge, multi-waveform, multi-channel electrotherapy device designed for comprehensive pain relief. It supports a wide range of therapies including Interferential, TENS, Galvanic, and Russian currents. With comfortable stimulation and proven clinical results, AP439 Plus is an essential addition to any modern physiotherapy clinic.",
+      "availability": "In Stock",
+      "image": "product-ap439plus",
+      "gallery": ["product-ap439plus"],
+      "features": ["Multi-Waveform", "Pain Relief", "Multi-Channel"],
+      "keyFeatures": [
+        "Multi-waveform stimulator",
+        "True sine wave interferential",
+        "2 Independent Outputs / 4 channel device",
+        "Light weight and portable device",
+        "Precise treatment selection",
+        "Comfortable electrical stimulation"
+      ],
+      "specifications": [
+        { "name": "Output", "value": "Two (4 Channels)" },
+        { "name": "Waveform", "value": "Sine Wave, Symm Biphasic, DC" },
+        { "name": "Carrier Freq.", "value": "4000 Hz (IFT) & 2500 Hz (Russian)" },
+        { "name": "Pulse Rate", "value": "50 uS – 400 uS" },
+        { "name": "Pulse Width", "value": "1 – 60 Minutes" },
+        { "name": "Output Voltage", "value": "0 – 70 Vpp @ 500" },
+        { "name": "Power", "value": "110 – 220 VAC" }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Jus 2",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "Johari’s therapeutic ultrasound device delivers effective continuous and pulsed treatments for pain relief and muscle rehabilitation.",
+      "longDescription": "Johari’s therapeutic ultrasound device delivers effective continuous and pulsed treatments for pain relief and muscle rehabilitation. It supports both 1 MHz and 3 MHz frequencies through a specially designed ultrasound applicator, ensuring targeted and efficient therapy. By increasing local blood flow, ultrasound therapy helps reduce swelling, manage chronic inflammation, and promote bone fracture healing—making it an essential modality for modern clinical practice.",
+      "availability": "In Stock",
+      "image": "product-jus2",
+      "gallery": ["product-jus2"],
+      "features": ["Therapeutic Ultrasound", "Pain Relief", "Rehabilitation"],
+      "keyFeatures": [
+        "Digital display",
+        "3.8 cm dia Ultrasound applicator",
+        "Selectable Duty Cycle and Frequency",
+        "Microprocessor controlled digital unit",
+        "Inbuilt Intensity Control in applicator"
+      ],
+      "specifications": [
+        { "name": "Output", "value": "One" },
+        { "name": "Wave", "value": "Ultrasound (Sinewave)" },
+        { "name": "Modes", "value": "2 (Pulsed and Continuous)" },
+        { "name": "Frequency", "value": "1 MHz and 3 MHz" },
+        { "name": "% Duty Cycle", "value": "10%, 20% and 50%" },
+        { "name": "Treatment Time", "value": "1 – 60 Minutes (in step of 1 min)" },
+        { "name": "Power", "value": "110 – 220V AC" }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "NMS-498",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "NMS-498 is an advanced solution for pain management and muscle rehabilitation.",
+      "longDescription": "NMS-498 is an advanced solution for pain management and muscle rehabilitation. This electronic nerve and muscle stimulator offers seven specialized NMES modes, each designed to target specific muscle groups. The microcomputer-controlled unit combines proven therapeutic techniques, delivering effective and customized rehabilitation to meet diverse clinical needs.",
+      "availability": "In Stock",
+      "image": "product-nms498",
+      "gallery": ["product-nms498"],
+      "features": ["Pain Management", "Muscle Rehabilitation", "NMES Modes"],
+      "keyFeatures": [
+        "Single machine with the benefit of dual therapies (TENS / EMS)",
+        "4 body areas / 2 patients can be treated at one time",
+        "Inbuilt 7 preset programs enabling treatment of different",
+        "One mode for custom parameter and custom treatment",
+        "Flexibility for custom treatment"
+      ],
+      "specifications": [
+        { "name": "Outputs", "value": "4 Independent Outputs" },
+        { "name": "Waveform", "value": "Symm Biphasic Square Wave" },
+        { "name": "Frequency", "value": "1 Hz – 250 Hz" },
+        { "name": "Pulse Width", "value": "50 uS – 400 uS" },
+        { "name": "Treatment Time", "value": "1 – 60 Minutes" },
+        { "name": "On / Off Time", "value": "2 sec, 4 sec" },
+        { "name": "Power Supply", "value": "110 – 220 VAC, 50Hz" }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Physiokit",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "Physiokit is a complete, portable solution that equips physiotherapists with all essential devices to deliver high-quality treatment at the patient’s location.",
+      "longDescription": "Physiokit is a complete, portable solution that equips physiotherapists with all essential devices to deliver high-quality treatment at the patient’s location. Packed in a convenient backpack, it includes Stim 3 and JUS-1, enabling effective electrotherapy and ultrasound therapy for pain relief and rehabilitation.",
+      "availability": "In Stock",
+      "image": "product-physiokit",
+      "gallery": ["product-physiokit"],
+      "features": ["Portable", "Electrotherapy", "Ultrasound"],
+      "keyFeatures": [
+        "True sinewave IFT with four-pole application",
+        "Vector effect with 100% amplitude modulation",
+        "2 outputs, 4 channels",
+        "LCD digital display",
+        "Battery and adapter operated",
+        "Microprocessor-controlled digital unit",
+        "Multiple parameter selection options",
+        "1 MHz ultrasound therapy",
+        "US FDA–cleared"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Stim3",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "Stim3 is a US FDA 510(k)–cleared portable electrotherapy device designed for physiotherapists and home care professionals.",
+      "longDescription": "Stim3 is a US FDA 510(k)–cleared portable electrotherapy device designed for physiotherapists and home care professionals. It enables effective pain relief for both acute and chronic conditions while supporting mobility and overall wellness during home visits. Compact and versatile, Stim3 delivers multiple therapies in a single handheld unit, making it one of the most trusted devices in physical therapy.",
+      "availability": "In Stock",
+      "image": "product-stim3",
+      "gallery": ["product-stim3"],
+      "features": ["Portable", "Electrotherapy", "FDA Cleared"],
+      "keyFeatures": [
+        "True sinewave IFT with four-pole application",
+        "EMS, IFT, and TENS therapy modes",
+        "Vector effect with 100% amplitude modulation",
+        "Independent 2 or 4 channels",
+        "Carrier frequency: 5000 Hz",
+        "LCD digital display",
+        "Battery and adapter operated",
+        "US FDA 510(k) cleared"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Stim Tec4",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "Interferential Electrical Stimulation (IFS) is an advanced therapy that delivers therapeutic frequencies deep into body tissues.",
+      "longDescription": "Interferential Electrical Stimulation (IFS) is an advanced therapy that delivers therapeutic frequencies deep into body tissues. It uses two medium-frequency currents—one fixed at 4,000 Hz and another adjustable between 4,001–4,150 Hz. The interaction of these currents allows stimulation to reach deeper tissues while also acting on the skin surface, resulting in enhanced pain relief and nerve-blocking effects.",
+      "availability": "In Stock",
+      "image": "product-stim-tec4",
+      "gallery": ["product-stim-tec4"],
+      "features": ["Interferential", "TENS", "EMS"],
+      "specifications": [
+        { "name": "Output", "value": "2 Channel" },
+        { "name": "Modes", "value": "IFT, Russian, TENS & EMS" },
+        { "name": "Frequency", "value": "Base: 4000 Hz, Sweep: 1–150 Hz" },
+        { "name": "Treatment Time", "value": "1 – 60 Minutes" },
+        { "name": "Power", "value": "9 V DC" }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Stim Tec2",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "Stimtec is a portable electrotherapy device designed for effective muscle strengthening and pain relief.",
+      "longDescription": "Stimtec is a portable electrotherapy device designed for effective muscle strengthening and pain relief. It features dual therapeutic modes—TENS and EMS—to relieve pain, stimulate muscles, and enhance rehabilitation outcomes. Compact and easy to use, Stimtec is one of the most popular and trusted devices in physical therapy.",
+      "availability": "In Stock",
+      "image": "product-stim-tec2",
+      "gallery": ["product-stim-tec2"],
+      "features": ["Portable", "TENS & EMS", "Pain Relief"],
+      "specifications": [
+        { "name": "Channel", "value": "2" },
+        { "name": "Pad Output", "value": "4" },
+        { "name": "Display", "value": "Large" },
+        { "name": "Programs", "value": "Preset" },
+        { "name": "Power", "value": "Battery & Adapter" }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "NishCalm",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "NishCalm is a portable, safe, and effective sleep-inducing and relaxation device.",
+      "longDescription": "NishCalm is a portable, safe, and effective sleep-inducing and relaxation device. Using CES (Cranial Electrotherapy Stimulation) technology, it enhances energy levels, improves mood, and promotes deep, restorative sleep—without the use of drugs. Designed for ease of use and portability, NishCalm is ideal for everyday wellness and on-the-go lifestyles.",
+      "availability": "In Stock",
+      "image": "product-nishcalm",
+      "gallery": ["product-nishcalm"],
+      "features": ["Sleep Aid", "Relaxation", "CES Technology"],
+      "specifications": [
+        { "name": "Output", "value": "One" },
+        { "name": "Technology", "value": "Cranial Electrical Stimulation" },
+        { "name": "Frequency", "value": "0.5 Hz" },
+        { "name": "Pulse Width", "value": "240 msec to 1 second" },
+        { "name": "Output Current", "value": "0.6 mA" },
+        { "name": "Treatment Time", "value": "30 Minutes" },
+        { "name": "Wave Form", "value": "Symmetrical biphasic square wave" },
+        { "name": "Power", "value": "Inbuilt Rechargeable Battery" }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "VR System",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "SparshMind is dedicated to delivering high-quality, accessible care for individuals with neurological disabilities through innovative technology and empathetic design.",
+      "longDescription": "SparshMind is dedicated to delivering high-quality, accessible care for individuals with neurological disabilities through innovative technology and empathetic design. Its automated, immersive virtual reality–based therapies are built to maximize patient engagement and long-term adherence.",
+      "availability": "In Stock",
+      "image": "product-vr-system",
+      "gallery": ["product-vr-system"],
+      "features": ["VR Therapy", "Neurological Rehab", "Immersive"],
+      "keyFeatures": [
+        "Constraint-Induced Movement Therapy",
+        "Mirror Therapy",
+        "Cognitive Rehabilitation",
+        "Repetitive, Task-Oriented Training",
+        "Activities of Daily Living (ADL) Simulations",
+        "Mental Well-being Modules",
+        "Balance and Postural Training",
+        "Objective tracking of body movements",
+        "Range of motion measurement",
+        "Detection and correction of compensatory patterns",
+        "Monitoring of endurance, strength, and speed"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Limb Compression Therapy Device",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "This limb compression therapy device enhances blood circulation and helps relieve symptoms caused by inactivity, injury, or poor vascular flow.",
+      "longDescription": "This limb compression therapy device enhances blood circulation and helps relieve symptoms caused by inactivity, injury, or poor vascular flow. By improving venous and lymphatic drainage, it supports edema reduction and capillary reabsorption. Available in 4-chamber models with hand, waist, and leg cuffs, it is suitable for both clinical and home use.",
+      "availability": "In Stock",
+      "image": "product-limb-compression",
+      "gallery": ["product-limb-compression"],
+      "features": ["Blood Circulation", "Edema Reduction", "Pain Relief"],
+      "keyFeatures": [
+        "Improves blood circulation",
+        "Reduces cold hands and legs",
+        "Relieves joint (articular) pain",
+        "Eases muscle pain from inactivity or post-trauma",
+        "Reduces tiredness and chronic fatigue",
+        "Supports venous and lymphatic flow"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Chiropractic Table",
+      "rating": 5,
+      "reviewsCount": 0,
+      "shortDescription": "A versatile and cost-effective chiropractic table designed to deliver maximum treatment flexibility for modern practices.",
+      "longDescription": "A versatile and cost-effective chiropractic table designed to deliver maximum treatment flexibility for modern practices. Featuring manual drop activation with adjustable tension, it supports precise cervical, thoracic, lumbar, and pelvic treatments.",
+      "availability": "In Stock",
+      "image": "product-chiropractic-table",
+      "gallery": ["product-chiropractic-table"],
+      "features": ["Chiropractic", "Adjustable", "Electric Hi-Lo"],
+      "keyFeatures": [
+        "Electric Hi-Lo operation via hand remote or foot remote (optional)",
+        "Four manually activated drop sections: Cervical, Thoracic, Lumbar & Pelvic",
+        "Gas-strut assisted lift with ±20° dynamic adjustment",
+        "10 cm (4”) vertical height adjustment",
+        "Lateral head movement of ±15°",
+        "Height-adjustable and extendable padded footrest",
+        "Adjustable feet for uneven surfaces",
+        "4 retractable castors with central locking mechanism for easy transport (optional)",
+        "Reliable TiMOTION motor"
+      ],
+      "specifications": [
+        { "name": "Height Range", "value": "46–80 cm (18.1”–31.5”) in approx. 30 seconds" },
+        { "name": "Padding Thickness", "value": "7.5 cm (3”)" },
+        { "name": "Foam Density", "value": "100 kg/m³ (220 lbs/m³)" },
+        { "name": "Max Weight Capacity", "value": "200 kg" }
+      ]
     }
   ]
 }
+
+    
