@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "republic-day-sale-banner",
+      "description": "Republic Day Sale Banner",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1769073627/Untitled_design_73_zuab8h.jpg",
+      "imageHint": "sale banner"
+    },
+    {
       "id": "hero-physiotherapy",
       "description": "A physiotherapist assisting a patient with exercises.",
       "imageUrl": "https://images.unsplash.com/photo-1579758629938-03607ccdb340?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwaHlzaW90aGVyYXB5fGVufDB8fHx8MTc2OTExNzkxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
@@ -183,13 +189,13 @@
     {
       "id": "product-nms498",
       "description": "NMS-498 nerve and muscle stimulator",
-      "imageUrl": "https://images.unsplash.com/photo-1715526411331-4947f75eb25f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtdXNjbGUlMjBzdGltdWxhdG9yfGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1715526411331-4947f75eb25f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtdXNjbGUlMjBzdGltdWxhdG9yfGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "muscle stimulator"
     },
     {
       "id": "product-physiokit",
       "description": "Physiokit portable therapy solution",
-      "imageUrl": "https://images.unsplash.com/photo-1702060679993-eb16d16740aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0aGVyYXB5JTIwa2l0fGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1702060679993-eb16d16740aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0aGVyYXB5JTIwa2l0fGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "therapy kit"
     },
     {
@@ -201,31 +207,31 @@
     {
       "id": "product-stim-tec4",
       "description": "Stim Tec4 electrotherapy device",
-      "imageUrl": "https://images.unsplash.com/photo-1553515783-53c554174835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1553515783-53c554174835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "electrotherapy device"
     },
     {
       "id": "product-stim-tec2",
       "description": "Stim Tec2 portable electrotherapy device",
-      "imageUrl": "https://images.unsplash.com/photo-1766325693728-348c38374d33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1766325693728-348c38374d33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "electrotherapy device"
     },
     {
       "id": "product-nishcalm",
       "description": "NishCalm sleep-inducing device",
-      "imageUrl": "https://images.unsplash.com/photo-1758577515333-e71b713059f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzbGVlcCUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758577515333-e71b713059f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzbGVlcCUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sleep device"
     },
     {
       "id": "product-vr-system",
       "description": "SparshMind VR rehabilitation system",
-      "imageUrl": "https://images.unsplash.com/photo-1758524944936-777400e025d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8VlIlMjBzeXN0ZW18ZW58MHx8fHwxNzY5MDIzMzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758524944936-777400e025d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8VlIlMjBzeXN0ZW18ZW58MHx8fHwxNzY5MDIzMzUxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "VR system"
     },
     {
       "id": "product-limb-compression",
       "description": "Limb compression therapy device",
-      "imageUrl": "https://images.unsplash.com/photo-1643216790495-ed36d21b05c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wcmVzc2lvbiUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1643216790495-ed36d21b05c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wcmVzc2lvbiUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "compression device"
     },
     {

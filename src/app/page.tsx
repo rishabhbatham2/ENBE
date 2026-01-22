@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/carousel"
 
 export default function Home() {
-  const heroImage = placeholderImages.find(p => p.id === "hero-physiotherapy");
+  const heroImage = placeholderImages.find(p => p.id === "republic-day-sale-banner");
   const solutionsImage = placeholderImages.find(p => p.id === "customer-driven-solutions");
   const reviewer1 = placeholderImages.find(p => p.id === "reviewer-raashi-metha");
   const reviewer2 = placeholderImages.find(p => p.id === "reviewer-ria-bajaj");
