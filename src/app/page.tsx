@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Eye, Heart, Star, CheckCircle2, Award, Lightbulb, ShieldCheck } from "lucide-react";
+import { ArrowRight, Eye, Heart, Star, CheckCircle2, Award, Lightbulb, ShieldCheck, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { AnnouncementBar } from "@/components/announcement-bar";
 import { Header } from "@/components/header";
@@ -34,25 +34,39 @@ export default function Home() {
 
   const reviews = [
     {
-      name: "Dr. Raashi Metha",
-      title: "MBBS, DNB",
-      review: "As a dermatologist, I highly recommend Caresmith's Bloom Scalp Massager for stimulating hair growth and the Bloom Foot File for rejuvenated feet. I've personally used them and can attest to their effectiveness. The scalp massager promotes circulation while the foot file exfoliates for softer skin.",
+      name: "Amit Sharma",
+      title: "IT Professional, Bengaluru",
+      review: "Enbe Techserv products have completely changed how I manage my health with a busy work schedule. The massage and therapy devices are very easy to use and give instant relief after long hours at work. It truly feels like professional care at home.",
       rating: 5,
       image: reviewer1,
     },
     {
-      name: "Ria Bajaj",
-      title: "Athlete Pole & Aerial Fitness",
-      review: "As an athlete in pole and aerial fitness, I love the ChargeSport and ChargeFlex Massage Guns. With customizable intensity and versatile attachments, they target muscle tension effectively. Essential for my recovery routine, helping me perform at my best. Highly recommended!",
+      name: "Neha Verma",
+      title: "Working Professional, Delhi",
+      review: "The quality of Enbe Techserv’s wellness products is excellent. You can immediately feel the difference compared to normal massagers. The build quality, comfort, and results are all top-class. Their team also guided me very well before purchase.",
       rating: 5,
       image: reviewer2,
     },
     {
-      name: "Radhi Agarwal",
-      title: "Product Manager at Microsoft",
-      review: "Revive Electric Head Massager is my ultimate relaxation tool after a hectic workday. This blissful device helps me unwind, calm down, and find tranquility within minutes. A must-have for all workaholics seeking daily rejuvenation.",
+      name: "Rajesh Patel",
+      title: "Business Owner, Ahmedabad",
+      review: "I purchased a therapy and massage product from Enbe Techserv for muscle pain and recovery. The results were impressive within a few days. It’s perfect for people who don’t have time for regular clinic visits but still want effective health solutions.",
       rating: 5,
       image: reviewer3,
+    },
+    {
+      name: "Priya Nair",
+      title: "Homemaker, Kochi",
+      review: "What I really liked about Enbe Techserv is their customer support. They patiently explained the product benefits and helped me choose the right solution. The product works exactly as promised and is very comfortable to use.",
+      rating: 5,
+      image: reviewer4,
+    },
+    {
+      name: "Sandeep Malhotra",
+      title: "Fitness Enthusiast, Chandigarh",
+      review: "Enbe Techserv products are ideal for modern lifestyles. They help reduce stress, relax muscles, and support faster recovery after workouts. It’s a great investment for long-term health and overall well-being.",
+      rating: 5,
+      image: reviewer5,
     },
     {
       name: "Dr. Sameer Sharma",
@@ -83,13 +97,6 @@ export default function Home() {
       image: reviewer5,
     },
     {
-      name: "Arjun Kumar",
-      title: "Home User",
-      review: "I bought the EYE 900 massager for my eye strain, and it works wonders. It's very relaxing after a long day of screen time. The product was delivered on time and in perfect condition.",
-      rating: 5,
-      image: reviewer4,
-    },
-    {
       name: "Sunita Gupta",
       title: "Hospital Procurement Manager",
       review: "We procured a range of rehabilitation equipment for our hospital. The entire process, from inquiry to installation, was seamless. The eNBe team is professional and efficient.",
@@ -102,13 +109,6 @@ export default function Home() {
       review: "The Graphene Magnetic Waist Belt has been a great help for my lower back pain. It's comfortable to wear and provides good support. I'm very satisfied with my purchase.",
       rating: 4,
       image: reviewer9,
-    },
-    {
-      name: "Neha Sharma",
-      title: "IT Professional",
-      review: "I love the Revive Electric Head Massager. It's my go-to for destressing. The different modes are great for finding the right intensity. A fantastic product for anyone with a stressful job.",
-      rating: 5,
-      image: reviewer12,
     },
     {
       name: "Amit Patel",
@@ -195,7 +195,7 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
               {categories.map((category) => (
                 category.image && (
-                  <Link href={category.href} key={category.title} className="relative aspect-square overflow-hidden rounded-2xl group block">
+                  <Link href={category.href} key={category.title} className="relative aspect-square overflow-hidden rounded-xl group block">
                     <Image
                       src={category.image.imageUrl}
                       alt={category.image.description}
@@ -393,7 +393,7 @@ export default function Home() {
                               alt={review.name}
                               width={100}
                               height={100}
-                              className="rounded-full mx-auto mb-4 object-cover"
+                              className="rounded-full mx-auto mb-4 object-cover w-[100px] h-[100px]"
                               data-ai-hint={review.image.imageHint}
                             />
                           )}
@@ -410,8 +410,12 @@ export default function Home() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="hidden md:flex items-center justify-center bg-background border-border text-foreground hover:bg-accent hover:text-accent-foreground">
+                <ChevronLeft className="h-6 w-6" />
+              </CarouselPrevious>
+              <CarouselNext className="hidden md:flex items-center justify-center bg-background border-border text-foreground hover:bg-accent hover:text-accent-foreground">
+                <ChevronRight className="h-6 w-6" />
+              </CarouselNext>
             </Carousel>
           </div>
         </section>
