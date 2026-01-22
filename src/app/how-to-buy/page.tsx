@@ -4,8 +4,7 @@ import { Footer } from '@/components/footer';
 import Image from 'next/image';
 import { placeholderImages } from '@/lib/placeholder-images';
 import { Card, CardContent } from '@/components/ui/card';
-import { FileText, Inbox, MessageSquare, PackageCheck, Leaf, UserCheck, Zap, Heart } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
+import { FileText, Inbox, MessageSquare, PackageCheck } from 'lucide-react';
 
 export default function HowToBuyPage() {
   const howToBuyImage = placeholderImages.find(p => p.id === 'how-to-buy-inquiry');
@@ -33,25 +32,6 @@ export default function HowToBuyPage() {
     },
   ];
 
-  const whyChooseUs = [
-    {
-      icon: <Leaf className="w-6 h-6 text-primary" />,
-      text: 'Wellness-focused products for modern, busy lifestyles',
-    },
-    {
-      icon: <UserCheck className="w-6 h-6 text-primary" />,
-      text: 'Personalized product guidance',
-    },
-    {
-      icon: <Zap className="w-6 h-6 text-primary" />,
-      text: 'Quick and reliable customer support',
-    },
-    {
-      icon: <Heart className="w-6 h-6 text-primary" />,
-      text: 'Trusted solutions for comfort, recovery, and relaxation',
-    }
-  ];
-
   return (
     <div className="bg-background text-foreground">
       <AnnouncementBar />
@@ -77,7 +57,7 @@ export default function HowToBuyPage() {
             )}
           </div>
 
-          <Card className="bg-card p-8 sm:p-12 rounded-xl border">
+          <Card className="bg-card p-8 sm:p-12 rounded-xl border-none">
              <CardContent className="p-0">
                 <div className="space-y-8">
                   {steps.map((step, index) => (
@@ -89,18 +69,6 @@ export default function HowToBuyPage() {
                           </div>
                       </div>
                   ))}
-                </div>
-                <Separator className="my-8" />
-                <div>
-                  <h3 className="text-h4 font-semibold text-foreground mb-4">Why Choose Enbe Techserv?</h3>
-                  <ul className="space-y-4">
-                    {whyChooseUs.map((item, index) => (
-                      <li key={index} className="flex items-center gap-4">
-                        {item.icon}
-                        <span className="text-body-base text-muted-foreground">{item.text}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
             </CardContent>
           </Card>
