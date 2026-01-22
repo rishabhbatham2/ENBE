@@ -13,6 +13,16 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { Star, Minus, Plus, Heart, Facebook, Twitter, Instagram, CheckCircle2 } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 export default function ProductPage() {
   const params = useParams();
@@ -139,9 +149,55 @@ export default function ProductPage() {
                     <Plus className="w-4 h-4" />
                   </Button>
                 </div>
-                <Button size="lg" className="flex-grow">
-                  Get Quote
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button size="lg" className="flex-grow">
+                      Get Quote
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-md">
+                    <DialogHeader>
+                      <DialogTitle>Request a Quote</DialogTitle>
+                      <DialogDescription>
+                        Please fill in your details below to request a quote for the selected product.
+                      </DialogDescription>
+                    </DialogHeader>
+                    <div className="flex items-start gap-4 pt-4">
+                      {product.image && (
+                        <div className="relative h-24 w-24 flex-shrink-0">
+                          <Image
+                            src={product.image.imageUrl}
+                            alt={name}
+                            fill
+                            className="object-cover rounded-md"
+                            data-ai-hint={product.image.imageHint}
+                          />
+                        </div>
+                      )}
+                      <div className="flex-grow">
+                        <h3 className="font-semibold text-lg">{name}</h3>
+                        <p className="text-sm text-muted-foreground">Quantity: {quantity}</p>
+                      </div>
+                    </div>
+                    <form className="space-y-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="name">Full Name *</Label>
+                        <Input id="name" placeholder="Jane Smith" required />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="email">Email *</Label>
+                        <Input id="email" type="email" placeholder="jane@email.com" required />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="phone">Phone Number</Label>
+                        <Input id="phone" type="tel" placeholder="+91 12345 67890" />
+                      </div>
+                      <Button type="submit" className="w-full">
+                        Submit Quote Request
+                      </Button>
+                    </form>
+                  </DialogContent>
+                </Dialog>
                 <Button variant="outline" size="icon">
                   <Heart className="w-5 h-5"/>
                 </Button>
