@@ -1,4 +1,5 @@
 
+
 {
   "products": [
     {
@@ -416,6 +417,193 @@
         { "name": "Foam Density", "value": "100 kg/m³ (220 lbs/m³)" },
         { "name": "Max Weight Capacity", "value": "200 kg" }
       ]
+    },
+    {
+      "id": 23,
+      "name": "Ilux smart",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-ilux-smart",
+      "gallery": ["product-ilux-smart"],
+      "features": ["Laser Therapy", "Smart", "Portable"],
+      "shortDescription": "Advanced smart laser therapy device."
+    },
+    {
+      "id": 24,
+      "name": "Ilux plus",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-ilux-plus",
+      "gallery": ["product-ilux-plus"],
+      "features": ["Laser Therapy", "High Power", "Clinical Use"],
+      "shortDescription": "High-power laser therapy device for clinical settings."
+    },
+    {
+      "id": 25,
+      "name": "Physo laser 1000",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-physo-laser-1000",
+      "gallery": ["product-physo-laser-1000"],
+      "features": ["Laser Therapy", "1000mW", "Professional"],
+      "shortDescription": "Professional 1000mW laser therapy device."
+    },
+    {
+      "id": 26,
+      "name": "Physo laser - 2",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-physo-laser-2",
+      "gallery": ["product-physo-laser-2"],
+      "features": ["Laser Therapy", "Dual Wavelength", "Versatile"],
+      "shortDescription": "Versatile dual wavelength laser therapy device."
+    },
+    {
+      "id": 27,
+      "name": "Opton pro 10",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-opton-pro-10",
+      "gallery": ["product-opton-pro-10"],
+      "features": ["Laser Therapy", "10W Power", "Deep Tissue"],
+      "shortDescription": "Opton pro 10 for deep tissue laser therapy."
+    },
+    {
+      "id": 28,
+      "name": "Opton pro 15",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-opton-pro-15",
+      "gallery": ["product-opton-pro-15"],
+      "features": ["Laser Therapy", "15W Power", "High Intensity"],
+      "shortDescription": "Opton pro 15 for high intensity laser therapy."
+    },
+    {
+      "id": 29,
+      "name": "Physhock",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-physhock",
+      "gallery": ["product-physhock"],
+      "features": ["Shockwave Therapy", "Pain Relief", "Portable"],
+      "shortDescription": "Portable shockwave therapy device."
+    },
+    {
+      "id": 30,
+      "name": "Impuls - 2",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-impuls-2",
+      "gallery": ["product-impuls-2"],
+      "features": ["Shockwave Therapy", "Dual Channel", "Clinical"],
+      "shortDescription": "Dual channel shockwave therapy device for clinical use."
+    },
+    {
+      "id": 31,
+      "name": "Impuls pro",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-impuls-pro",
+      "gallery": ["product-impuls-pro"],
+      "features": ["Shockwave Therapy", "Professional", "High Frequency"],
+      "shortDescription": "Professional high-frequency shockwave therapy device."
+    },
+    {
+      "id": 32,
+      "name": "Fit Must",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-fit-must",
+      "gallery": ["product-fit-must"],
+      "features": ["Assessment Tool", "Muscle Strength", "Accurate"],
+      "shortDescription": "Tool for assessing muscle strength."
+    },
+    {
+      "id": 33,
+      "name": "Fit knees",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-fit-knees",
+      "gallery": ["product-fit-knees"],
+      "features": ["Assessment Tool", "Knee Function", "Rehab"],
+      "shortDescription": "Tool for assessing knee function and rehabilitation progress."
+    },
+    {
+      "id": 34,
+      "name": "Polar care wave",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-polar-care-wave",
+      "gallery": ["product-polar-care-wave"],
+      "features": ["Cryo Therapy", "Cold Compression", "Post-Op"],
+      "shortDescription": "Combines cold therapy and compression."
+    },
+    {
+      "id": 35,
+      "name": "Cryo 6",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-cryo-6",
+      "gallery": ["product-cryo-6"],
+      "features": ["Cryo Therapy", "Skin Cooling", "Dermatology"],
+      "shortDescription": "Cryo therapy for skin cooling in dermatological treatments."
+    },
+    {
+      "id": 36,
+      "name": "Cryo 7",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-cryo-7",
+      "gallery": ["product-cryo-7"],
+      "features": ["Cryo Therapy", "Advanced", "Pain Management"],
+      "shortDescription": "Advanced cryo therapy system for pain management."
+    },
+    {
+      "id": 37,
+      "name": "Tecar smart",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-tecar-smart",
+      "gallery": ["product-tecar-smart"],
+      "features": ["Tecar Therapy", "Smart", "Portable"],
+      "shortDescription": "Smart and portable Tecar therapy device."
+    },
+    {
+      "id": 38,
+      "name": "Diacare 7000",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-diacare-7000",
+      "gallery": ["product-diacare-7000"],
+      "features": ["Tecar Therapy", "Professional", "High Power"],
+      "shortDescription": "Professional high-power Tecar therapy device."
+    },
+    {
+      "id": 39,
+      "name": "Diacare 5000",
+      "rating": 5,
+      "reviewsCount": 0,
+      "availability": "In Stock",
+      "image": "product-diacare-5000",
+      "gallery": ["product-diacare-5000"],
+      "features": ["Tecar Therapy", "Clinical", "Effective"],
+      "shortDescription": "Effective Tecar therapy device for clinical use."
     }
   ]
 }

@@ -81,7 +81,7 @@
     {
       "id": "category-massage-guns",
       "description": "A collection of massage guns.",
-      "imageUrl": "https://images.unsplash.com/photo-1650763346044-650eaf6edbb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXNzYWdlJTIwZ3Vuc3xlbnwwfHx8fDE3Njg4MTUwMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650763346044-650eaf6edbb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXNzYWdlJTIwZ3Vuc3xlbnwwfHx8fDE3Njg4MTUwMjl8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "massage guns"
     },
     {
@@ -93,7 +93,7 @@
     {
       "id": "category-oral-flossers",
       "description": "Modern oral flossers.",
-      "imageUrl": "https://images.unsplash.com/photo-1655807946138-811bb2340d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmFsJTIwZmxvc3NlcnN8ZW58MHx8fHwxNzY4ODE1MDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1655807946138-811bb2340d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmFsJTIwZmxvc3NlcnN8ZW58MHx8fHwxNzY4ODE1MDMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "oral flossers"
     },
     {
@@ -129,19 +129,19 @@
     {
       "id": "reviewer-7",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdHxlbnwwfHx8fDE3Njg4MjAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdHxlbnwwfHx8fDE3Njg4MjAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "reviewer-8",
       "description": "Portrait of a fitness instructor.",
-      "imageUrl": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwaW5zdHJ1Y3RvcnxlbnwwfHx8fDE3Njg4MjAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwaW5zdHJ1Y3RvcnxlbnwwfHx8fDE3Njg4MjAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "fitness instructor"
     },
     {
       "id": "reviewer-9",
       "description": "Portrait of a male professional.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2ODgyMDAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2ODgyMDAwMHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "male professional"
     },
     {
@@ -165,80 +165,182 @@
     {
       "id": "product-winvac",
       "description": "WinVac vacuum therapy system",
-      "imageUrl": "https://images.unsplash.com/photo-1644313375621-9aa7c35cacbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx2YWN1dW0lMjB0aGVyYXB5fGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758273705601-50b1b61f7e6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2YWN1dW0lMjB0aGVyYXB5fGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "vacuum therapy"
     },
     {
       "id": "product-ssd-500",
       "description": "SSD-500 shortwave diathermy system",
-      "imageUrl": "https://images.unsplash.com/photo-1630128295920-627fb9aff5a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaWF0aGVybXklMjBzeXN0ZW18ZW58MHx8fHwxNzY5MDIzMzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562411054-261f857a7c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaWF0aGVybXklMjBzeXN0ZW18ZW58MHx8fHwxNzY5MDIzMzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "diathermy system"
     },
     {
       "id": "product-ap439plus",
       "description": "AP439+ multi-waveform stimulator",
-      "imageUrl": "https://images.unsplash.com/photo-1625465587283-52634dab3c8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzdGltdWxhdG9yJTIwZGV2aWNlfGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1768726455780-1bed2b8679c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdGltdWxhdG9yJTIwZGV2aWNlfGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stimulator device"
     },
     {
       "id": "product-jus2",
       "description": "Jus 2 therapeutic ultrasound device",
-      "imageUrl": "https://images.unsplash.com/photo-1630531210784-21e457d5bd55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1bHRyYXNvdW5kJTIwZGV2aWNlfGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1630531210902-0673fd470570?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1bHRyYXNvdW5kJTIwZGV2aWNlfGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ultrasound device"
     },
     {
       "id": "product-nms498",
       "description": "NMS-498 nerve and muscle stimulator",
-      "imageUrl": "https://images.unsplash.com/photo-1715526411331-4947f75eb25f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtdXNjbGUlMjBzdGltdWxhdG9yfGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1715111641899-b0118be16660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtdXNjbGUlMjBzdGltdWxhdG9yfGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "muscle stimulator"
     },
     {
       "id": "product-physiokit",
       "description": "Physiokit portable therapy solution",
-      "imageUrl": "https://images.unsplash.com/photo-1702060679993-eb16d16740aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0aGVyYXB5JTIwa2l0fGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1593086586351-1673fca190cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0aGVyYXB5JTIwa2l0fGVufDB8fHx8MTc2OTAyMzM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "therapy kit"
     },
     {
       "id": "product-stim3",
       "description": "Stim3 portable electrotherapy device",
-      "imageUrl": "https://images.unsplash.com/photo-1764712749001-3a5694e6db40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562411054-261f857a7c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "electrotherapy device"
     },
     {
       "id": "product-stim-tec4",
       "description": "Stim Tec4 electrotherapy device",
-      "imageUrl": "https://images.unsplash.com/photo-1553515783-53c554174835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562411054-261f857a7c62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "electrotherapy device"
     },
     {
       "id": "product-stim-tec2",
       "description": "Stim Tec2 portable electrotherapy device",
-      "imageUrl": "https://images.unsplash.com/photo-1766325693728-348c38374d33?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1553515783-53c554174835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlbGVjdHJvdGhlcmFweSUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "electrotherapy device"
     },
     {
       "id": "product-nishcalm",
       "description": "NishCalm sleep-inducing device",
-      "imageUrl": "https://images.unsplash.com/photo-1758577515333-e71b713059f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzbGVlcCUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1711037869098-db23ae0b36cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzbGVlcCUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sleep device"
     },
     {
       "id": "product-vr-system",
       "description": "SparshMind VR rehabilitation system",
-      "imageUrl": "https://images.unsplash.com/photo-1758524944936-777400e025d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8VlIlMjBzeXN0ZW18ZW58MHx8fHwxNzY5MDIzMzUxfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768549303/Rehab_1_es1n1k.jpg",
       "imageHint": "VR system"
     },
     {
       "id": "product-limb-compression",
       "description": "Limb compression therapy device",
-      "imageUrl": "https://images.unsplash.com/photo-1643216790495-ed36d21b05c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb21wcmVzc2lvbiUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1725916631452-b411a5991fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21wcmVzc2lvbiUyMGRldmljZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "compression device"
     },
     {
       "id": "product-chiropractic-table",
       "description": "Chiropractic adjustment table",
-      "imageUrl": "https://images.unsplash.com/photo-1622878179314-0b25f2ad50e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlyb3ByYWN0aWMlMjB0YWJsZXxlbnwwfHx8fDE3NjkwMjMzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768549304/Treatment_table_2_wc3awn.jpg",
       "imageHint": "chiropractic table"
+    },
+    {
+      "id": "product-ilux-smart",
+      "description": "Ilux smart laser therapy device",
+      "imageUrl": "https://images.unsplash.com/photo-1587010579793-d870e1f79325?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYXNlciUyMHRoZXJhcHl8ZW58MHx8fHwxNzY5MTEzMjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser therapy"
+    },
+    {
+      "id": "product-ilux-plus",
+      "description": "Ilux plus laser therapy device",
+      "imageUrl": "https://images.unsplash.com/photo-1640861774479-cd6453479851?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsYXNlciUyMHRoZXJhcHl8ZW58MHx8fHwxNzY5MTEzMjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser therapy"
+    },
+    {
+      "id": "product-physo-laser-1000",
+      "description": "Physo laser 1000 device",
+      "imageUrl": "https://images.unsplash.com/photo-1738162837451-2041c1418f54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bGFzZXIlMjBkZXZpY2V8ZW58MHx8fHwxNzY5MTEzMjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser device"
+    },
+    {
+      "id": "product-physo-laser-2",
+      "description": "Physo laser 2 device",
+      "imageUrl": "https://images.unsplash.com/photo-1764114235896-034c8772de01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYXNlciUyMGRldmljZXxlbnwwfHx8fDE3NjkxMTMyMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser device"
+    },
+    {
+      "id": "product-opton-pro-10",
+      "description": "Opton pro 10 laser device",
+      "imageUrl": "https://images.unsplash.com/photo-1581594725728-880522845479?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXNlciUyMGRldmljZXxlbnwwfHx8fDE3NjkxMTMyMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser device"
+    },
+    {
+      "id": "product-opton-pro-15",
+      "description": "Opton pro 15 laser device",
+      "imageUrl": "https://images.unsplash.com/photo-1738162837329-2f2a2cdebb5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxsYXNlciUyMGRldmljZXxlbnwwfHx8fDE3NjkxMTMyMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser device"
+    },
+    {
+      "id": "product-physhock",
+      "description": "Physhock shock wave therapy device",
+      "imageUrl": "https://images.unsplash.com/photo-1653840910183-ea2e6241988b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaG9ja3dhdmUlMjB0aGVyYXB5fGVufDB8fHx8MTc2OTExMzIzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shockwave therapy"
+    },
+    {
+      "id": "product-impuls-2",
+      "description": "Impuls 2 shock wave therapy device",
+      "imageUrl": "https://images.unsplash.com/photo-1653840910183-ea2e6241988b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaG9ja3dhdmUlMjB0aGVyYXB5fGVufDB8fHx8MTc2OTExMzIzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shockwave therapy"
+    },
+    {
+      "id": "product-impuls-pro",
+      "description": "Impuls pro shock wave therapy device",
+      "imageUrl": "https://images.unsplash.com/photo-1653840910183-ea2e6241988b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaG9ja3dhdmUlMjB0aGVyYXB5fGVufDB8fHx8MTc2OTExMzIzOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "shockwave therapy"
+    },
+    {
+      "id": "product-fit-must",
+      "description": "Fit Must assessment tool",
+      "imageUrl": "https://images.unsplash.com/photo-1560785496-321917f24016?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhc3Nlc3NtZW50JTIwdG9vbHxlbnwwfHx8fDE3NjkxMTMyMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "assessment tool"
+    },
+    {
+      "id": "product-fit-knees",
+      "description": "Fit knees assessment tool",
+      "imageUrl": "https://images.unsplash.com/photo-1560785496-321917f24016?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhc3Nlc3NtZW50JTIwdG9vbHxlbnwwfHx8fDE3NjkxMTMyMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "assessment tool"
+    },
+    {
+      "id": "product-polar-care-wave",
+      "description": "Polar care wave cryo therapy device",
+      "imageUrl": "https://picsum.photos/seed/polarcare/600/600",
+      "imageHint": "cryo therapy"
+    },
+    {
+      "id": "product-cryo-6",
+      "description": "Cryo 6 therapy device",
+      "imageUrl": "https://images.unsplash.com/photo-1586187543455-28dd1d0210a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y3J5byUyMGRldmljZXxlbnwwfHx8fDE3NjkxMTMyMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cryo device"
+    },
+    {
+      "id": "product-cryo-7",
+      "description": "Cryo 7 therapy device",
+      "imageUrl": "https://images.unsplash.com/photo-1586187543455-28dd1d0210a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y3J5byUyMGRldmljZXxlbnwwfHx8fDE3NjkxMTMyMzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cryo device"
+    },
+    {
+      "id": "product-tecar-smart",
+      "description": "Tecar smart therapy device",
+      "imageUrl": "https://picsum.photos/seed/tecarsmart/600/600",
+      "imageHint": "tecar therapy"
+    },
+    {
+      "id": "product-diacare-7000",
+      "description": "Diacare 7000 tecar therapy device",
+      "imageUrl": "https://picsum.photos/seed/diacare7000/600/600",
+      "imageHint": "tecar therapy"
+    },
+    {
+      "id": "product-diacare-5000",
+      "description": "Diacare 5000 tecar therapy device",
+      "imageUrl": "https://picsum.photos/seed/diacare5000/600/600",
+      "imageHint": "tecar therapy"
     }
   ]
 }
