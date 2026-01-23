@@ -135,7 +135,7 @@
       "shortDescription": "SSD-500 is an advanced shortwave diathermy system with a solid-state generator and induction field circuitry.",
       "longDescription": "SSD-500 is an advanced shortwave diathermy system with a solid-state generator and induction field circuitry. Operating at a shortwave frequency of 27.12 MHz, it delivers deep penetration into muscle tissues with minimal heating of fatty layers or bone. Designed for use by trained professionals, it is ideal for physiotherapy, rehabilitation, and hospital settings.",
       "availability": "In Stock",
-      "image": "product-ssd-500",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768548799/SSD-500_zphc0l.jpg",
       "gallery": ["product-ssd-500"],
       "features": ["Shortwave Diathermy", "Deep Penetration", "Professional Use"],
       "keyFeatures": [
@@ -162,7 +162,7 @@
       "shortDescription": "AP439 Plus is a cutting-edge, multi-waveform, multi-channel electrotherapy device designed for comprehensive pain relief.",
       "longDescription": "AP439 Plus is a cutting-edge, multi-waveform, multi-channel electrotherapy device designed for comprehensive pain relief. It supports a wide range of therapies including Interferential, TENS, Galvanic, and Russian currents. With comfortable stimulation and proven clinical results, AP439 Plus is an essential addition to any modern physiotherapy clinic.",
       "availability": "In Stock",
-      "image": "product-ap439plus",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768548859/AP439_ipbej0.jpg",
       "gallery": ["product-ap439plus"],
       "features": ["Multi-Waveform", "Pain Relief", "Multi-Channel"],
       "keyFeatures": [

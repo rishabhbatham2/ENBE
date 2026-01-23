@@ -81,7 +81,7 @@
     {
       "id": "category-massage-guns",
       "description": "A collection of massage guns.",
-      "imageUrl": "https://images.unsplash.com/photo-1650763346044-650eaf6edbb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXNzYWdlJTIwZ3Vuc3xlbnwwfHx8fDE3Njg4MTUwMjl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650763346044-650eaf6edbb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYXNzYWdlJTIwZ3Vuc3xlbnwwfHx8fDE3Njg4MTUwMjl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "massage guns"
     },
     {
@@ -93,7 +93,7 @@
     {
       "id": "category-oral-flossers",
       "description": "Modern oral flossers.",
-      "imageUrl": "https://images.unsplash.com/photo-1655807946138-811bb2340d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmFsJTIwZmxvc3NlcnN8ZW58MHx8fHwxNzY4ODE1MDMwfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1655807946138-811bb2340d34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmFsJTIwZmxvc3NlcnN8ZW58MHx8fHwxNzY4ODE1MDMwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "oral flossers"
     },
     {
@@ -129,19 +129,19 @@
     {
       "id": "reviewer-7",
       "description": "Portrait of a smiling woman.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdHxlbnwwfHx8fDE3Njg4MjAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdHxlbnwwfHx8fDE3Njg4MjAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
     },
     {
       "id": "reviewer-8",
       "description": "Portrait of a fitness instructor.",
-      "imageUrl": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwaW5zdHJ1Y3RvcnxlbnwwfHx8fDE3Njg4MjAwMDB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1548690312-e3b507d8c110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwaW5zdHJ1Y3RvcnxlbnwwfHx8fDE3Njg4MjAwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fitness instructor"
     },
     {
       "id": "reviewer-9",
       "description": "Portrait of a male professional.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2ODgyMDAwMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWxlJTIwcHJvZmVzc2lvbmFsfGVufDB8fHx8MTc2ODgyMDAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "male professional"
     },
     {
@@ -309,7 +309,7 @@
     {
       "id": "product-polar-care-wave",
       "description": "Polar care wave cryo therapy device",
-      "imageUrl": "https://picsum.photos/seed/polarcare/600/600",
+      "imageUrl": "https://images.unsplash.com/photo-1607524951139-2ac661448882?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjeXJvJTIwdGhlcmFweXxlbnwwfHx8fDE3NjkxMTY5OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cryo therapy"
     },
     {
@@ -327,19 +327,19 @@
     {
       "id": "product-tecar-smart",
       "description": "Tecar smart therapy device",
-      "imageUrl": "https://picsum.photos/seed/tecarsmart/600/600",
+      "imageUrl": "https://images.unsplash.com/photo-1631882899945-8e75878347f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWNhciUyMHRoZXJhcHl8ZW58MHx8fHwxNzY5MTE3MDQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tecar therapy"
     },
     {
       "id": "product-diacare-7000",
       "description": "Diacare 7000 tecar therapy device",
-      "imageUrl": "https://picsum.photos/seed/diacare7000/600/600",
+      "imageUrl": "https://images.unsplash.com/photo-1631882899945-8e75878347f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWNhciUyMHRoZXJhcHl8ZW58MHx8fHwxNzY5MTE3MDQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tecar therapy"
     },
     {
       "id": "product-diacare-5000",
       "description": "Diacare 5000 tecar therapy device",
-      "imageUrl": "https://picsum.photos/seed/diacare5000/600/600",
+      "imageUrl": "https://images.unsplash.com/photo-1631882899945-8e75878347f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWNhciUyMHRoZXJhcHl8ZW58MHx8fHwxNzY5MTE3MDQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tecar therapy"
     }
   ]
