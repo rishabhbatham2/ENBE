@@ -21,8 +21,6 @@ export function Footer() {
   ];
 
   const customerServicesLinks = [
-    { name: "My Account", href: "#" },
-    { name: "Track Your Order", href: "#" },
     { name: "Return", href: "#" },
     { name: "FAQ", href: "#" },
   ];
