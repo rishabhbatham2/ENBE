@@ -191,7 +191,7 @@
       "shortDescription": "Johari’s therapeutic ultrasound device delivers effective continuous and pulsed treatments for pain relief and muscle rehabilitation.",
       "longDescription": "Johari’s therapeutic ultrasound device delivers effective continuous and pulsed treatments for pain relief and muscle rehabilitation. It supports both 1 MHz and 3 MHz frequencies through a specially designed ultrasound applicator, ensuring targeted and efficient therapy. By increasing local blood flow, ultrasound therapy helps reduce swelling, manage chronic inflammation, and promote bone fracture healing—making it an essential modality for modern clinical practice.",
       "availability": "In Stock",
-      "image": "product-jus2",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768548924/Jus_2_visexv.jpg",
       "gallery": ["product-jus2"],
       "features": ["Therapeutic Ultrasound", "Pain Relief", "Rehabilitation"],
       "keyFeatures": [
@@ -219,7 +219,7 @@
       "shortDescription": "NMS-498 is an advanced solution for pain management and muscle rehabilitation.",
       "longDescription": "NMS-498 is an advanced solution for pain management and muscle rehabilitation. This electronic nerve and muscle stimulator offers seven specialized NMES modes, each designed to target specific muscle groups. The microcomputer-controlled unit combines proven therapeutic techniques, delivering effective and customized rehabilitation to meet diverse clinical needs.",
       "availability": "In Stock",
-      "image": "product-nms498",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768549023/NMS-498_sl1bkh.jpg",
       "gallery": ["product-nms498"],
       "features": ["Pain Management", "Muscle Rehabilitation", "NMES Modes"],
       "keyFeatures": [
@@ -247,7 +247,7 @@
       "shortDescription": "Physiokit is a complete, portable solution that equips physiotherapists with all essential devices to deliver high-quality treatment at the patient’s location.",
       "longDescription": "Physiokit is a complete, portable solution that equips physiotherapists with all essential devices to deliver high-quality treatment at the patient’s location. Packed in a convenient backpack, it includes Stim 3 and JUS-1, enabling effective electrotherapy and ultrasound therapy for pain relief and rehabilitation.",
       "availability": "In Stock",
-      "image": "product-physiokit",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768549063/Physiokit_c4xfhm.jpg",
       "gallery": ["product-physiokit"],
       "features": ["Portable", "Electrotherapy", "Ultrasound"],
       "keyFeatures": [
@@ -270,7 +270,7 @@
       "shortDescription": "Stim3 is a US FDA 510(k)–cleared portable electrotherapy device designed for physiotherapists and home care professionals.",
       "longDescription": "Stim3 is a US FDA 510(k)–cleared portable electrotherapy device designed for physiotherapists and home care professionals. It enables effective pain relief for both acute and chronic conditions while supporting mobility and overall wellness during home visits. Compact and versatile, Stim3 delivers multiple therapies in a single handheld unit, making it one of the most trusted devices in physical therapy.",
       "availability": "In Stock",
-      "image": "product-stim3",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768549115/Stim3_v5mfwi.jpg",
       "gallery": ["product-stim3"],
       "features": ["Portable", "Electrotherapy", "FDA Cleared"],
       "keyFeatures": [
@@ -292,7 +292,7 @@
       "shortDescription": "Interferential Electrical Stimulation (IFS) is an advanced therapy that delivers therapeutic frequencies deep into body tissues.",
       "longDescription": "Interferential Electrical Stimulation (IFS) is an advanced therapy that delivers therapeutic frequencies deep into body tissues. It uses two medium-frequency currents—one fixed at 4,000 Hz and another adjustable between 4,001–4,150 Hz. The interaction of these currents allows stimulation to reach deeper tissues while also acting on the skin surface, resulting in enhanced pain relief and nerve-blocking effects.",
       "availability": "In Stock",
-      "image": "product-stim-tec4",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768553146/Stim_tec4_tucman.jpg",
       "gallery": ["product-stim-tec4"],
       "features": ["Interferential", "TENS", "EMS"],
       "specifications": [
@@ -330,7 +330,7 @@
       "shortDescription": "NishCalm is a portable, safe, and effective sleep-inducing and relaxation device.",
       "longDescription": "NishCalm is a portable, safe, and effective sleep-inducing and relaxation device. Using CES (Cranial Electrotherapy Stimulation) technology, it enhances energy levels, improves mood, and promotes deep, restorative sleep—without the use of drugs. Designed for ease of use and portability, NishCalm is ideal for everyday wellness and on-the-go lifestyles.",
       "availability": "In Stock",
-      "image": "product-nishcalm",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768553405/Nishcalm_z6xpty.jpg",
       "gallery": ["product-nishcalm"],
       "features": ["Sleep Aid", "Relaxation", "CES Technology"],
       "specifications": [
@@ -377,7 +377,7 @@
       "shortDescription": "This limb compression therapy device enhances blood circulation and helps relieve symptoms caused by inactivity, injury, or poor vascular flow.",
       "longDescription": "This limb compression therapy device enhances blood circulation and helps relieve symptoms caused by inactivity, injury, or poor vascular flow. By improving venous and lymphatic drainage, it supports edema reduction and capillary reabsorption. Available in 4-chamber models with hand, waist, and leg cuffs, it is suitable for both clinical and home use.",
       "availability": "In Stock",
-      "image": "product-limb-compression",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768553614/Limb_Compression_ephne4.jpg",
       "gallery": ["product-limb-compression"],
       "features": ["Blood Circulation", "Edema Reduction", "Pain Relief"],
       "keyFeatures": [
@@ -397,7 +397,7 @@
       "shortDescription": "A versatile and cost-effective chiropractic table designed to deliver maximum treatment flexibility for modern practices.",
       "longDescription": "A versatile and cost-effective chiropractic table designed to deliver maximum treatment flexibility for modern practices. Featuring manual drop activation with adjustable tension, it supports precise cervical, thoracic, lumbar, and pelvic treatments.",
       "availability": "In Stock",
-      "image": "product-chiropractic-table",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768553612/Chiropractic_Table_ncigfe.jpg",
       "gallery": ["product-chiropractic-table"],
       "features": ["Chiropractic", "Adjustable", "Electric Hi-Lo"],
       "keyFeatures": [
@@ -604,7 +604,48 @@
       "gallery": ["product-diacare-5000"],
       "features": ["Tecar Therapy", "Clinical", "Effective"],
       "shortDescription": "Effective Tecar therapy device for clinical use."
+    },{
+      "id": 72,
+      "name": "Neurological Bobath Table",
+      "rating": 0,
+      "reviewsCount": 0,
+      "price": 0.00,
+      "salePrice": 0.00,
+      "shortDescription": "Purpose-built for rehabilitation, this strong two-section neurological Bobath table is designed with the therapist in mind, offering an extra-wide tabletop and flexible patient positioning.",
+      "availability": "In Stock",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768554040/Bobath_Table_nhdns6.jpg",
+      "gallery": [
+        "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768554040/Bobath_Table_nhdns6.jpg"
+      
+      ],
+      "features": [
+        "Rehabilitation Table",
+        "Electric Hi-Lo",
+        "Neurological Therapy"
+      ],
+      "keyFeatures": [
+        "Electric Hi-Lo operation via hand remote or foot remote",
+        "Super-wide tabletop (120 cm) for patient and therapist comfort",
+        "Head section with three face holes and removable plugs",
+        "Sleek design with rounded frame legs for enhanced safety",
+        "Adjustable feet for uneven surfaces",
+        "75 mm retractable castors for mobility and safety (optional)",
+        "Reliable TiMOTION motor"
+      ],
+      "longDescription": "This purpose-built two-section neurological Bobath table is designed specifically for rehabilitation therapy. Its extra-wide tabletop provides ample space for both patient and therapist, while multiple face holes allow greater flexibility during treatment. The electric Hi-Lo height adjustment ensures ease of use, safety, and ergonomic comfort during therapy sessions.",
+      "specifications": [
+        { "name": "Tabletop Width", "value": "120 cm" },
+        { "name": "Height Adjustment Range", "value": "49 cm – 93 cm" },
+        { "name": "Height Adjustment Time", "value": "Approx. 30 seconds" },
+        { "name": "Motor", "value": "TiMOTION" },
+        { "name": "Padding Thickness", "value": "5 cm" },
+        { "name": "Foam Density", "value": "36 kg/m³" },
+        { "name": "Castors", "value": "75 mm retractable (optional)" },
+        { "name": "Upholstery Options", "value": "16 colors (optional)" }
+      ],
+      "userReviews": []
     }
+    
   ]
 }
 

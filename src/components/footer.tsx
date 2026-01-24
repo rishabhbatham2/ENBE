@@ -44,7 +44,7 @@ export function Footer() {
               eNBe TechServ
             </Link>
             <p className="max-w-sm text-body-sm text-muted-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              eNBe TechServ is a leading provider of advanced physiotherapy and rehabilitation solutions, delivering high-performance medical and therapeutic equipment.
             </p>
             <div className="flex gap-2 mt-6">
               {socialLinks.map((link, index) => (
