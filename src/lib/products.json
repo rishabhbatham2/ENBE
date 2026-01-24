@@ -5,6 +5,7 @@
     {
       "id": 1,
       "name": "Winstim",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 2,
       "price": 120.00,
@@ -61,6 +62,7 @@
     {
       "id": 5,
       "name": "Winstim Plus",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "price": 150.00,
@@ -71,6 +73,7 @@
     {
       "id": 6,
       "name": "Graphene Magnetic Waist Belt",
+      "category": "PEMF Therapy",
       "rating": 5,
       "reviewsCount": 0,
       "price": 80.00,
@@ -81,6 +84,7 @@
     {
       "id": 7,
       "name": "PEMF Prostate",
+      "category": "PEMF Therapy",
       "rating": 5,
       "reviewsCount": 0,
       "price": 250.00,
@@ -91,6 +95,7 @@
     {
       "id": 8,
       "name": "PEMF Gshios",
+      "category": "PEMF Therapy",
       "rating": 5,
       "reviewsCount": 0,
       "price": 180.00,
@@ -101,6 +106,7 @@
     {
       "id": 9,
       "name": "EYE 900",
+      "category": "Rehabilitation",
       "rating": 5,
       "reviewsCount": 0,
       "price": 95.00,
@@ -111,6 +117,7 @@
     {
       "id": 10,
       "name": "WinVac",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "WinVac is an advanced vacuum therapy system designed for easy and effective electrode placement using vacuum electrodes.",
@@ -130,6 +137,7 @@
     {
       "id": 11,
       "name": "SSD-500",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "SSD-500 is an advanced shortwave diathermy system with a solid-state generator and induction field circuitry.",
@@ -157,6 +165,7 @@
     {
       "id": 12,
       "name": "AP439+",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "AP439 Plus is a cutting-edge, multi-waveform, multi-channel electrotherapy device designed for comprehensive pain relief.",
@@ -186,6 +195,7 @@
     {
       "id": 13,
       "name": "Jus 2",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "Johari’s therapeutic ultrasound device delivers effective continuous and pulsed treatments for pain relief and muscle rehabilitation.",
@@ -214,6 +224,7 @@
     {
       "id": 14,
       "name": "NMS-498",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "NMS-498 is an advanced solution for pain management and muscle rehabilitation.",
@@ -242,6 +253,7 @@
     {
       "id": 15,
       "name": "Physiokit",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "Physiokit is a complete, portable solution that equips physiotherapists with all essential devices to deliver high-quality treatment at the patient’s location.",
@@ -265,6 +277,7 @@
     {
       "id": 16,
       "name": "Stim3",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "Stim3 is a US FDA 510(k)–cleared portable electrotherapy device designed for physiotherapists and home care professionals.",
@@ -287,6 +300,7 @@
     {
       "id": 17,
       "name": "Stim Tec4",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "Interferential Electrical Stimulation (IFS) is an advanced therapy that delivers therapeutic frequencies deep into body tissues.",
@@ -306,6 +320,7 @@
     {
       "id": 18,
       "name": "Stim Tec2",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "Stimtec is a portable electrotherapy device designed for effective muscle strengthening and pain relief.",
@@ -325,6 +340,7 @@
     {
       "id": 19,
       "name": "NishCalm",
+      "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "NishCalm is a portable, safe, and effective sleep-inducing and relaxation device.",
@@ -347,6 +363,7 @@
     {
       "id": 20,
       "name": "VR System",
+      "category": "Rehabilitation",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "SparshMind is dedicated to delivering high-quality, accessible care for individuals with neurological disabilities through innovative technology and empathetic design.",
@@ -372,6 +389,7 @@
     {
       "id": 21,
       "name": "Limb Compression Therapy Device",
+      "category": "Rehabilitation",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "This limb compression therapy device enhances blood circulation and helps relieve symptoms caused by inactivity, injury, or poor vascular flow.",
@@ -392,6 +410,7 @@
     {
       "id": 22,
       "name": "Chiropractic Table",
+      "category": "Treatment Tables",
       "rating": 5,
       "reviewsCount": 0,
       "shortDescription": "A versatile and cost-effective chiropractic table designed to deliver maximum treatment flexibility for modern practices.",
@@ -421,6 +440,7 @@
     {
       "id": 23,
       "name": "Ilux smart",
+      "category": "Laser therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -432,6 +452,7 @@
     {
       "id": 24,
       "name": "Ilux plus",
+      "category": "Laser therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -443,6 +464,7 @@
     {
       "id": 25,
       "name": "Physo laser 1000",
+      "category": "Laser therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -454,6 +476,7 @@
     {
       "id": 26,
       "name": "Physo laser - 2",
+      "category": "Laser therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -465,6 +488,7 @@
     {
       "id": 27,
       "name": "Opton pro 10",
+      "category": "Laser therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -476,6 +500,7 @@
     {
       "id": 28,
       "name": "Opton pro 15",
+      "category": "Laser therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -487,6 +512,7 @@
     {
       "id": 29,
       "name": "Physhock",
+      "category": "Shock wave",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -498,6 +524,7 @@
     {
       "id": 30,
       "name": "Impuls - 2",
+      "category": "Shock wave",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -509,6 +536,7 @@
     {
       "id": 31,
       "name": "Impuls pro",
+      "category": "Shock wave",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -520,6 +548,7 @@
     {
       "id": 32,
       "name": "Fit Must",
+      "category": "Assessment tools",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -531,6 +560,7 @@
     {
       "id": 33,
       "name": "Fit knees",
+      "category": "Assessment tools",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -542,6 +572,7 @@
     {
       "id": 34,
       "name": "Polar care wave",
+      "category": "Cryo therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -553,6 +584,7 @@
     {
       "id": 35,
       "name": "Cryo 6",
+      "category": "Cryo therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -564,6 +596,7 @@
     {
       "id": 36,
       "name": "Cryo 7",
+      "category": "Cryo therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -575,6 +608,7 @@
     {
       "id": 37,
       "name": "Tecar smart",
+      "category": "Tecar therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -586,6 +620,7 @@
     {
       "id": 38,
       "name": "Diacare 7000",
+      "category": "Tecar therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -597,6 +632,7 @@
     {
       "id": 39,
       "name": "Diacare 5000",
+      "category": "Tecar therapy",
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
@@ -607,6 +643,7 @@
     },{
       "id": 72,
       "name": "Neurological Bobath Table",
+      "category": "Treatment Tables",
       "rating": 0,
       "reviewsCount": 0,
       "price": 0.00,

@@ -17,6 +17,7 @@ export type ProductReview = {
 export type Product = {
   id: number;
   name: string;
+  category: string;
   rating: number;
   reviewsCount: number;
   price?: number;
