@@ -21,8 +21,8 @@ export function Footer() {
   ];
 
   const customerServicesLinks = [
-    { name: "Return", href: "#" },
-    { name: "FAQ", href: "#" },
+    { name: "Return", href: "/return-policy" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   const informationLinks = [

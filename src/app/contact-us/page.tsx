@@ -8,90 +8,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Plus, X } from 'lucide-react';
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from '@/components/ui/collapsible';
 import { Footer } from '@/components/footer';
-
-function FaqSection() {
-  const faqs = [
-    {
-      id: 'faq-1',
-      question: 'Placeholder question goes here?',
-      answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.',
-    },
-    {
-      id: 'faq-2',
-      question: 'Placeholder question goes here?',
-      answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.',
-    },
-    {
-      id: 'faq-3',
-      question: 'Placeholder question goes here?',
-      answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.',
-    },
-    {
-      id: 'faq-4',
-      question: 'Placeholder question goes here?',
-      answer:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text.',
-    },
-  ];
-  const [openItem, setOpenItem] = React.useState<string | null>('faq-1');
-
-  return (
-    <section
-      className="py-16 sm:py-24 bg-secondary"
-    >
-      <div className="container mx-auto max-w-[1371px] px-4">
-        <div
-          className="text-center max-w-readable mx-auto"
-        >
-          <p className="text-sm font-semibold text-muted-foreground tracking-widest mb-2">
-            TRUSTED BY
-          </p>
-          <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">
-            Frequently Asked Questions
-          </h2>
-        </div>
-        <div
-          className="w-full mx-auto mt-12 space-y-4"
-        >
-          {faqs.map(faq => (
-            <Collapsible
-              key={faq.id}
-              open={openItem === faq.id}
-              onOpenChange={isOpen => setOpenItem(isOpen ? faq.id : null)}
-              className="rounded-xl border-none data-[state=closed]:bg-card data-[state=open]:bg-card"
-            >
-              <CollapsibleTrigger className="p-6 w-full flex justify-between items-center text-left font-semibold hover:no-underline">
-                {faq.question}
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary">
-                  {openItem === faq.id ? (
-                    <X className="h-4 w-4" />
-                  ) : (
-                    <Plus className="h-4 w-4" />
-                  )}
-                </div>
-              </CollapsibleTrigger>
-              <CollapsibleContent className="overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
-                <div className="px-6 pb-6 text-muted-foreground">
-                  {faq.answer}
-                </div>
-              </CollapsibleContent>
-            </Collapsible>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function ContactUsPage() {
   const contactInfo = [
@@ -215,7 +132,6 @@ export default function ContactUsPage() {
             </div>
           </div>
         </section>
-        <FaqSection />
       </main>
       <Footer />
     </div>
