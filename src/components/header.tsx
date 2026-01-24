@@ -193,11 +193,11 @@ export function Header() {
                 <span className="sr-only">Open Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
-              <nav className="flex flex-col gap-4 text-lg p-6">
+            <SheetContent side="left" className="p-4">
+              <nav className="flex flex-col gap-4 text-lg">
                 <Link href="/products" className="text-gray-700 hover:text-black py-2">Products</Link>
                 
-                <Accordion type="single" collapsible className="w-full">
+                <Accordion type="single" collapsible defaultValue="shop" className="w-full">
                   <AccordionItem value="shop" className="border-b-0">
                     <AccordionTrigger className="text-lg font-medium text-gray-700 hover:text-black hover:no-underline py-2">Shop</AccordionTrigger>
                     <AccordionContent>
