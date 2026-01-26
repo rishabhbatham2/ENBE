@@ -54,8 +54,6 @@ export default function ProductPage() {
     if (!product) return;
     setIsSubmitting(true);
 
-    const message = `Product: ${product.name}\nQuantity: ${quantity}`;
-
     try {
         const response = await fetch('/api/query', {
             method: 'POST',
@@ -66,7 +64,9 @@ export default function ProductPage() {
                 name: fullName,
                 email,
                 phoneno: phone,
-                message,
+                productName: product.name,
+                quantity: quantity,
+                productImage: product.image?.imageUrl || '',
             }),
         });
 

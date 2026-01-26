@@ -1,3 +1,7 @@
+
+'use client';
+
+import * as React from 'react';
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, Eye, Heart, Star, CheckCircle2, Award, Lightbulb, ShieldCheck, ChevronLeft, ChevronRight } from "lucide-react";
@@ -15,6 +19,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+
 
 export default function Home() {
   const heroImage = placeholderImages.find(p => p.id === "republic-day-sale-banner");
@@ -118,6 +124,11 @@ export default function Home() {
       image: reviewer11,
     }
   ];
+
+  const autoplayPlugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
+
 
   return (
     <div className="bg-background text-foreground">
@@ -268,6 +279,9 @@ export default function Home() {
                 align: "start",
                 loop: true,
               }}
+              plugins={[autoplayPlugin.current]}
+              onMouseEnter={autoplayPlugin.current.stop}
+              onMouseLeave={autoplayPlugin.current.reset}
               className="w-full"
             >
               <CarouselContent>
@@ -298,10 +312,10 @@ export default function Home() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex items-center justify-center bg-background border-border text-foreground hover:bg-accent hover:text-accent-foreground">
+              <CarouselPrevious className="flex items-center justify-center bg-background border-border text-foreground hover:bg-accent hover:text-accent-foreground left-2 md:-left-8">
                 <ChevronLeft className="h-6 w-6" />
               </CarouselPrevious>
-              <CarouselNext className="hidden md:flex items-center justify-center bg-background border-border text-foreground hover:bg-accent hover:text-accent-foreground">
+              <CarouselNext className="flex items-center justify-center bg-background border-border text-foreground hover:bg-accent hover:text-accent-foreground right-2 md:-right-8">
                 <ChevronRight className="h-6 w-6" />
               </CarouselNext>
             </Carousel>
