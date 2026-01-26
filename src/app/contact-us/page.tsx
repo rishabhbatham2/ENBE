@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Footer } from '@/components/footer';
+import { useToast } from '@/hooks/use-toast';
 
 export default function ContactUsPage() {
   const contactInfo = [
@@ -16,6 +17,66 @@ export default function ContactUsPage() {
     { title: 'Phone', description: 'Call us Monday–Saturday, 9 AM to 8 PM.', link: 'tel:+918800633255', linkText: '+91 88006 33255' },
     { title: 'Office', description: 'Visit us at our headquarters.', address: 'T2/505, RPS Savana, Sector - 88, Faridabad - 121002, Haryana' },
   ];
+
+  const [firstName, setFirstName] = React.useState('');
+  const [lastName, setLastName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [message, setMessage] = React.useState('');
+  const [agreed, setAgreed] = React.useState(false);
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const { toast } = useToast();
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      if (!agreed) {
+          toast({
+              variant: 'destructive',
+              title: 'Agreement Required',
+              description: 'You must agree to the Privacy Policy to continue.',
+          });
+          return;
+      }
+      setIsSubmitting(true);
+
+      try {
+          const response = await fetch('/api/contact', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                  name: `${firstName} ${lastName}`,
+                  email,
+                  message,
+              }),
+          });
+
+          if (!response.ok) {
+              const errorData = await response.json();
+              throw new Error(errorData.error || 'Something went wrong');
+          }
+
+          toast({
+              title: 'Message Sent!',
+              description: "We've received your message and will get back to you shortly.",
+          });
+          // Reset form
+          setFirstName('');
+          setLastName('');
+          setEmail('');
+          setMessage('');
+          setAgreed(false);
+
+      } catch (error: any) {
+          toast({
+              variant: 'destructive',
+              title: 'Uh oh! Something went wrong.',
+              description: error.message || 'Could not send your message.',
+          });
+      } finally {
+          setIsSubmitting(false);
+      }
+  };
 
   return (
     <div className="bg-background text-foreground">
@@ -72,7 +133,7 @@ export default function ContactUsPage() {
                 <h2 className="mb-6 text-m-h2 font-headline font-semibold md:text-h2 text-primary">
                   Write us a message
                 </h2>
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid gap-6 sm:grid-cols-2">
                     <div className="space-y-2">
                       <Label htmlFor="first-name">First name *</Label>
@@ -81,6 +142,9 @@ export default function ContactUsPage() {
                         type="text"
                         placeholder="Jane"
                         className="rounded-full"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        required
                       />
                     </div>
                     <div className="space-y-2">
@@ -90,6 +154,9 @@ export default function ContactUsPage() {
                         type="text"
                         placeholder="Smith"
                         className="rounded-full"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
+                        required
                       />
                     </div>
                   </div>
@@ -100,32 +167,43 @@ export default function ContactUsPage() {
                       type="email"
                       placeholder="jane@email.com"
                       className="rounded-full"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">Message *</Label>
                     <Textarea
                       id="message"
                       placeholder="Leave us a message..."
                       rows={5}
                       className="rounded-xl"
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      required
                     />
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Checkbox id="privacy-policy" />
+                    <Checkbox 
+                        id="privacy-policy"
+                        checked={agreed}
+                        onCheckedChange={(checked) => setAgreed(checked as boolean)}
+                    />
                     <Label
                       htmlFor="privacy-policy"
                       className="text-sm font-normal text-muted-foreground"
                     >
-                      I agree the Privacy Policy
+                      I agree the <a href="/privacy-policy" target="_blank" className="underline">Privacy Policy</a>
                     </Label>
                   </div>
                   <Button
                     type="submit"
                     size="lg"
                     className="w-full rounded-full bg-accent text-accent-foreground hover:bg-accent/90"
+                    disabled={isSubmitting}
                   >
-                    Send
+                    {isSubmitting ? 'Sending...' : 'Send'}
                   </Button>
                 </form>
               </div>
