@@ -85,15 +85,19 @@ export default function AboutUsPage() {
                 </ul>
               </div>
             </div>
-             <div className="text-center max-w-prose mx-auto mt-16">
-                 <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-foreground mb-4">
-                  Our Commitment
-                </h2>
-                <p className="text-m-body-base md:text-body-lg text-muted-foreground">
-                    By combining advanced technology with dependable support, eNBe TechServ helps healthcare professionals improve efficiency, enhance patient recovery, and build long-term clinical trust.
-                </p>
-             </div>
           </div>
+        </section>
+        <section className="bg-secondary py-16 sm:py-24">
+            <div className="container mx-auto max-w-[1371px] px-4">
+                <div className="text-center max-w-prose mx-auto">
+                    <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-foreground mb-4">
+                    Our Commitment
+                    </h2>
+                    <p className="text-m-body-base md:text-body-lg text-muted-foreground">
+                        By combining advanced technology with dependable support, eNBe TechServ helps healthcare professionals improve efficiency, enhance patient recovery, and build long-term clinical trust.
+                    </p>
+                </div>
+            </div>
         </section>
       </main>
       <Footer />
