@@ -87,7 +87,7 @@ export default function AboutUsPage() {
             </div>
           </div>
         </section>
-        <section className="py-16 sm:py-24">
+        <section className="bg-card py-16 sm:py-24 border-t border-b">
             <div className="container mx-auto max-w-[1371px] px-4">
                 <div className="text-center max-w-prose mx-auto">
                     <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-foreground mb-4">
