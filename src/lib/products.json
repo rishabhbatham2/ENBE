@@ -552,7 +552,7 @@
       "rating": 5,
       "reviewsCount": 0,
       "availability": "In Stock",
-      "image": "product-fit-must",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555193/Fitmust_vo3btd.jpg",
       "gallery": ["product-fit-must"],
       "features": ["Assessment Tool", "Muscle Strength", "Accurate"],
       "shortDescription": "Tool for assessing muscle strength."
@@ -563,7 +563,7 @@
       "category": "Assessment tools",
       "rating": 5,
       "reviewsCount": 0,
-      "availability": "In Stock",
+      "availability": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555192/Fitknees_ocnxvg.jpg",
       "image": "product-fit-knees",
       "gallery": ["product-fit-knees"],
       "features": ["Assessment Tool", "Knee Function", "Rehab"],
@@ -681,7 +681,131 @@
         { "name": "Upholstery Options", "value": "16 colors (optional)" }
       ],
       "userReviews": []
+    },{
+      "id": 0,
+      "name": "Split Leg Treatment Table",
+      "category": "Treatment Tables",
+      "rating": 0,
+      "reviewsCount": 0,
+      "price": 0.00,
+      "salePrice": 0.00,
+      "shortDescription": "Specially designed split-leg treatment table offering enhanced functionality, superior stability, and ergonomic comfort for therapists and patients.",
+      "availability": "In Stock",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555197/Split_Leg_Table_pbxocg.jpg",
+      "gallery": [
+        "product-split-leg-table-main"
+      ],
+      "features": [
+        "Split Leg Table",
+        "Electric Hi-Lo",
+        "Physiotherapy Treatment"
+      ],
+      "keyFeatures": [
+        "Electric split-leg operation via hand remote or foot remote",
+        "Sleek, modern design with rounded frame legs for added safety",
+        "Height-adjustable padded armrests",
+        "Head section with face hole and removable plug",
+        "Adjustable feet for uneven surfaces",
+        "75 mm retractable castors for mobility and safety (optional)",
+        "Reliable TiMOTION motor",
+        "Specially designed split-leg backrest for enhanced functionality and superior stability"
+      ],
+      "longDescription": "This split-leg treatment table is designed to meet the demands of modern physiotherapy and rehabilitation clinics. Featuring electric split-leg adjustment, ergonomic armrests, and a stable, safety-focused frame, it ensures optimal positioning, therapist comfort, and patient safety during a wide range of treatments.",
+      "specifications": [
+        { "name": "Height Adjustment Range", "value": "51 cm – 94 cm" },
+        { "name": "Height Adjustment Time", "value": "Approx. 30 seconds" },
+        { "name": "Motor", "value": "TiMOTION" },
+        { "name": "Padding Thickness", "value": "5 cm" },
+        { "name": "Foam Density", "value": "36 kg/m³" },
+        { "name": "Upholstery Options", "value": "16 colors (optional)" },
+        { "name": "Maximum Weight Capacity", "value": "200 kg" },
+        { "name": "Castors", "value": "75 mm retractable (optional)" }
+      ],
+      "userReviews": []
+    },{
+      "id": 0,
+      "name": "Postural Drainage Treatment Table",
+      "category": "Treatment Tables",
+      "rating": 0,
+      "reviewsCount": 0,
+      "price": 0.00,
+      "salePrice": 0.00,
+      "shortDescription": "A preferred choice among physiotherapists, this five-section postural drainage table offers smooth electric Hi-Lo operation and precise postural drainage control with a wide range of head and backrest motion.",
+      "availability": "In Stock",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555198/Postural_Drainage_nqntpu.jpg", 
+      "gallery": [
+        "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555198/Postural_Drainage_nqntpu.jpg"
+      ],
+      "features": [
+        "Postural Drainage Table",
+        "Electric Hi-Lo",
+        "Physiotherapy Treatment"
+      ],
+      "keyFeatures": [
+        "Electric Hi-Lo operation via hand remote or foot remote",
+        "Electric postural drainage operation via foot switch",
+        "Sleek, modern design with rounded frame legs for enhanced safety",
+        "Height-adjustable padded armrests",
+        "Head section with face hole and removable plug",
+        "Adjustable feet for uneven surfaces",
+        "75 mm retractable castors for mobility and safety (optional)",
+        "Reliable TiMOTION motor",
+        "Five-section design with wide range of motion for head and backrest"
+      ],
+      "longDescription": "This five-section post", "specifications": [
+        { "name": "Height Adjustment Range", "value": "51 cm – 94 cm" },
+        { "name": "Height Adjustment Time", "value": "Approx. 30 seconds" },
+        { "name": "Motor", "value": "TiMOTION" },
+        { "name": "Padding Thickness", "value": "5 cm" },
+        { "name": "Foam Density", "value": "36 kg/m³" },
+        { "name": "Upholstery Options", "value": "16 colors (optional)" },
+        { "name": "Maximum Weight Capacity", "value": "200 kg" },
+        { "name": "Castors", "value": "75 mm retractable (optional)" }
+      ],
+      "userReviews": []
+    },{
+      "id": 0,
+      "name": "Unweighing Harness System",
+      "category": "Rehabilitation Systems",
+      "rating": 0,
+      "reviewsCount": 0,
+      "price": 0.00,
+      "salePrice": 0.00,
+      "shortDescription": "The Unweighing Harness System enables partial weight-bearing therapy with open patient access, supporting early rehabilitation in a safe and controlled environment.",
+      "availability": "In Stock",
+      "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555189/Harness_system_wdbwia.jpg",
+      "gallery": [
+        "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555189/Harness_system_wdbwia.jpg"
+      ],
+      "features": [
+        "Partial Weight-Bearing Therapy",
+        "Open Patient Access",
+        "Neurological Rehabilitation"
+      ],
+      "keyFeatures": [
+        "Enables controlled offloading of body weight for early rehabilitation",
+        "Allows open access to the patient for hands-on therapist facilitation",
+        "Assists posture and balance during gait and standing therapy",
+        "Enables weight bearing as per therapeutic requirement",
+        "Provides stability to the trunk and spine",
+        "Prevents excessive rotation during movement",
+        "Facilitates hip flexor activation",
+        "Supports motor re-learning",
+        "Improves walking speed and endurance",
+        "Safe and patient-friendly design"
+      ],
+      "longDescription": "The Unweighing Harness System is designed to support partial weight-bearing rehabilitation by safely offloading a controlled percentage of a patient’s body weight. This allows early mobilization while maintaining stability and safety for both patient and therapist. The open-access design enables therapists to focus on treatment and manually facilitate lower-limb movements, making it ideal for neurological and geriatric rehabilitation programs.",
+      "specifications": [
+        { "name": "Therapy Type", "value": "Partial weight-bearing rehabilitation" },
+        { "name": "Patient Access", "value": "Open access design" },
+        { "name": "Weight Offloading", "value": "Adjustable as per therapeutic requirement" },
+        { "name": "Design", "value": "Safe and patient-friendly" }
+      ],
+      "userReviews": []
     }
+    
+    
+    
     
   ]
 }

@@ -23,6 +23,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { useToast } from '@/hooks/use-toast';
 
 export default function ProductPage() {
   const params = useParams();
@@ -30,6 +31,13 @@ export default function ProductPage() {
   const [product, setProduct] = React.useState<(typeof products)[0] | null>(null);
   const [activeImage, setActiveImage] = React.useState<string | undefined>(undefined);
   const [quantity, setQuantity] = React.useState(1);
+
+  const [fullName, setFullName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [phone, setPhone] = React.useState('');
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [dialogOpen, setDialogOpen] = React.useState(false);
+  const { toast } = useToast();
 
   React.useEffect(() => {
     if (!isNaN(id)) {
@@ -40,6 +48,53 @@ export default function ProductPage() {
       }
     }
   }, [id]);
+
+  const handleQuoteSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!product) return;
+    setIsSubmitting(true);
+
+    const message = `Product: ${product.name}\nQuantity: ${quantity}`;
+
+    try {
+        const response = await fetch('/api/query', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: fullName,
+                email,
+                phoneno: phone,
+                message,
+            }),
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.error || 'Something went wrong');
+        }
+
+        toast({
+            title: 'Quote Request Sent!',
+            description: 'We have received your request and will get back to you shortly.',
+        });
+        setDialogOpen(false); // Close the dialog
+        // Reset form fields
+        setFullName('');
+        setEmail('');
+        setPhone('');
+
+    } catch (error: any) {
+        toast({
+            variant: 'destructive',
+            title: 'Uh oh! Something went wrong.',
+            description: error.message || 'Could not send quote request.',
+        });
+    } finally {
+        setIsSubmitting(false);
+    }
+  };
 
   if (!product) {
     return (
@@ -126,7 +181,7 @@ export default function ProductPage() {
                 {price && salePrice && (
                   <span className="text-xl text-muted-foreground line-through mr-2">${price.toFixed(2)}</span>
                 )}
-                {currentPrice && (
+                {currentPrice && currentPrice > 0 && (
                   <span className="text-3xl font-bold text-primary">${currentPrice.toFixed(2)}</span>
                 )}
               </div>
@@ -149,7 +204,7 @@ export default function ProductPage() {
                     <Plus className="w-4 h-4" />
                   </Button>
                 </div>
-                <Dialog>
+                <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
                   <DialogTrigger asChild>
                     <Button size="lg" className="flex-grow">
                       Get Quote
@@ -179,21 +234,21 @@ export default function ProductPage() {
                         <p className="text-sm text-muted-foreground">Quantity: {quantity}</p>
                       </div>
                     </div>
-                    <form className="space-y-4">
+                    <form className="space-y-4" onSubmit={handleQuoteSubmit}>
                       <div className="space-y-2">
                         <Label htmlFor="name">Full Name *</Label>
-                        <Input id="name" placeholder="Jane Smith" required />
+                        <Input id="name" placeholder="Jane Smith" required value={fullName} onChange={(e) => setFullName(e.target.value)} />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="email">Email *</Label>
-                        <Input id="email" type="email" placeholder="jane@email.com" required />
+                        <Input id="email" type="email" placeholder="jane@email.com" required value={email} onChange={(e) => setEmail(e.target.value)} />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="phone">Phone Number</Label>
-                        <Input id="phone" type="tel" placeholder="+91 12345 67890" />
+                        <Input id="phone" type="tel" placeholder="+91 12345 67890" value={phone} onChange={(e) => setPhone(e.target.value)} />
                       </div>
-                      <Button type="submit" className="w-full">
-                        Submit Quote Request
+                      <Button type="submit" className="w-full" disabled={isSubmitting}>
+                        {isSubmitting ? 'Submitting...' : 'Submit Quote Request'}
                       </Button>
                     </form>
                   </DialogContent>
