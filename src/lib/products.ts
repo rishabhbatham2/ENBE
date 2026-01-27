@@ -20,8 +20,6 @@ export type Product = {
   category: string;
   rating: number;
   reviewsCount: number;
-  price?: number;
-  salePrice?: number;
   shortDescription?: string;
   availability?: string;
   image: string; // id from placeholderImages
@@ -50,3 +48,5 @@ export const products: (Omit<Product, 'image' | 'gallery'> & { image: ImagePlace
     gallery: galleryImages,
   };
 });
+
+    

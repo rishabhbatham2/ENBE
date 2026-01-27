@@ -8,8 +8,6 @@
       "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 2,
-      "price": 120.00,
-      "salePrice": 99.00,
       "shortDescription": "Winstim is a 4/2-channel electrotherapy and ultrasound device offering 4-pole and 2-pole interferential therapy along with a variety of electrical stimulation waveforms. It effectively treats acute and subacute trauma, inflammatory conditions, chronic rheumatoid and arthritic disorders, and provides reliable pain relief.",
       "availability": "In Stock",
       "image": "product-winstim",
@@ -65,7 +63,6 @@
       "category": "Electrotherapy",
       "rating": 5,
       "reviewsCount": 0,
-      "price": 150.00,
       "image": "product-electro-2",
       "gallery": ["product-electro-2"],
       "features": ["Dual Channel", "12 Modes", "Portable"]
@@ -76,7 +73,6 @@
       "category": "PEMF Therapy",
       "rating": 5,
       "reviewsCount": 0,
-      "price": 80.00,
       "image": "product-graphene-belt",
       "gallery": ["product-graphene-belt"],
       "features": ["Pain Relief", "Magnetic Therapy", "Adjustable"]
@@ -87,7 +83,6 @@
       "category": "PEMF Therapy",
       "rating": 5,
       "reviewsCount": 0,
-      "price": 250.00,
       "image": "product-pemf-prostate",
       "gallery": ["product-pemf-prostate"],
       "features": ["Targeted Therapy", "Non-Invasive", "At-Home Use"]
@@ -98,7 +93,6 @@
       "category": "PEMF Therapy",
       "rating": 5,
       "reviewsCount": 0,
-      "price": 180.00,
       "image": "product-pemf-gshios",
       "gallery": ["product-pemf-gshios"],
       "features": ["PEMF Therapy", "Portable", "Pain Relief"]
@@ -109,7 +103,6 @@
       "category": "Rehabilitation",
       "rating": 5,
       "reviewsCount": 0,
-      "price": 95.00,
       "image": "product-eye-900",
       "gallery": ["product-eye-900"],
       "features": ["Eye Massage", "Reduces Strain", "Portable"]
@@ -646,8 +639,6 @@
       "category": "Treatment Tables",
       "rating": 0,
       "reviewsCount": 0,
-      "price": 0.00,
-      "salePrice": 0.00,
       "shortDescription": "Purpose-built for rehabilitation, this strong two-section neurological Bobath table is designed with the therapist in mind, offering an extra-wide tabletop and flexible patient positioning.",
       "availability": "In Stock",
       "image": "product-bobath-table-main",
@@ -687,8 +678,6 @@
       "category": "Treatment Tables",
       "rating": 0,
       "reviewsCount": 0,
-      "price": 0.00,
-      "salePrice": 0.00,
       "shortDescription": "Specially designed split-leg treatment table offering enhanced functionality, superior stability, and ergonomic comfort for therapists and patients.",
       "availability": "In Stock",
       "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555197/Split_Leg_Table_pbxocg.jpg",
@@ -728,8 +717,6 @@
       "category": "Treatment Tables",
       "rating": 0,
       "reviewsCount": 0,
-      "price": 0.00,
-      "salePrice": 0.00,
       "shortDescription": "A preferred choice among physiotherapists, this five-section postural drainage table offers smooth electric Hi-Lo operation and precise postural drainage control with a wide range of head and backrest motion.",
       "availability": "In Stock",
       "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555198/Postural_Drainage_nqntpu.jpg", 
@@ -769,8 +756,6 @@
       "category": "Rehabilitation Systems",
       "rating": 0,
       "reviewsCount": 0,
-      "price": 0.00,
-      "salePrice": 0.00,
       "shortDescription": "The Unweighing Harness System enables partial weight-bearing therapy with open patient access, supporting early rehabilitation in a safe and controlled environment.",
       "availability": "In Stock",
       "image": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555189/Harness_system_wdbwia.jpg",
@@ -809,6 +794,8 @@
     
   ]
 }
+
+    
 
     
 

@@ -113,8 +113,6 @@ export default function ProductPage() {
     name,
     rating,
     reviewsCount,
-    price,
-    salePrice,
     shortDescription,
     availability,
     gallery,
@@ -123,8 +121,6 @@ export default function ProductPage() {
     userReviews,
     keyFeatures,
   } = product;
-  
-  const currentPrice = salePrice || price;
 
   return (
     <div className="bg-white text-foreground">
@@ -176,14 +172,6 @@ export default function ProductPage() {
                   ))}
                 </div>
                 <span className="text-sm text-muted-foreground">({reviewsCount} customer reviews)</span>
-              </div>
-              <div>
-                {price && salePrice && (
-                  <span className="text-xl text-muted-foreground line-through mr-2">${price.toFixed(2)}</span>
-                )}
-                {currentPrice && currentPrice > 0 && (
-                  <span className="text-3xl font-bold text-primary">${currentPrice.toFixed(2)}</span>
-                )}
               </div>
               <p className="text-body-base text-muted-foreground">{shortDescription}</p>
               
@@ -347,3 +335,5 @@ export default function ProductPage() {
     </div>
   );
 }
+
+    
