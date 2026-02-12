@@ -251,7 +251,7 @@ export default function Home() {
               </h2>
               <div className="flex justify-center gap-8 md:gap-16 mb-12">
                 <div>
-                  <p className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">50K+</p>
+                  <p className="text-m-h2 md:text-h2 font-headline font-semibold text-primary">40K+</p>
                   <p className="text-body-sm text-muted-foreground mt-1">Reviews</p>
                 </div>
                 <div>
