@@ -407,6 +407,30 @@
       "description": "Neurological Bobath Table",
       "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768554040/Bobath_Table_nhdns6.jpg",
       "imageHint": "bobath table"
+    },
+     {
+      "id": "product-fitknees",
+      "description": "Fitknees wearable knee monitoring device",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555192/Fitknees_ocnxvg.jpg",
+      "imageHint": "fitknees device"
+    },
+     {
+      "id": "product-fitmust",
+      "description": "Fitknees wearable knee monitoring device",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768555193/Fitmust_vo3btd.jpg",
+      "imageHint": "fitknees device"
+    },
+     {
+      "id": "product-sparshmind-vr",
+      "description": "Fitknees wearable knee monitoring device",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768553478/VR_System_mi2ipg.jpg",
+      "imageHint": "fitknees device"
+    },
+     {
+      "id": "product-sparshmind-vr",
+      "description": "Fitknees wearable knee monitoring device",
+      "imageUrl": "https://res.cloudinary.com/dyx7of5zc/image/upload/v1768548859/AP439_ipbej0.jpg",
+      "imageHint": "fitknees device"
     }
   ]
 }

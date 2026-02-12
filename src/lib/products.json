@@ -16,7 +16,7 @@
         "product-electro-2",
         "product-graphene-belt"
       ],
-      "features": ["Electrotherapy", "Ultrasound", "Pain Relief"],
+      "features": ["Electrotherapy", "Ultrasound", "Combination"],
       "keyFeatures": [
         "4 / 2 channel electrotherapy, multiple modalities in a single unit including combination of ultrasound and electrotherapy",
         "A comprehensive reference library providing information on therapy, treatments and electrode placement",
@@ -57,6 +57,133 @@
         }
       ]
     },
+
+
+    {
+  "id": 221,
+  "name": "Fitknees",
+  "category": "Wearable Rehabilitation",
+  "rating": 5,
+  "reviewsCount": 0,
+  "shortDescription": "Fitknees is an AI-based wearable knee monitoring device designed to provide precise treatment tracking through graphical and numerical data. It enhances transparency, improves compliance, and builds trust between patients and clinicians.",
+  "availability": "In Stock",
+  "image": "product-fitknees",
+  "gallery": [
+    "product-fitknees",
+    "product-fitknees-2",
+    "product-fitknees-3"
+  ],
+  "features": [
+    "AI Monitoring",
+    "Wearable Device",
+    "IoT Screening",
+    "OTA Updates"
+  ],
+  "keyFeatures": [
+    "Portable and easily operable design",
+    "Comprehensive knee treatment monitoring",
+    "Empowers patients through graphical and numerical data",
+    "Enhances trust, compliance, and transparency in treatment",
+    "IoT-enabled screening capabilities",
+    "Unmatched accuracy in monitoring",
+    "Supports OTA (Over-the-Air) updates"
+  ],
+  "longDescription": "Fitknees is an AI-based wearable knee monitoring device built to enhance rehabilitation and knee treatment outcomes. It provides real-time graphical and numerical insights, helping clinicians set accurate baselines and track recovery effectively. Patients gain a clear understanding of treatment goals, enabling smarter decisions and stronger trust with their physiotherapist.",
+  "specifications": [
+    { "name": "Device Type", "value": "AI-Based Wearable Knee Monitoring Device" },
+    { "name": "Connectivity", "value": "IoT Enabled" },
+    { "name": "Data Output", "value": "Graphical & Numerical Data" },
+    { "name": "Updates", "value": "OTA (Over-the-Air)" },
+    { "name": "Portability", "value": "Portable & Lightweight" }
+  ],
+  "userReviews": []
+}
+,{
+  "id": 223,
+  "name": "Fitmust",
+  "category": "Muscle Assessment",
+  "rating": 5,
+  "reviewsCount": 0,
+  "shortDescription": "Fitmust is a clinically validated device designed for accurate, objective, and repeatable muscle strength assessments. With 97% intra-examiner reliability, it delivers precise isometric strength data, making it an essential tool for every clinic.",
+  "availability": "In Stock",
+  "image": "product-fitmust",
+  "gallery": [
+    "product-fitmust",
+    "product-fitmust-2",
+    "product-fitmust-3"
+  ],
+  "features": [
+    "Muscle Strength Testing",
+    "Clinical Accuracy",
+    "Progress Tracking",
+    "Isometric Measurement"
+  ],
+  "keyFeatures": [
+    "97% intra-examiner reliability compared to approximately 40% with manual testing",
+    "Clinically validated and supported by hundreds of scientific studies",
+    "Provides precise and consistent isometric strength data",
+    "Fast and efficient muscle strength assessments",
+    "Tracks patient progress over time",
+    "Simple and user-friendly operation",
+    "Easy integration into existing clinical workflows"
+  ],
+  "longDescription": "Fitmust is an essential muscle strength assessment device built for clinical accuracy and reliability. Designed to provide objective and quantitative measurements, it enables clinicians to make evidence-based decisions with confidence. With 97% intra-examiner reliability and strong scientific backing, Fitmust ensures consistent and repeatable results. Patients benefit from clear insights into strength deficits and measurable recovery progress, enhancing motivation and engagement during rehabilitation.",
+  "specifications": [
+    { "name": "Device Type", "value": "Muscle Strength Assessment Device" },
+    { "name": "Measurement Type", "value": "Isometric Strength" },
+    { "name": "Reliability", "value": "97% Intra-Examiner Reliability" },
+    { "name": "Clinical Validation", "value": "Supported by Scientific Studies" },
+    { "name": "Operation", "value": "User-Friendly & Fast Assessment" }
+  ],
+  "userReviews": []
+}
+,
+
+{
+  "id": 4,
+  "name": "SparshMind VR System",
+  "category": "Neuro Rehabilitation",
+  "rating": 5,
+  "reviewsCount": 0,
+  "shortDescription": "SparshMind VR System delivers immersive, automated virtual reality–based therapies for individuals with neurological disabilities. Designed to maximize engagement and long-term adherence, it combines innovative technology with empathetic care.",
+  "availability": "In Stock",
+  "image": "product-sparshmind-vr",
+  "gallery": [
+    "product-sparshmind-vr",
+    "product-sparshmind-vr-2",
+    "product-sparshmind-vr-3"
+  ],
+  "features": [
+    "VR-Based Therapy",
+    "Neuro Rehabilitation",
+    "Movement Tracking",
+    "Advanced Analytics"
+  ],
+  "keyFeatures": [
+    "Automated, immersive virtual reality–based therapy programs",
+    "Constraint-Induced Movement Therapy modules",
+    "Mirror Therapy integration",
+    "Cognitive rehabilitation programs",
+    "Repetitive, task-oriented training exercises",
+    "Activities of Daily Living (ADL) simulations",
+    "Mental well-being therapy modules",
+    "Balance and postural training programs",
+    "Advanced reporting and analytics dashboard",
+    "Objective tracking of body movements and range of motion",
+    "Detection and correction of compensatory movement patterns",
+    "Monitoring of endurance, strength, and speed"
+  ],
+  "longDescription": "SparshMind VR System is an advanced virtual reality–based rehabilitation platform designed to support individuals with neurological disabilities. By combining immersive therapy environments with intelligent tracking and analytics, it enhances patient engagement and long-term treatment adherence. The system offers a wide range of therapy programs including motor rehabilitation, cognitive training, ADL simulations, mental well-being modules, and balance training. With objective performance tracking and detailed analytics, clinicians can monitor progress accurately and deliver highly personalized, data-driven rehabilitation.",
+  "specifications": [
+    { "name": "System Type", "value": "Virtual Reality Rehabilitation System" },
+    { "name": "Therapy Modules", "value": "Motor, Cognitive, ADL, Mental Well-being" },
+    { "name": "Motion Tracking", "value": "Objective Body Movement Tracking" },
+    { "name": "Analytics", "value": "Advanced Reporting & Performance Metrics" },
+    { "name": "Measured Parameters", "value": "Range of Motion, Endurance, Strength, Speed" }
+  ],
+  "userReviews": []
+}
+,
     {
       "id": 5,
       "name": "Winstim Plus",
