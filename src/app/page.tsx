@@ -108,20 +108,6 @@ export default function Home() {
       review: "We procured a range of rehabilitation equipment for our hospital. The entire process, from inquiry to installation, was seamless. The eNBe team is professional and efficient.",
       rating: 5,
       image: reviewer10,
-    },
-    {
-      name: "Rohan Desai",
-      title: "Product Manager",
-      review: "The Graphene Magnetic Waist Belt has been a great help for my lower back pain. It's comfortable to wear and provides good support. I'm very satisfied with my purchase.",
-      rating: 4,
-      image: reviewer9,
-    },
-    {
-      name: "Amit Patel",
-      title: "Engineer",
-      review: "The customer service is excellent. I had a query about my product, and they resolved it quickly. The product itself is of high quality. I'm a happy customer.",
-      rating: 5,
-      image: reviewer11,
     }
   ];
 

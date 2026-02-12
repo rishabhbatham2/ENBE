@@ -505,7 +505,53 @@
         "Detection and correction of compensatory patterns",
         "Monitoring of endurance, strength, and speed"
       ]
-    },
+    },{
+  "id": 225,
+  "name": "AP439+",
+  "category": "Electrotherapy",
+  "rating": 5,
+  "reviewsCount": 0,
+  "shortDescription": "AP439+ is a multi-waveform, multi-channel electrotherapy device designed for comprehensive pain relief. Supporting Interferential, TENS, Galvanic, Russian currents, and Ultrasound therapy, it delivers precise and comfortable stimulation for modern physiotherapy clinics.",
+  "availability": "In Stock",
+  "image": "product-ap439-plus",
+  "gallery": [
+    "product-ap439-plus",
+    "product-ap439-plus-2",
+    "product-ap439-plus-3"
+  ],
+  "features": [
+    "Multi-Waveform Stimulator",
+    "Interferential Therapy",
+    "TENS & Russian Currents",
+    "Ultrasound Therapy"
+  ],
+  "keyFeatures": [
+    "Multi-waveform stimulator with true sine wave interferential",
+    "Supports Interferential, TENS, Galvanic, and Russian currents",
+    "Ultrasound therapy with pulsed and continuous modes",
+    "2 independent outputs / 4-channel device",
+    "Lightweight and portable design",
+    "Precise treatment selection controls",
+    "Comfortable electrical stimulation with proven clinical results"
+  ],
+  "longDescription": "AP439+ is a cutting-edge electrotherapy system built for comprehensive pain management and rehabilitation. This multi-waveform, multi-channel device supports a wide range of therapeutic modalities including Interferential Therapy (IFT), TENS, Galvanic, Russian currents, and Ultrasound therapy. Designed for accuracy, comfort, and efficiency, AP439+ ensures reliable clinical outcomes while remaining lightweight and portable—making it an essential device for modern physiotherapy practices.",
+  "specifications": [
+    { "name": "Ultrasound Output", "value": "Single Output" },
+    { "name": "Ultrasound Wave", "value": "Sine Wave" },
+    { "name": "Ultrasound Modes", "value": "Pulsed & Continuous" },
+    { "name": "Ultrasound Frequency", "value": "1 MHz & 3 MHz" },
+    { "name": "Duty Cycle", "value": "10%, 20%, 50%" },
+    { "name": "Treatment Time", "value": "1 - 60 Minutes (1 min steps)" },
+    { "name": "Electrotherapy Output", "value": "Two Independent Outputs (4 Channels)" },
+    { "name": "Waveforms", "value": "Sine Wave, Symmetrical Biphasic, DC" },
+    { "name": "Carrier Frequency", "value": "4000 Hz (IFT) & 2500 Hz (Russian)" },
+    { "name": "Pulse Width", "value": "50 µS - 400 µS" },
+    { "name": "Output Voltage", "value": "0 - 70 Vpp @ 500Ω" },
+    { "name": "Power Supply", "value": "110 - 220V AC" }
+  ],
+  "userReviews": []
+}
+,
     {
       "id": 21,
       "name": "Limb Compression Therapy Device",
