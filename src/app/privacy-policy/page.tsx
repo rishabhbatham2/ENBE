@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
                   <li>📧 Email: jsrawat@enbetechserv.com</li>
                   <li>📞 Phone: +91 88006 33255</li>
                   <li>🏢 Address: T2/505, RPS Savana, Sector - 88, Faridabad - 121002, Haryana</li>
-                  <li>🕒 Business Hours: Monday–Saturday (9:00 AM – 8:00 PM)</li>
+                  <li>🕒 Business Hours: Monday–Saturday (11:00 AM – 6:00 PM)</li>
                 </ul>
 
                 <h2 className="text-m-h2 md:text-h2 font-headline font-semibold text-foreground !mt-12">16. Governing Law</h2>
